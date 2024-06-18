@@ -1,0 +1,585 @@
+/ddn/age/default/spool/node14/job_scripts/97704: line 16: mpiexec: command not found
+
+h_vmem=32G
+maxrss=N/A
+
+
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+numprocs=18
+NEURON -- VERSION 8.2.4 HEAD (1d87d5d39) 2024-02-09
+Duke, Yale, and the BlueBrain Project -- Copyright 1984-2022
+See http://neuron.yale.edu/neuron/credits
+
+Additional mechanisms from files
+ "mod/APCounter2.mod" "mod/ar_traub.mod" "mod/beforestep_py.mod" "mod/CA1ika.mod" "mod/CA1ikdr.mod" "mod/CA1ina.mod" "mod/cadad.mod" "mod/cadecay_destexhe.mod" "mod/cad.mod" "mod/Cadynamics.mod" "mod/cadyn.mod" "mod/cagk.mod" "mod/cal_mh.mod" "mod/cal_mig.mod" "mod/cancr.mod" "mod/canin.mod" "mod/can_mig.mod" "mod/caolmw.mod" "mod/capr.mod" "mod/catcb.mod" "mod/cat_mig.mod" "mod/cat_traub.mod" "mod/ch_CavL.mod" "mod/ch_CavN.mod" "mod/ch_KCaS.mod" "mod/ch_Kdrfastngf.mod" "mod/ch_KvAngf.mod" "mod/ch_KvCaB.mod" "mod/ch_leak.mod" "mod/ch_Navngf.mod" "mod/cp2.mod" "mod/cp.mod" "mod/DynamicNetStim.mod" "mod/gabab.mod" "mod/h_BS.mod" "mod/HH2.mod" "mod/h_harnett.mod" "mod/HH_traub.mod" "mod/hin.mod" "mod/h_kole.mod" "mod/h_migliore.mod" "mod/htc.mod" "mod/Iahp.mod" "mod/ICal.mod" "mod/Ican.mod" "mod/ican_sidi.mod" "mod/icaolmw.mod" "mod/icapr.mod" "mod/iccr.mod" "mod/IC.mod" "mod/iconc_Ca.mod" "mod/iholmkop.mod" "mod/iholmw.mod" "mod/ihpyrkop.mod" "mod/IKM.mod" "mod/ikscr.mod" "mod/IKsin.mod" "mod/IL_gutnick.mod" "mod/IL.mod" "mod/IM_cortex.mod" "mod/ipulse3.mod" "mod/IT2.mod" "mod/IT.mod" "mod/kahppr.mod" "mod/kaolmkop.mod" "mod/kap_BS.mod" "mod/kapcb.mod" "mod/kapin.mod" "mod/kapyrkop.mod" "mod/kBK.mod" "mod/kca.mod" "mod/kcaolmw.mod" "mod/kcpr.mod" "mod/kctin.mod" "mod/kdmc_BS.mod" "mod/kdr2_orig.mod" "mod/kdr_BS.mod" "mod/kdrbwb.mod" "mod/kdrcr.mod" "mod/kdrin.mod" "mod/kdrolmkop.mod" "mod/kdrpr.mod" "mod/kdrpyrkop.mod" "mod/kl.mod" "mod/km.mod" "mod/kv.mod" "mod/MyExp2SynAlpha.mod" "mod/MyExp2SynBB.mod" "mod/my_exp2syn.mod" "mod/MyExp2SynNMDABB.mod" "mod/na_2.mod" "mod/naf2.mod" "mod/nafbwb.mod" "mod/nafcr.mod" "mod/nafolmkop.mod" "mod/nafpr.mod" "mod/nafpyrkop.mod" "mod/nafx.mod" "mod/nap_sidi.mod" "mod/nax_BS.mod" "mod/naz.mod" "mod/Nca.mod" "mod/nsloc.mod" "mod/ntIh.mod" "mod/ntleak.mod" "mod/ntt_int.mod" "mod/ntt.mod" "mod/pasi.mod" "mod/savedist.mod" "mod/tia.mod" "mod/vecstim.mod" "mod/wrap.mod"
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 3: 717 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 3: 734335 
+  Number of synaptic contacts on node 3: 1428373 
+  Number of stims on node 3: 2151 
+Recording 0 traces of 0 types on node 3
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 5: 717 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 5: 735100 
+  Number of synaptic contacts on node 5: 1429556 
+  Number of stims on node 5: 2151 
+Recording 0 traces of 0 types on node 5
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 6: 717 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 6: 734646 
+  Number of synaptic contacts on node 6: 1428838 
+  Number of stims on node 6: 2151 
+Recording 0 traces of 0 types on node 6
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 7: 717 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 7: 736496 
+  Number of synaptic contacts on node 7: 1432655 
+  Number of stims on node 7: 2151 
+Recording 0 traces of 0 types on node 7
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 1: 718 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 1: 739262 
+  Number of synaptic contacts on node 1: 1438429 
+  Number of stims on node 1: 2154 
+Recording 0 traces of 0 types on node 1
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 11: 717 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 11: 738904 
+  Number of synaptic contacts on node 11: 1437218 
+  Number of stims on node 11: 2151 
+Recording 0 traces of 0 types on node 11
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 16: 717 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 16: 739793 
+  Number of synaptic contacts on node 16: 1438757 
+  Number of stims on node 16: 2151 
+Recording 0 traces of 0 types on node 16
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 2: 717 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 2: 739907 
+  Number of synaptic contacts on node 2: 1439324 
+  Number of stims on node 2: 2151 
+Recording 0 traces of 0 types on node 2
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 8: 717 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 8: 739600 
+  Number of synaptic contacts on node 8: 1438709 
+  Number of stims on node 8: 2151 
+Recording 0 traces of 0 types on node 8
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 9: 717 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 9: 739437 
+  Number of synaptic contacts on node 9: 1438176 
+  Number of stims on node 9: 2151 
+Recording 0 traces of 0 types on node 9
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 14: 717 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 14: 738920 
+  Number of synaptic contacts on node 14: 1436873 
+  Number of stims on node 14: 2151 
+Recording 0 traces of 0 types on node 14
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 17: 717 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 17: 739160 
+  Number of synaptic contacts on node 17: 1437844 
+  Number of stims on node 17: 2151 
+Recording 0 traces of 0 types on node 17
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 13: 717 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 13: 737998 
+  Number of synaptic contacts on node 13: 1435709 
+  Number of stims on node 13: 2151 
+Recording 0 traces of 0 types on node 13
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 4: 717 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 4: 734085 
+  Number of synaptic contacts on node 4: 1428071 
+  Number of stims on node 4: 2151 
+Recording 0 traces of 0 types on node 4
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 12: 717 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 12: 739665 
+  Number of synaptic contacts on node 12: 1438804 
+  Number of stims on node 12: 2151 
+Recording 0 traces of 0 types on node 12
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 15: 717 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 15: 738269 
+  Number of synaptic contacts on node 15: 1435871 
+  Number of stims on node 15: 2151 
+Recording 0 traces of 0 types on node 15
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 10: 717 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 10: 739105 
+  Number of synaptic contacts on node 10: 1437838 
+  Number of stims on node 10: 2151 
+Recording 0 traces of 0 types on node 10
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+
+Start time:  2024-06-17 18:39:49.989382
+
+Creating network of 43 cell populations on 18 hosts...
+  Number of cells on node 0: 718 
+  Done; cell creation time = 1.68 s.
+Making connections...
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 0: 739225 
+  Number of synaptic contacts on node 0: 1437662 
+  Done; cell connection time = 417.21 s.
+Adding stims...
+  Number of stims on node 0: 2154 
+  Done; cell stims creation time = 0.77 s.
+Recording 0 traces of 0 types on node 0
+0.0s
+
+Running simulation using NEURON for 1000.0 ms...
+0.1s
+0.2s
+0.3s
+0.4s
+0.5s
+0.6s
+0.7s
+0.8s
+0.9s
+1.0s
+  Done; run time = 1013.61 s; real-time ratio: 0.00.
+
+Gathering data...
+  Done; gather time = 44.19 s.
+
+Analyzing...
+  Cells: 12908
+  Connections: 0 (0.00 per cell)
+  Spikes: 38292 (2.97 Hz)
+  Simulated time: 1.0 s; 18 workers
+  Run time: 1013.61 s
+   NGF1 : 0.397 Hz
+   IT2 : 3.296 Hz
+   SOM2 : 136.800 Hz
+   PV2 : 48.615 Hz
+   VIP2 : 6.375 Hz
+   NGF2 : 17.818 Hz
+   IT3 : 0.531 Hz
+   SOM3 : 16.371 Hz
+   PV3 : 19.784 Hz
+   VIP3 : 9.867 Hz
+   NGF3 : 7.533 Hz
+   ITP4 : 1.503 Hz
+   ITS4 : 1.247 Hz
+   SOM4 : 13.750 Hz
+   PV4 : 5.075 Hz
+   VIP4 : 17.231 Hz
+   NGF4 : 10.857 Hz
+   IT5A : 2.563 Hz
+   CT5A : 0.635 Hz
+   SOM5A : 21.256 Hz
+   PV5A : 2.082 Hz
+   VIP5A : 16.800 Hz
+   NGF5A : 4.500 Hz
+   IT5B : 7.117 Hz
+   CT5B : 0.166 Hz
+   PT5B : 0.195 Hz
+   SOM5B : 32.143 Hz
+   PV5B : 0.985 Hz
+   VIP5B : 10.000 Hz
+   NGF5B : 4.917 Hz
+   IT6 : 6.410 Hz
+   CT6 : 3.225 Hz
+   SOM6 : 90.635 Hz
+   PV6 : 0.000 Hz
+   VIP6 : 0.000 Hz
+   NGF6 : 231.421 Hz
+   TC : 4.966 Hz
+   TCM : 4.103 Hz
+   HTC : 3.368 Hz
+   IRE : 2.787 Hz
+   IREM : 4.026 Hz
+   TI : 1.373 Hz
+   TIM : 2.353 Hz
+ Could not create target folder: data/A1_test
+ Could not create target folder: data/A1_test
+Saving output as data/A1_test/A1_test_data.pkl ... 
+Traceback (most recent call last):
+  File "init.py", line 41, in <module>
+    sim.saveData()  
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne3/lib/python3.10/site-packages/netpyne/sim/save.py", line 203, in saveData
+    with open(path, 'wb') as fileObj:
+FileNotFoundError: [Errno 2] No such file or directory: 'data/A1_test/A1_test_data.pkl'
+
+h_vmem=32G
+maxrss=50.968G
+
+
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+numprocs=14
+NEURON -- VERSION 8.2.4 HEAD (1d87d5d39) 2024-02-09
+Duke, Yale, and the BlueBrain Project -- Copyright 1984-2022
+See http://neuron.yale.edu/neuron/credits
+
+Additional mechanisms from files
+ "mod/APCounter2.mod" "mod/ar_traub.mod" "mod/beforestep_py.mod" "mod/CA1ika.mod" "mod/CA1ikdr.mod" "mod/CA1ina.mod" "mod/cadad.mod" "mod/cadecay_destexhe.mod" "mod/cad.mod" "mod/Cadynamics.mod" "mod/cadyn.mod" "mod/cagk.mod" "mod/cal_mh.mod" "mod/cal_mig.mod" "mod/cancr.mod" "mod/canin.mod" "mod/can_mig.mod" "mod/caolmw.mod" "mod/capr.mod" "mod/catcb.mod" "mod/cat_mig.mod" "mod/cat_traub.mod" "mod/ch_CavL.mod" "mod/ch_CavN.mod" "mod/ch_KCaS.mod" "mod/ch_Kdrfastngf.mod" "mod/ch_KvAngf.mod" "mod/ch_KvCaB.mod" "mod/ch_leak.mod" "mod/ch_Navngf.mod" "mod/cp2.mod" "mod/cp.mod" "mod/DynamicNetStim.mod" "mod/gabab.mod" "mod/h_BS.mod" "mod/HH2.mod" "mod/h_harnett.mod" "mod/HH_traub.mod" "mod/hin.mod" "mod/h_kole.mod" "mod/h_migliore.mod" "mod/htc.mod" "mod/Iahp.mod" "mod/ICal.mod" "mod/Ican.mod" "mod/ican_sidi.mod" "mod/icaolmw.mod" "mod/icapr.mod" "mod/iccr.mod" "mod/IC.mod" "mod/iconc_Ca.mod" "mod/iholmkop.mod" "mod/iholmw.mod" "mod/ihpyrkop.mod" "mod/IKM.mod" "mod/ikscr.mod" "mod/IKsin.mod" "mod/IL_gutnick.mod" "mod/IL.mod" "mod/IM_cortex.mod" "mod/ipulse3.mod" "mod/IT2.mod" "mod/IT.mod" "mod/kahppr.mod" "mod/kaolmkop.mod" "mod/kap_BS.mod" "mod/kapcb.mod" "mod/kapin.mod" "mod/kapyrkop.mod" "mod/kBK.mod" "mod/kca.mod" "mod/kcaolmw.mod" "mod/kcpr.mod" "mod/kctin.mod" "mod/kdmc_BS.mod" "mod/kdr2_orig.mod" "mod/kdr_BS.mod" "mod/kdrbwb.mod" "mod/kdrcr.mod" "mod/kdrin.mod" "mod/kdrolmkop.mod" "mod/kdrpr.mod" "mod/kdrpyrkop.mod" "mod/kl.mod" "mod/km.mod" "mod/kv.mod" "mod/MyExp2SynAlpha.mod" "mod/MyExp2SynBB.mod" "mod/my_exp2syn.mod" "mod/MyExp2SynNMDABB.mod" "mod/na_2.mod" "mod/naf2.mod" "mod/nafbwb.mod" "mod/nafcr.mod" "mod/nafolmkop.mod" "mod/nafpr.mod" "mod/nafpyrkop.mod" "mod/nafx.mod" "mod/nap_sidi.mod" "mod/nax_BS.mod" "mod/naz.mod" "mod/Nca.mod" "mod/nsloc.mod" "mod/ntIh.mod" "mod/ntleak.mod" "mod/ntt_int.mod" "mod/ntt.mod" "mod/pasi.mod" "mod/savedist.mod" "mod/tia.mod" "mod/vecstim.mod" "mod/wrap.mod"
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 8: 922 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 8: 945256 
+  Number of synaptic contacts on node 8: 1838631 
+  Number of stims on node 8: 2766 
+Recording 0 traces of 0 types on node 8
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 3: 922 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 3: 949248 
+  Number of synaptic contacts on node 3: 1846718 
+  Number of stims on node 3: 2766 
+Recording 0 traces of 0 types on node 3
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 6: 922 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 6: 947896 
+  Number of synaptic contacts on node 6: 1843539 
+  Number of stims on node 6: 2766 
+Recording 0 traces of 0 types on node 6
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 9: 922 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 9: 946052 
+  Number of synaptic contacts on node 9: 1839942 
+  Number of stims on node 9: 2766 
+Recording 0 traces of 0 types on node 9
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 10: 922 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 10: 948528 
+  Number of synaptic contacts on node 10: 1844707 
+  Number of stims on node 10: 2766 
+Recording 0 traces of 0 types on node 10
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 11: 922 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 11: 948661 
+  Number of synaptic contacts on node 11: 1845549 
+  Number of stims on node 11: 2766 
+Recording 0 traces of 0 types on node 11
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 4: 922 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 4: 950593 
+  Number of synaptic contacts on node 4: 1848955 
+  Number of stims on node 4: 2766 
+Recording 0 traces of 0 types on node 4
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 12: 922 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 12: 950288 
+  Number of synaptic contacts on node 12: 1847935 
+  Number of stims on node 12: 2766 
+Recording 0 traces of 0 types on node 12
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 13: 922 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 13: 951308 
+  Number of synaptic contacts on node 13: 1850292 
+  Number of stims on node 13: 2766 
+Recording 0 traces of 0 types on node 13
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 7: 922 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 7: 947678 
+  Number of synaptic contacts on node 7: 1843423 
+  Number of stims on node 7: 2766 
+Recording 0 traces of 0 types on node 7
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 5: 922 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 5: 947348 
+  Number of synaptic contacts on node 5: 1842652 
+  Number of stims on node 5: 2766 
+Recording 0 traces of 0 types on node 5
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 2: 922 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 2: 951828 
+  Number of synaptic contacts on node 2: 1852048 
+  Number of stims on node 2: 2766 
+Recording 0 traces of 0 types on node 2
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 1: 922 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 1: 948666 
+  Number of synaptic contacts on node 1: 1845255 
+  Number of stims on node 1: 2766 
+Recording 0 traces of 0 types on node 1
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+
+Start time:  2024-06-17 19:26:38.364961
+
+Creating network of 43 cell populations on 14 hosts...
+  Number of cells on node 0: 922 
+  Done; cell creation time = 1.39 s.
+Making connections...
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 0: 950557 
+  Number of synaptic contacts on node 0: 1849061 
+  Done; cell connection time = 479.62 s.
+Adding stims...
+  Number of stims on node 0: 2766 
+  Done; cell stims creation time = 0.76 s.
+Recording 0 traces of 0 types on node 0
+0.0s
+
+Running simulation using NEURON for 1000.0 ms...
+0.1s
+0.2s
+0.3s
+0.4s
+0.5s
+0.6s
+0.7s
+0.8s
+0.9s
+1.0s
+  Done; run time = 1293.56 s; real-time ratio: 0.00.
+
+Gathering data...
+  Done; gather time = 62.32 s.
+
+Analyzing...
+  Cells: 12908
+  Connections: 0 (0.00 per cell)
+  Spikes: 38292 (2.97 Hz)
+  Simulated time: 1.0 s; 14 workers
+  Run time: 1293.56 s
+   NGF1 : 0.397 Hz
+   IT2 : 3.296 Hz
+   SOM2 : 136.800 Hz
+   PV2 : 48.615 Hz
+   VIP2 : 6.375 Hz
+   NGF2 : 17.818 Hz
+   IT3 : 0.531 Hz
+   SOM3 : 16.371 Hz
+   PV3 : 19.784 Hz
+   VIP3 : 9.867 Hz
+   NGF3 : 7.533 Hz
+   ITP4 : 1.503 Hz
+   ITS4 : 1.247 Hz
+   SOM4 : 13.750 Hz
+   PV4 : 5.075 Hz
+   VIP4 : 17.231 Hz
+   NGF4 : 10.857 Hz
+   IT5A : 2.563 Hz
+   CT5A : 0.635 Hz
+   SOM5A : 21.256 Hz
+   PV5A : 2.082 Hz
+   VIP5A : 16.800 Hz
+   NGF5A : 4.500 Hz
+   IT5B : 7.117 Hz
+   CT5B : 0.166 Hz
+   PT5B : 0.195 Hz
+   SOM5B : 32.143 Hz
+   PV5B : 0.985 Hz
+   VIP5B : 10.000 Hz
+   NGF5B : 4.917 Hz
+   IT6 : 6.410 Hz
+   CT6 : 3.225 Hz
+   SOM6 : 90.635 Hz
+   PV6 : 0.000 Hz
+   VIP6 : 0.000 Hz
+   NGF6 : 231.421 Hz
+   TC : 4.966 Hz
+   TCM : 4.103 Hz
+   HTC : 3.368 Hz
+   IRE : 2.787 Hz
+   IREM : 4.026 Hz
+   TI : 1.373 Hz
+   TIM : 2.353 Hz
+Saving output as /ddn/niknovikov19/repo/A1_model_old/data/A1_test/A1_test_data.pkl ... 
+Finished saving!
+  Done; saving time = 148.93 s.
+Preparing spike data...
+Plotting raster...
+Preparing LFP data...
+Plotting LFP time series...
+  Done; plotting time = 18.21 s
+
+Total time = 2006.83 s
+
+h_vmem=32G
+maxrss=40.429G
+
+

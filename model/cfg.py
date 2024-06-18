@@ -22,7 +22,7 @@ cfg = specs.SimConfig()
 #------------------------------------------------------------------------------
 # Run parameters
 #------------------------------------------------------------------------------
-cfg.duration = 1.0*1e3			## Duration of the sim, in ms 
+cfg.duration = 5.0*1e3			## Duration of the sim, in ms 
 cfg.dt = 0.05                   ## Internal Integration Time Step 
 cfg.verbose = 0         	## Show detailed messages
 cfg.hParams['celsius'] = 37
@@ -68,8 +68,8 @@ cfg.recordLFP = [[x, 1000, 100] for x in range(100, 2200, 200)]
 # Saving
 #------------------------------------------------------------------------------
 
-cfg.simLabel = 'A1_test' 
-cfg.saveFolder = 'data/A1_test'                	## Set file output name
+cfg.simLabel = 'A1_test_5sec' 
+cfg.saveFolder = '/ddn/niknovikov19/repo/A1_model_old/data/A1_test_5sec'                	## Set file output name
 cfg.savePickle = True         	## Save pkl file
 cfg.saveJson = False           	## Save json file
 cfg.saveDataInclude = ['simData', 'simConfig', 'netParams', 'net'] 
