@@ -21,6 +21,8 @@ from mpi4py import MPI
 
 from netpyne import sim
 
+from netParams import calc_num_cells
+
 cfg, netParams = sim.readCmdLineArgs(simConfigDefault='cfg.py', netParamsDefault='netParams.py')
 
 # sim.createSimulateAnalyze(netParams, cfg)
@@ -34,27 +36,30 @@ sim.net.createCells()              			# instantiate network cells based on defin
 sim.pc.barrier()
 comm = MPI.COMM_WORLD
 rank = comm.Get_rank()
-pop_name = 'PV5B'
-gids = sim.net.pops[pop_name].cellGids
-print(f'==== {len(gids)} cells of type {pop_name} on the core {rank} ====')
-sim.pc.barrier()
+#pop_name = 'PV5B'
+#gids = sim.net.pops[pop_name].cellGids
+#print(f'==== {len(gids)} cells of type {pop_name} on the core {rank} ====')
+#sim.pc.barrier()
 
-#sim.net.connectCells()            			# create connections between cells based on params
-#sim.net.addStims() 							# add network stimulation
+sim.net.connectCells()            			# create connections between cells based on params
+sim.net.addStims() 							# add network stimulation
 
 #sim.pc.barrier()
 #if sim.rank == 0:
-#    embed()
+    #embed()
+    #for name, pop in sim.net.pops.items():
+    #    ncells = calc_num_cells(netParams, name)
+    #    print(f'{name}: {pop.tags["numCells"]} {ncells}')
 #sim.pc.barrier()
 
-#sim.setupRecording()              			# setup variables to record for each cell (spikes, V traces, etc)
-#sim.runSim()                      			# run parallel Neuron simulation  
-#sim.gatherData()                  			# gather spiking data and cell info from each node
+sim.setupRecording()              			# setup variables to record for each cell (spikes, V traces, etc)
+sim.runSim()                      			# run parallel Neuron simulation  
+sim.gatherData()                  			# gather spiking data and cell info from each node
 
 # distributed saving (to avoid errors with large output data)
 #sim.saveDataInNodes()
 #sim.gatherDataFromFiles()
 
-#sim.saveData()  
+sim.saveData()  
 
-#sim.analysis.plotData()         			# plot spike raster etc
+sim.analysis.plotData()         			# plot spike raster etc

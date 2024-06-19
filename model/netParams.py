@@ -539,6 +539,8 @@ if cfg.addSubConn:
 
 from mpi4py import MPI
 from neuron import h
+import numpy as np
+
 pc = h.ParallelContext()
 pc.barrier()
 comm = MPI.COMM_WORLD
@@ -546,12 +548,53 @@ rank = comm.Get_rank()
 print(f'NetParams import on the core {rank}')
 if rank == 0:
     var_test = 'Test 1111'
-    comm.Gather(S_local, S, root=0)
+
+# Population that will receive oscillatory input
+pop_name_osc = 'IT3'
+
+def calc_num_cells(netParams, pop_name):
+    from numpy import pi
+    par = netParams.popParams[pop_name]
+    if netParams.shape == 'cuboid':
+        volume = netParams.sizeY / 1e3 * netParams.sizeX / 1e3 * netParams.sizeZ / 1e3
+    elif netParams.shape == 'cylinder':
+        volume = netParams.sizeY / 1e3 * netParams.sizeX / 1e3 / 2 * netParams.sizeZ / 1e3 / 2 * pi
+    elif netParams.shape == 'ellipsoid':
+        volume = netParams.sizeY / 1e3 / 2.0 * netParams.sizeX / 1e3 / 2.0 * netParams.sizeZ / 1e3 / 2.0 * pi * 4.0 / 3.0
+    for coord in ['x', 'y', 'z']:
+        if coord + 'normRange' in par:
+            minv = par[coord + 'normRange'][0]
+            maxv = par[coord + 'normRange'][1]
+            volume = volume * (maxv - minv)
+    return int(volume * par['density'])
+
+def generate_sin_spike_times(r0, A, f, ncells):
+    '''Generate poisson spike trains with sinusoidally modulated rate. '''
+    T = cfg.duration
+    dt = cfg.dt
+    tvec = np.arange(0, T, dt)
+    rvec = r0 + A * np.sin (2 * np.pi * f * tvec / 1000)
+    Nt = len(tvec)
+    S = (np.random.rand(ncells, Nt) < (rvec * dt / 1000))
+    spike_times = [tvec[np.argwhere(S[n, :])].ravel().tolist()
+                   for n in range(ncells)]
+    return spike_times
 
 if cfg.addBkgConn:
+
     # add bkg sources for E and I cells
     netParams.stimSourceParams['excBkg'] = {'type': 'NetStim', 'start': cfg.startBkg, 'rate': cfg.rateBkg['exc'], 'noise': cfg.noiseBkg, 'number': 1e9}
     netParams.stimSourceParams['inhBkg'] = {'type': 'NetStim', 'start': cfg.startBkg, 'rate': cfg.rateBkg['inh'], 'noise': cfg.noiseBkg, 'number': 1e9}
+    
+    # Create sinusoidal input
+    r0 = cfg.rateBkg['exc']
+    ncells_osc = calc_num_cells(netParams, pop_name_osc)
+    S = generate_sin_spike_times(r0, A=r0*1.0, f=5, ncells=ncells_osc)
+    netParams.popParams['osc' + pop_name_osc] = {
+						'numCells': ncells_osc, 
+						'cellModel': 'VecStim',
+						'spkTimes': S,   
+						'delay': 0}
     
     if cfg.cochlearThalInput:
         from input import cochlearInputSpikes
@@ -605,15 +648,33 @@ if cfg.addBkgConn:
 
 
     for pop in pops:
-        netParams.stimTargetParams['excBkg->'+pop] =  {
-            'source': 'excBkg', 
-            'conds': {'pop': pop},
-            'sec': 'apic', 
-            'loc': 0.5,
-            'synMech': ESynMech,
-            'weight': weightBkg[pop],
-            'synMechWeightFactor': cfg.synWeightFractionEE,
-            'delay': cfg.delayBkg}
+        if pop == pop_name_osc:
+            # Excitatory sinusoidal input
+            ncells_osc = calc_num_cells(netParams, pop_name_osc)
+            auxConn = np.array(
+                [range(0, ncells_osc, 1), range(0, ncells_osc, 1)])
+            netParams.connParams['osc->' + pop] = {
+          			'preConds': {'pop': 'osc' + pop},  
+          			'postConds': {'pop': pop},
+          			'connList': auxConn.T,
+                'sec': 'apic', 
+                'loc': 0.5,
+                'synMech': ESynMech,
+                'synsPerConn': 1,
+    			      'weight': weightBkg[pop],
+                'synMechWeightFactor': cfg.synWeightFractionEE, 
+    			      'delay': cfg.delayBkg}
+        else:
+            # Excitatory poisson input
+            netParams.stimTargetParams['excBkg->'+pop] =  {
+                'source': 'excBkg', 
+                'conds': {'pop': pop},
+                'sec': 'apic', 
+                'loc': 0.5,
+                'synMech': ESynMech,
+                'weight': weightBkg[pop],
+                'synMechWeightFactor': cfg.synWeightFractionEE,
+                'delay': cfg.delayBkg}
 
         netParams.stimTargetParams['inhBkg->'+pop] =  {
             'source': 'inhBkg', 
