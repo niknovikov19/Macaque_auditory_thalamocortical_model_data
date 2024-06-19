@@ -535,7 +535,19 @@ if cfg.addSubConn:
 
 #------------------------------------------------------------------------------
 # Background inputs 
-#------------------------------------------------------------------------------  
+#------------------------------------------------------------------------------ 
+
+from mpi4py import MPI
+from neuron import h
+pc = h.ParallelContext()
+pc.barrier()
+comm = MPI.COMM_WORLD
+rank = comm.Get_rank()
+print(f'NetParams import on the core {rank}')
+if rank == 0:
+    var_test = 'Test 1111'
+    comm.Gather(S_local, S, root=0)
+
 if cfg.addBkgConn:
     # add bkg sources for E and I cells
     netParams.stimSourceParams['excBkg'] = {'type': 'NetStim', 'start': cfg.startBkg, 'rate': cfg.rateBkg['exc'], 'noise': cfg.noiseBkg, 'number': 1e9}

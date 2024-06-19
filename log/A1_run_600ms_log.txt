@@ -1,0 +1,671 @@
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+numprocs=49
+NEURON -- VERSION 8.2.4 HEAD (1d87d5d39) 2024-02-09
+Duke, Yale, and the BlueBrain Project -- Copyright 1984-2022
+See http://neuron.yale.edu/neuron/credits
+
+Additional mechanisms from files
+ "mod/APCounter2.mod" "mod/ar_traub.mod" "mod/beforestep_py.mod" "mod/CA1ika.mod" "mod/CA1ikdr.mod" "mod/CA1ina.mod" "mod/cadad.mod" "mod/cadecay_destexhe.mod" "mod/cad.mod" "mod/Cadynamics.mod" "mod/cadyn.mod" "mod/cagk.mod" "mod/cal_mh.mod" "mod/cal_mig.mod" "mod/cancr.mod" "mod/canin.mod" "mod/can_mig.mod" "mod/caolmw.mod" "mod/capr.mod" "mod/catcb.mod" "mod/cat_mig.mod" "mod/cat_traub.mod" "mod/ch_CavL.mod" "mod/ch_CavN.mod" "mod/ch_KCaS.mod" "mod/ch_Kdrfastngf.mod" "mod/ch_KvAngf.mod" "mod/ch_KvCaB.mod" "mod/ch_leak.mod" "mod/ch_Navngf.mod" "mod/cp2.mod" "mod/cp.mod" "mod/DynamicNetStim.mod" "mod/gabab.mod" "mod/h_BS.mod" "mod/HH2.mod" "mod/h_harnett.mod" "mod/HH_traub.mod" "mod/hin.mod" "mod/h_kole.mod" "mod/h_migliore.mod" "mod/htc.mod" "mod/Iahp.mod" "mod/ICal.mod" "mod/Ican.mod" "mod/ican_sidi.mod" "mod/icaolmw.mod" "mod/icapr.mod" "mod/iccr.mod" "mod/IC.mod" "mod/iconc_Ca.mod" "mod/iholmkop.mod" "mod/iholmw.mod" "mod/ihpyrkop.mod" "mod/IKM.mod" "mod/ikscr.mod" "mod/IKsin.mod" "mod/IL_gutnick.mod" "mod/IL.mod" "mod/IM_cortex.mod" "mod/ipulse3.mod" "mod/IT2.mod" "mod/IT.mod" "mod/kahppr.mod" "mod/kaolmkop.mod" "mod/kap_BS.mod" "mod/kapcb.mod" "mod/kapin.mod" "mod/kapyrkop.mod" "mod/kBK.mod" "mod/kca.mod" "mod/kcaolmw.mod" "mod/kcpr.mod" "mod/kctin.mod" "mod/kdmc_BS.mod" "mod/kdr2_orig.mod" "mod/kdr_BS.mod" "mod/kdrbwb.mod" "mod/kdrcr.mod" "mod/kdrin.mod" "mod/kdrolmkop.mod" "mod/kdrpr.mod" "mod/kdrpyrkop.mod" "mod/kl.mod" "mod/km.mod" "mod/kv.mod" "mod/MyExp2SynAlpha.mod" "mod/MyExp2SynBB.mod" "mod/my_exp2syn.mod" "mod/MyExp2SynNMDABB.mod" "mod/na_2.mod" "mod/naf2.mod" "mod/nafbwb.mod" "mod/nafcr.mod" "mod/nafolmkop.mod" "mod/nafpr.mod" "mod/nafpyrkop.mod" "mod/nafx.mod" "mod/nap_sidi.mod" "mod/nax_BS.mod" "mod/naz.mod" "mod/Nca.mod" "mod/nsloc.mod" "mod/ntIh.mod" "mod/ntleak.mod" "mod/ntt_int.mod" "mod/ntt.mod" "mod/pasi.mod" "mod/savedist.mod" "mod/tia.mod" "mod/vecstim.mod" "mod/wrap.mod"
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   PID 692487 RUNNING AT node14
+=   EXIT CODE: 134
+=   CLEANING UP REMAINING PROCESSES
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Aborted (signal 6)
+This typically refers to a problem with your application.
+Please see the FAQ page for debugging suggestions
+
+h_vmem=128G
+maxrss=132.102G
+
+
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+numprocs=14
+NEURON -- VERSION 8.2.4 HEAD (1d87d5d39) 2024-02-09
+Duke, Yale, and the BlueBrain Project -- Copyright 1984-2022
+See http://neuron.yale.edu/neuron/credits
+
+Additional mechanisms from files
+ "mod/APCounter2.mod" "mod/ar_traub.mod" "mod/beforestep_py.mod" "mod/CA1ika.mod" "mod/CA1ikdr.mod" "mod/CA1ina.mod" "mod/cadad.mod" "mod/cadecay_destexhe.mod" "mod/cad.mod" "mod/Cadynamics.mod" "mod/cadyn.mod" "mod/cagk.mod" "mod/cal_mh.mod" "mod/cal_mig.mod" "mod/cancr.mod" "mod/canin.mod" "mod/can_mig.mod" "mod/caolmw.mod" "mod/capr.mod" "mod/catcb.mod" "mod/cat_mig.mod" "mod/cat_traub.mod" "mod/ch_CavL.mod" "mod/ch_CavN.mod" "mod/ch_KCaS.mod" "mod/ch_Kdrfastngf.mod" "mod/ch_KvAngf.mod" "mod/ch_KvCaB.mod" "mod/ch_leak.mod" "mod/ch_Navngf.mod" "mod/cp2.mod" "mod/cp.mod" "mod/DynamicNetStim.mod" "mod/gabab.mod" "mod/h_BS.mod" "mod/HH2.mod" "mod/h_harnett.mod" "mod/HH_traub.mod" "mod/hin.mod" "mod/h_kole.mod" "mod/h_migliore.mod" "mod/htc.mod" "mod/Iahp.mod" "mod/ICal.mod" "mod/Ican.mod" "mod/ican_sidi.mod" "mod/icaolmw.mod" "mod/icapr.mod" "mod/iccr.mod" "mod/IC.mod" "mod/iconc_Ca.mod" "mod/iholmkop.mod" "mod/iholmw.mod" "mod/ihpyrkop.mod" "mod/IKM.mod" "mod/ikscr.mod" "mod/IKsin.mod" "mod/IL_gutnick.mod" "mod/IL.mod" "mod/IM_cortex.mod" "mod/ipulse3.mod" "mod/IT2.mod" "mod/IT.mod" "mod/kahppr.mod" "mod/kaolmkop.mod" "mod/kap_BS.mod" "mod/kapcb.mod" "mod/kapin.mod" "mod/kapyrkop.mod" "mod/kBK.mod" "mod/kca.mod" "mod/kcaolmw.mod" "mod/kcpr.mod" "mod/kctin.mod" "mod/kdmc_BS.mod" "mod/kdr2_orig.mod" "mod/kdr_BS.mod" "mod/kdrbwb.mod" "mod/kdrcr.mod" "mod/kdrin.mod" "mod/kdrolmkop.mod" "mod/kdrpr.mod" "mod/kdrpyrkop.mod" "mod/kl.mod" "mod/km.mod" "mod/kv.mod" "mod/MyExp2SynAlpha.mod" "mod/MyExp2SynBB.mod" "mod/my_exp2syn.mod" "mod/MyExp2SynNMDABB.mod" "mod/na_2.mod" "mod/naf2.mod" "mod/nafbwb.mod" "mod/nafcr.mod" "mod/nafolmkop.mod" "mod/nafpr.mod" "mod/nafpyrkop.mod" "mod/nafx.mod" "mod/nap_sidi.mod" "mod/nax_BS.mod" "mod/naz.mod" "mod/Nca.mod" "mod/nsloc.mod" "mod/ntIh.mod" "mod/ntleak.mod" "mod/ntt_int.mod" "mod/ntt.mod" "mod/pasi.mod" "mod/savedist.mod" "mod/tia.mod" "mod/vecstim.mod" "mod/wrap.mod"
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 6: 922 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 6: 947896 
+  Number of synaptic contacts on node 6: 1843539 
+  Number of stims on node 6: 2766 
+Recording 0 traces of 0 types on node 6
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 5: 922 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 5: 947348 
+  Number of synaptic contacts on node 5: 1842652 
+  Number of stims on node 5: 2766 
+Recording 0 traces of 0 types on node 5
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 9: 922 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 9: 946052 
+  Number of synaptic contacts on node 9: 1839942 
+  Number of stims on node 9: 2766 
+Recording 0 traces of 0 types on node 9
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 4: 922 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 4: 950593 
+  Number of synaptic contacts on node 4: 1848955 
+  Number of stims on node 4: 2766 
+Recording 0 traces of 0 types on node 4
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 7: 922 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 7: 947678 
+  Number of synaptic contacts on node 7: 1843423 
+  Number of stims on node 7: 2766 
+Recording 0 traces of 0 types on node 7
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 10: 922 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 10: 948528 
+  Number of synaptic contacts on node 10: 1844707 
+  Number of stims on node 10: 2766 
+Recording 0 traces of 0 types on node 10
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 11: 922 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 11: 948661 
+  Number of synaptic contacts on node 11: 1845549 
+  Number of stims on node 11: 2766 
+Recording 0 traces of 0 types on node 11
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 1: 922 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 1: 948666 
+  Number of synaptic contacts on node 1: 1845255 
+  Number of stims on node 1: 2766 
+Recording 0 traces of 0 types on node 1
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 2: 922 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 2: 951828 
+  Number of synaptic contacts on node 2: 1852048 
+  Number of stims on node 2: 2766 
+Recording 0 traces of 0 types on node 2
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 12: 922 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 12: 950288 
+  Number of synaptic contacts on node 12: 1847935 
+  Number of stims on node 12: 2766 
+Recording 0 traces of 0 types on node 12
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 3: 922 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 3: 949248 
+  Number of synaptic contacts on node 3: 1846718 
+  Number of stims on node 3: 2766 
+Recording 0 traces of 0 types on node 3
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 8: 922 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 8: 945256 
+  Number of synaptic contacts on node 8: 1838631 
+  Number of stims on node 8: 2766 
+Recording 0 traces of 0 types on node 8
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 13: 922 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 13: 951308 
+  Number of synaptic contacts on node 13: 1850292 
+  Number of stims on node 13: 2766 
+Recording 0 traces of 0 types on node 13
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+
+Start time:  2024-06-18 14:43:16.002065
+
+Creating network of 43 cell populations on 14 hosts...
+  Number of cells on node 0: 922 
+  Done; cell creation time = 1.45 s.
+Making connections...
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 0: 950557 
+  Number of synaptic contacts on node 0: 1849061 
+  Done; cell connection time = 484.15 s.
+Adding stims...
+  Number of stims on node 0: 2766 
+  Done; cell stims creation time = 0.78 s.
+Recording 0 traces of 0 types on node 0
+0.0s
+
+Running simulation using NEURON for 600.0 ms...
+0.1s
+0.2s
+0.3s
+0.4s
+0.5s
+0.6s
+  Done; run time = 786.48 s; real-time ratio: 0.00.
+
+Gathering data...
+  Done; gather time = 61.84 s.
+
+Analyzing...
+  Cells: 12908
+  Connections: 0 (0.00 per cell)
+  Spikes: 13857 (1.79 Hz)
+  Simulated time: 0.6 s; 14 workers
+  Run time: 786.48 s
+   NGF1 : 0.795 Hz
+   IT2 : 1.923 Hz
+   SOM2 : 88.000 Hz
+   PV2 : 14.615 Hz
+   VIP2 : 16.250 Hz
+   NGF2 : 11.818 Hz
+   IT3 : 0.433 Hz
+   SOM3 : 1.857 Hz
+   PV3 : 2.045 Hz
+   VIP3 : 12.417 Hz
+   NGF3 : 5.133 Hz
+   ITP4 : 1.207 Hz
+   ITS4 : 1.446 Hz
+   SOM4 : 0.833 Hz
+   PV4 : 0.215 Hz
+   VIP4 : 31.538 Hz
+   NGF4 : 6.429 Hz
+   IT5A : 1.811 Hz
+   CT5A : 0.696 Hz
+   SOM5A : 2.558 Hz
+   PV5A : 4.795 Hz
+   VIP5A : 40.000 Hz
+   NGF5A : 8.750 Hz
+   IT5B : 1.911 Hz
+   CT5B : 0.085 Hz
+   PT5B : 0.255 Hz
+   SOM5B : 8.661 Hz
+   PV5B : 1.567 Hz
+   VIP5B : 27.647 Hz
+   NGF5B : 10.417 Hz
+   IT6 : 0.287 Hz
+   CT6 : 0.525 Hz
+   SOM6 : 41.587 Hz
+   PV6 : 0.000 Hz
+   VIP6 : 0.000 Hz
+   NGF6 : 46.579 Hz
+   TC : 3.707 Hz
+   TCM : 3.806 Hz
+   HTC : 3.158 Hz
+   IRE : 0.065 Hz
+   IREM : 0.516 Hz
+   TI : 1.765 Hz
+   TIM : 4.118 Hz
+Saving output as /ddn/niknovikov19/repo/A1_model_old/data/A1_test_600ms/A1_test_600ms_data.pkl ... 
+Finished saving!
+  Done; saving time = 151.35 s.
+Preparing spike data...
+Plotting raster...
+Preparing LFP data...
+Plotting LFP time series...
+  Done; plotting time = 9.44 s
+
+Total time = 1496.56 s
+
+h_vmem=32G
+maxrss=40.364G
+
+
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+numprocs=14
+NEURON -- VERSION 8.2.4 HEAD (1d87d5d39) 2024-02-09
+Duke, Yale, and the BlueBrain Project -- Copyright 1984-2022
+See http://neuron.yale.edu/neuron/credits
+
+Additional mechanisms from files
+ "mod/APCounter2.mod" "mod/ar_traub.mod" "mod/beforestep_py.mod" "mod/CA1ika.mod" "mod/CA1ikdr.mod" "mod/CA1ina.mod" "mod/cadad.mod" "mod/cadecay_destexhe.mod" "mod/cad.mod" "mod/Cadynamics.mod" "mod/cadyn.mod" "mod/cagk.mod" "mod/cal_mh.mod" "mod/cal_mig.mod" "mod/cancr.mod" "mod/canin.mod" "mod/can_mig.mod" "mod/caolmw.mod" "mod/capr.mod" "mod/catcb.mod" "mod/cat_mig.mod" "mod/cat_traub.mod" "mod/ch_CavL.mod" "mod/ch_CavN.mod" "mod/ch_KCaS.mod" "mod/ch_Kdrfastngf.mod" "mod/ch_KvAngf.mod" "mod/ch_KvCaB.mod" "mod/ch_leak.mod" "mod/ch_Navngf.mod" "mod/cp2.mod" "mod/cp.mod" "mod/DynamicNetStim.mod" "mod/gabab.mod" "mod/h_BS.mod" "mod/HH2.mod" "mod/h_harnett.mod" "mod/HH_traub.mod" "mod/hin.mod" "mod/h_kole.mod" "mod/h_migliore.mod" "mod/htc.mod" "mod/Iahp.mod" "mod/ICal.mod" "mod/Ican.mod" "mod/ican_sidi.mod" "mod/icaolmw.mod" "mod/icapr.mod" "mod/iccr.mod" "mod/IC.mod" "mod/iconc_Ca.mod" "mod/iholmkop.mod" "mod/iholmw.mod" "mod/ihpyrkop.mod" "mod/IKM.mod" "mod/ikscr.mod" "mod/IKsin.mod" "mod/IL_gutnick.mod" "mod/IL.mod" "mod/IM_cortex.mod" "mod/ipulse3.mod" "mod/IT2.mod" "mod/IT.mod" "mod/kahppr.mod" "mod/kaolmkop.mod" "mod/kap_BS.mod" "mod/kapcb.mod" "mod/kapin.mod" "mod/kapyrkop.mod" "mod/kBK.mod" "mod/kca.mod" "mod/kcaolmw.mod" "mod/kcpr.mod" "mod/kctin.mod" "mod/kdmc_BS.mod" "mod/kdr2_orig.mod" "mod/kdr_BS.mod" "mod/kdrbwb.mod" "mod/kdrcr.mod" "mod/kdrin.mod" "mod/kdrolmkop.mod" "mod/kdrpr.mod" "mod/kdrpyrkop.mod" "mod/kl.mod" "mod/km.mod" "mod/kv.mod" "mod/MyExp2SynAlpha.mod" "mod/MyExp2SynBB.mod" "mod/my_exp2syn.mod" "mod/MyExp2SynNMDABB.mod" "mod/na_2.mod" "mod/naf2.mod" "mod/nafbwb.mod" "mod/nafcr.mod" "mod/nafolmkop.mod" "mod/nafpr.mod" "mod/nafpyrkop.mod" "mod/nafx.mod" "mod/nap_sidi.mod" "mod/nax_BS.mod" "mod/naz.mod" "mod/Nca.mod" "mod/nsloc.mod" "mod/ntIh.mod" "mod/ntleak.mod" "mod/ntt_int.mod" "mod/ntt.mod" "mod/pasi.mod" "mod/savedist.mod" "mod/tia.mod" "mod/vecstim.mod" "mod/wrap.mod"
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 2: 922 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 2: 951828 
+  Number of synaptic contacts on node 2: 1852048 
+  Number of stims on node 2: 2766 
+Recording 0 traces of 0 types on node 2
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 6: 922 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 6: 947896 
+  Number of synaptic contacts on node 6: 1843539 
+  Number of stims on node 6: 2766 
+Recording 0 traces of 0 types on node 6
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 1: 922 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 1: 948666 
+  Number of synaptic contacts on node 1: 1845255 
+  Number of stims on node 1: 2766 
+Recording 0 traces of 0 types on node 1
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 3: 922 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 3: 949248 
+  Number of synaptic contacts on node 3: 1846718 
+  Number of stims on node 3: 2766 
+Recording 0 traces of 0 types on node 3
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 8: 922 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 8: 945256 
+  Number of synaptic contacts on node 8: 1838631 
+  Number of stims on node 8: 2766 
+Recording 0 traces of 0 types on node 8
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 10: 922 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 10: 948528 
+  Number of synaptic contacts on node 10: 1844707 
+  Number of stims on node 10: 2766 
+Recording 0 traces of 0 types on node 10
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 9: 922 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 9: 946052 
+  Number of synaptic contacts on node 9: 1839942 
+  Number of stims on node 9: 2766 
+Recording 0 traces of 0 types on node 9
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 4: 922 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 4: 950593 
+  Number of synaptic contacts on node 4: 1848955 
+  Number of stims on node 4: 2766 
+Recording 0 traces of 0 types on node 4
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 12: 922 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 12: 950288 
+  Number of synaptic contacts on node 12: 1847935 
+  Number of stims on node 12: 2766 
+Recording 0 traces of 0 types on node 12
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 7: 922 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 7: 947678 
+  Number of synaptic contacts on node 7: 1843423 
+  Number of stims on node 7: 2766 
+Recording 0 traces of 0 types on node 7
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 5: 922 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 5: 947348 
+  Number of synaptic contacts on node 5: 1842652 
+  Number of stims on node 5: 2766 
+Recording 0 traces of 0 types on node 5
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 11: 922 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 11: 948661 
+  Number of synaptic contacts on node 11: 1845549 
+  Number of stims on node 11: 2766 
+Recording 0 traces of 0 types on node 11
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+  Number of cells on node 13: 922 
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 13: 951308 
+  Number of synaptic contacts on node 13: 1850292 
+  Number of stims on node 13: 2766 
+Recording 0 traces of 0 types on node 13
+Traceback (most recent call last):
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne3/lib/python3.10/site-packages/netpyne/analysis/utils.py", line 87, in wrapper
+    return function(*args, **kwargs)
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne3/lib/python3.10/site-packages/netpyne/plotting/plotRaster.py", line 277, in plotRaster
+    popNumCells = [max(spkInds)]
+UnboundLocalError: local variable 'spkInds' referenced before assignment
+Traceback (most recent call last):
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne3/lib/python3.10/site-packages/netpyne/analysis/utils.py", line 87, in wrapper
+    return function(*args, **kwargs)
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne3/lib/python3.10/site-packages/netpyne/plotting/plotTimeSeries.py", line 627, in plotTimeSeries
+    timeSeriesPlot = linesPlotter.plot(**axisArgs, **kwargs)
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne3/lib/python3.10/site-packages/netpyne/plotting/plotter.py", line 1140, in plot
+    self.finishAxis(**kwargs)
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne3/lib/python3.10/site-packages/netpyne/plotting/plotter.py", line 938, in finishAxis
+    self.addScalebar(axis=curAx,**kwargs['scalebar'])
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne3/lib/python3.10/site-packages/netpyne/plotting/plotter.py", line 815, in addScalebar
+    _add_scalebar(
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne3/lib/python3.10/site-packages/netpyne/plotting/plotter.py", line 1400, in _add_scalebar
+    axis.add_artist(scalebar)
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne3/lib/python3.10/site-packages/matplotlib/axes/_base.py", line 2225, in add_artist
+    a.axes = self
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne3/lib/python3.10/site-packages/matplotlib/offsetbox.py", line 236, in axes
+    martist.Artist.axes.fset(self, ax)
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne3/lib/python3.10/site-packages/matplotlib/artist.py", line 300, in axes
+    if (new_axes is not None and self._axes is not None
+AttributeError: '_AnchoredScaleBar' object has no attribute '_axes'
+
+Reading command line arguments using syntax: python file.py [simConfig=filepath] [netParams=filepath]
+Importing simConfig from cfg.py
+Importing netParams from netParams.py
+
+Start time:  2024-06-18 15:30:17.893269
+
+Creating network of 43 cell populations on 14 hosts...
+  Number of cells on node 0: 922 
+  Done; cell creation time = 2.13 s.
+Making connections...
+  Distributing synapses based on subcellular connectivity rules...
+  Number of connections on node 0: 950557 
+  Number of synaptic contacts on node 0: 1849061 
+  Done; cell connection time = 475.71 s.
+Adding stims...
+  Number of stims on node 0: 2766 
+  Done; cell stims creation time = 0.77 s.
+Recording 0 traces of 0 types on node 0
+
+Gathering data...
+  Done; gather time = 47.21 s.
+
+Analyzing...
+  Cells: 12908
+  Connections: 0 (0.00 per cell)
+Saving output as /ddn/niknovikov19/repo/A1_model_old/data/A1_test_600ms/A1_test_600ms_data.pkl ... 
+Finished saving!
+  Done; saving time = 109.67 s.
+Preparing spike data...
+No spikes available to plot raster
+Plotting raster...
+
+There was an exception in plotRaster()
+Preparing LFP data...
+Plotting LFP time series...
+
+There was an exception in plotTimeSeries()
+  Done; plotting time = 1.50 s
+
+Total time = 638.03 s
+
+h_vmem=32G
+maxrss=40.680G
+
+
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne3/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+numprocs=14
+NEURON -- VERSION 8.2.4 HEAD (1d87d5d39) 2024-02-09
+Duke, Yale, and the BlueBrain Project -- Copyright 1984-2022
+See http://neuron.yale.edu/neuron/credits
+
+Additional mechanisms from files
+ "mod/APCounter2.mod" "mod/ar_traub.mod" "mod/beforestep_py.mod" "mod/CA1ika.mod" "mod/CA1ikdr.mod" "mod/CA1ina.mod" "mod/cadad.mod" "mod/cadecay_destexhe.mod" "mod/cad.mod" "mod/Cadynamics.mod" "mod/cadyn.mod" "mod/cagk.mod" "mod/cal_mh.mod" "mod/cal_mig.mod" "mod/cancr.mod" "mod/canin.mod" "mod/can_mig.mod" "mod/caolmw.mod" "mod/capr.mod" "mod/catcb.mod" "mod/cat_mig.mod" "mod/cat_traub.mod" "mod/ch_CavL.mod" "mod/ch_CavN.mod" "mod/ch_KCaS.mod" "mod/ch_Kdrfastngf.mod" "mod/ch_KvAngf.mod" "mod/ch_KvCaB.mod" "mod/ch_leak.mod" "mod/ch_Navngf.mod" "mod/cp2.mod" "mod/cp.mod" "mod/DynamicNetStim.mod" "mod/gabab.mod" "mod/h_BS.mod" "mod/HH2.mod" "mod/h_harnett.mod" "mod/HH_traub.mod" "mod/hin.mod" "mod/h_kole.mod" "mod/h_migliore.mod" "mod/htc.mod" "mod/Iahp.mod" "mod/ICal.mod" "mod/Ican.mod" "mod/ican_sidi.mod" "mod/icaolmw.mod" "mod/icapr.mod" "mod/iccr.mod" "mod/IC.mod" "mod/iconc_Ca.mod" "mod/iholmkop.mod" "mod/iholmw.mod" "mod/ihpyrkop.mod" "mod/IKM.mod" "mod/ikscr.mod" "mod/IKsin.mod" "mod/IL_gutnick.mod" "mod/IL.mod" "mod/IM_cortex.mod" "mod/ipulse3.mod" "mod/IT2.mod" "mod/IT.mod" "mod/kahppr.mod" "mod/kaolmkop.mod" "mod/kap_BS.mod" "mod/kapcb.mod" "mod/kapin.mod" "mod/kapyrkop.mod" "mod/kBK.mod" "mod/kca.mod" "mod/kcaolmw.mod" "mod/kcpr.mod" "mod/kctin.mod" "mod/kdmc_BS.mod" "mod/kdr2_orig.mod" "mod/kdr_BS.mod" "mod/kdrbwb.mod" "mod/kdrcr.mod" "mod/kdrin.mod" "mod/kdrolmkop.mod" "mod/kdrpr.mod" "mod/kdrpyrkop.mod" "mod/kl.mod" "mod/km.mod" "mod/kv.mod" "mod/MyExp2SynAlpha.mod" "mod/MyExp2SynBB.mod" "mod/my_exp2syn.mod" "mod/MyExp2SynNMDABB.mod" "mod/na_2.mod" "mod/naf2.mod" "mod/nafbwb.mod" "mod/nafcr.mod" "mod/nafolmkop.mod" "mod/nafpr.mod" "mod/nafpyrkop.mod" "mod/nafx.mod" "mod/nap_sidi.mod" "mod/nax_BS.mod" "mod/naz.mod" "mod/Nca.mod" "mod/nsloc.mod" "mod/ntIh.mod" "mod/ntleak.mod" "mod/ntt_int.mod" "mod/ntt.mod" "mod/pasi.mod" "mod/savedist.mod" "mod/tia.mod" "mod/vecstim.mod" "mod/wrap.mod"
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   PID 710562 RUNNING AT node14
+=   EXIT CODE: 134
+=   CLEANING UP REMAINING PROCESSES
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Aborted (signal 6)
+This typically refers to a problem with your application.
+Please see the FAQ page for debugging suggestions
+
+h_vmem=32G
+maxrss=40.479G
+
+
