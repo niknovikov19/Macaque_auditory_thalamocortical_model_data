@@ -50,7 +50,7 @@ cfg.allThalPops = ['TC', 'TCM', 'HTC', 'IRE', 'IREM', 'TI', 'TIM', 'IC']
 
 alltypes = ['NGF1', 'IT2', 'PV2', 'SOM2', 'VIP2', 'ITS4', 'PT5B', 'TC', 'HTC', 'IRE', 'TI']
 
-cfg.recordTraces = {'V_soma': {'sec':'soma', 'loc': 0.5, 'var':'v'}}  ## Dict with traces to record 
+cfg.recordTraces = {} #{'V_soma': {'sec':'soma', 'loc': 0.5, 'var':'v'}}  ## Dict with traces to record 
 cfg.recordStim = False			## Seen in M1 cfg.py
 cfg.recordTime = False  		## SEen in M1 cfg.py 
 cfg.recordStep = 0.1            ## Step size (in ms) to save data 
@@ -63,19 +63,30 @@ cfg.recordLFP = [[x, 1000, 100] for x in range(100, 2200, 200)]
 # cfg.saveDipoleCells = ['all']
 # cfg.saveDipolePops = cfg.allpops
 
+#------------------------------------------------------------------------------
+# Oscillatory input
+#------------------------------------------------------------------------------
+
+cfg.osc_inp_on = 1
+cfg.osc_pop_name = 'IT3'
+cfg.osc_A_frac = 0.8
+cfg.osc_f = 5
+cfg.osc_pop_off = 0
+cfg.osc_inp_indep = 0
+cfg.osc_pop_scale = 0.5
 
 #------------------------------------------------------------------------------
 # Saving
 #------------------------------------------------------------------------------
 
-cfg.simLabel = 'A1_test_2000ms_IT3_5Hz' 
-cfg.saveFolder = '/ddn/niknovikov19/repo/A1_model_old/data/A1_test_2000ms_IT3_5Hz'                	## Set file output name
+cfg.simLabel = 'A1_test_2000ms_IT3_5Hz_A=0.8_indep'
+cfg.saveFolder = '/ddn/niknovikov19/repo/A1_model_old/data/A1_osc_inp'
 cfg.savePickle = True         	## Save pkl file
 cfg.saveJson = False           	## Save json file
 cfg.saveDataInclude = ['simData', 'simConfig', 'netParams', 'net'] 
 cfg.backupCfgFile = None 		
 cfg.gatherOnlySimData = False	 
-cfg.saveCellSecs = True		 
+cfg.saveCellSecs = False #True		 
 cfg.saveCellConns = False		 
 cfg.compactConnFormat = False
 

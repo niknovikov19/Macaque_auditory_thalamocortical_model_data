@@ -541,17 +541,6 @@ from mpi4py import MPI
 from neuron import h
 import numpy as np
 
-pc = h.ParallelContext()
-pc.barrier()
-comm = MPI.COMM_WORLD
-rank = comm.Get_rank()
-print(f'NetParams import on the core {rank}')
-if rank == 0:
-    var_test = 'Test 1111'
-
-# Population that will receive oscillatory input
-pop_name_osc = 'IT3'
-
 def calc_num_cells(netParams, pop_name):
     from numpy import pi
     par = netParams.popParams[pop_name]
@@ -568,7 +557,7 @@ def calc_num_cells(netParams, pop_name):
             volume = volume * (maxv - minv)
     return int(volume * par['density'])
 
-def generate_sin_spike_times(r0, A, f, ncells):
+def _generate_sin_spike_times(r0, A, f, ncells):
     '''Generate poisson spike trains with sinusoidally modulated rate. '''
     T = cfg.duration
     dt = cfg.dt
@@ -576,9 +565,21 @@ def generate_sin_spike_times(r0, A, f, ncells):
     rvec = r0 + A * np.sin (2 * np.pi * f * tvec / 1000)
     Nt = len(tvec)
     S = (np.random.rand(ncells, Nt) < (rvec * dt / 1000))
-    spike_times = [tvec[np.argwhere(S[n, :])].ravel().tolist()
+    S = [tvec[np.argwhere(S[n, :])].ravel().tolist()
                    for n in range(ncells)]
-    return spike_times
+    return S
+
+def generate_sin_spike_times(r0, A, f, ncells):
+    pc = h.ParallelContext()
+    pc.barrier()
+    comm = MPI.COMM_WORLD
+    rank = comm.Get_rank()
+    if rank == 0:
+        S = _generate_sin_spike_times(r0, A, f, ncells)
+    else:
+        S = None
+    S = comm.bcast(S, root=0)
+    return S
 
 if cfg.addBkgConn:
 
@@ -588,9 +589,12 @@ if cfg.addBkgConn:
     
     # Create sinusoidal input
     r0 = cfg.rateBkg['exc']
-    ncells_osc = calc_num_cells(netParams, pop_name_osc)
-    S = generate_sin_spike_times(r0, A=r0*1.0, f=5, ncells=ncells_osc)
-    netParams.popParams['osc' + pop_name_osc] = {
+    A = r0 * cfg.osc_A_frac
+    ncells_osc = calc_num_cells(netParams, cfg.osc_pop_name)
+    if not cfg.osc_inp_indep:
+        ncells_osc = int(ncells_osc * cfg.osc_pop_scale)
+    S = generate_sin_spike_times(r0, A=A, f=cfg.osc_f, ncells=ncells_osc)
+    netParams.popParams['osc' + cfg.osc_pop_name] = {
 						'numCells': ncells_osc, 
 						'cellModel': 'VecStim',
 						'spkTimes': S,   
@@ -648,22 +652,27 @@ if cfg.addBkgConn:
 
 
     for pop in pops:
-        if pop == pop_name_osc:
+        if (pop == cfg.osc_pop_name) and cfg.osc_pop_off:
+            kw = 0
+        if (pop == cfg.osc_pop_name) and cfg.osc_inp_on:
             # Excitatory sinusoidal input
-            ncells_osc = calc_num_cells(netParams, pop_name_osc)
-            auxConn = np.array(
-                [range(0, ncells_osc, 1), range(0, ncells_osc, 1)])
             netParams.connParams['osc->' + pop] = {
-          			'preConds': {'pop': 'osc' + pop},  
-          			'postConds': {'pop': pop},
-          			'connList': auxConn.T,
+                'preConds': {'pop': 'osc' + pop},  
+                'postConds': {'pop': pop},
                 'sec': 'apic', 
                 'loc': 0.5,
                 'synMech': ESynMech,
                 'synsPerConn': 1,
-    			      'weight': weightBkg[pop],
+                'weight': weightBkg[pop],
                 'synMechWeightFactor': cfg.synWeightFractionEE, 
-    			      'delay': cfg.delayBkg}
+                'delay': cfg.delayBkg}
+            if cfg.osc_inp_indep:
+                ncells_osc = calc_num_cells(netParams, cfg.osc_pop_name)
+                C = np.array(
+                    [range(0, ncells_osc, 1), range(0, ncells_osc, 1)])
+                netParams.connParams['osc->' + pop]['connList'] = C.T
+            else:
+                netParams.connParams['osc->' + pop]['convergence'] = 1
         else:
             # Excitatory poisson input
             netParams.stimTargetParams['excBkg->'+pop] =  {
