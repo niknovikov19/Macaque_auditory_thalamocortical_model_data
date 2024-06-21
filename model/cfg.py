@@ -1,15 +1,6 @@
-"""
-cfg.py 
-
-Simulation configuration for A1 model (using NetPyNE)
-This file has sim configs as well as specification for parameterized values in netParams.py 
-
-Contributors: ericaygriffith@gmail.com, salvadordura@gmail.com
-"""
-
-
-from netpyne import specs
 import pickle
+from netpyne.batchtools import specs
+
 
 cfg = specs.SimConfig()
 
@@ -79,7 +70,8 @@ cfg.osc_pop_scale = 0.5
 # Saving
 #------------------------------------------------------------------------------
 
-cfg.simLabel = 'A1_test_2000ms_IT3_5Hz_A=0.8_indep'
+cfg.simLabel = 'A1_test_2000ms_IT3_40Hz_A=0.8_indep'
+#cfg.simLabel = 'A1_test_2000ms_IT3_40Hz_A=0.8_q=1'
 cfg.saveFolder = '/ddn/niknovikov19/repo/A1_model_old/data/A1_osc_inp'
 cfg.savePickle = True         	## Save pkl file
 cfg.saveJson = False           	## Save json file

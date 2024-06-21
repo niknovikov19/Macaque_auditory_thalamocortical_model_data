@@ -1,21 +1,12 @@
-"""
-netParams.py 
-
-High-level specifications for A1 network model using NetPyNE
-
-Contributors: ericaygriffith@gmail.com, salvadordura@gmail.com
-"""
-
-from netpyne import specs
 import pickle, json
 
+from netpyne.batchtools import specs
+from cfg import cfg
+
+
+cfg.update_cfg()
+
 netParams = specs.NetParams()   # object of class NetParams to store the network parameters
-
-try:
-    from __main__ import cfg  # import SimConfig object with params from parent module
-except:
-    from cfg import cfg
-
 
 #------------------------------------------------------------------------------
 # VERSION 
