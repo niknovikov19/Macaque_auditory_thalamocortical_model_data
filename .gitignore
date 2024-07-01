@@ -1,3 +1,5 @@
 model/x86_64/
 data/
 model/__pycache__/
+grid_batch*/
+ray/
