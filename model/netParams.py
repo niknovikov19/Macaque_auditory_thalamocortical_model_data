@@ -643,10 +643,21 @@ if cfg.addBkgConn:
 
 
     for pop in pops:
-        if (pop == cfg.osc_pop_name) and cfg.osc_pop_off:
-            kw = 0
+        
         if (pop == cfg.osc_pop_name) and cfg.osc_inp_on:
-            # Excitatory sinusoidal input
+            add_osc = 1
+            if cfg.osc_inp_replace_bkg:  # replace excBkg by osc. input
+                osc_w = weightBkg[pop]
+                add_bkg = 0
+            else:                        # add osc. input together with excBkg
+                osc_w = cfg.osc_inp_weight
+                add_bkg = 1
+        else:
+            add_osc = 0
+            add_bkg = 1
+        
+        # Excitatory sinusoidal input
+        if add_osc:
             netParams.connParams['osc->' + pop] = {
                 'preConds': {'pop': 'osc' + pop},  
                 'postConds': {'pop': pop},
@@ -654,7 +665,7 @@ if cfg.addBkgConn:
                 'loc': 0.5,
                 'synMech': ESynMech,
                 'synsPerConn': 1,
-                'weight': weightBkg[pop],
+                'weight': osc_w,
                 'synMechWeightFactor': cfg.synWeightFractionEE, 
                 'delay': cfg.delayBkg}
             if cfg.osc_inp_indep:
@@ -664,8 +675,9 @@ if cfg.addBkgConn:
                 netParams.connParams['osc->' + pop]['connList'] = C.T
             else:
                 netParams.connParams['osc->' + pop]['convergence'] = 1
-        else:
-            # Excitatory poisson input
+                
+        # Excitatory poisson input
+        if add_bkg:
             netParams.stimTargetParams['excBkg->'+pop] =  {
                 'source': 'excBkg', 
                 'conds': {'pop': pop},
@@ -676,6 +688,7 @@ if cfg.addBkgConn:
                 'synMechWeightFactor': cfg.synWeightFractionEE,
                 'delay': cfg.delayBkg}
 
+        # Inhibitory poisson input
         netParams.stimTargetParams['inhBkg->'+pop] =  {
             'source': 'inhBkg', 
             'conds': {'pop': pop},

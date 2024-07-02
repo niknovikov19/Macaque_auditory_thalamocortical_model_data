@@ -13,9 +13,9 @@ cfg = specs.SimConfig()
 #------------------------------------------------------------------------------
 # Run parameters
 #------------------------------------------------------------------------------
-cfg.duration = 5*1e3			## Duration of the sim, in ms 
+cfg.duration = 5 * 1e3			## Duration of the sim, in ms 
 cfg.dt = 0.05                   ## Internal Integration Time Step 
-cfg.verbose = 0         	## Show detailed messages
+cfg.verbose = 0              	## Show detailed messages
 cfg.hParams['celsius'] = 37
 cfg.createNEURONObj = 1
 cfg.createPyStruct = 1
@@ -47,7 +47,7 @@ cfg.recordTime = False  		## SEen in M1 cfg.py
 cfg.recordStep = 0.1            ## Step size (in ms) to save data 
 
 cfg.recordLFP = [[100, y, 100] for y in range(0, 2000, 100)]
-cfg.recordLFP = [[x, 1000, 100] for x in range(100, 2200, 200)]
+#cfg.recordLFP = [[x, 1000, 100] for x in range(100, 2200, 200)]
 #cfg.saveLFPPops =  cfg.allCorticalPops #, "IT3", "SOM3", "PV3", "VIP3", "NGF3", "ITP4", "ITS4", "IT5A", "CT5A", "IT5B", "PT5B", "CT5B", "IT6", "CT6"]
 
 # cfg.recordDipole = True
@@ -61,10 +61,11 @@ cfg.recordLFP = [[x, 1000, 100] for x in range(100, 2200, 200)]
 cfg.osc_inp_on = 1
 cfg.osc_pop_name = 'IT3'
 cfg.osc_A_frac = 0.8
-cfg.osc_f = 5
-cfg.osc_pop_off = 0
+cfg.osc_f = 20
 cfg.osc_inp_indep = 1
 cfg.osc_pop_scale = 0.5
+cfg.osc_inp_replace_bkg = 0
+cfg.osc_inp_weight = 10
 
 #------------------------------------------------------------------------------
 # Saving
@@ -123,7 +124,7 @@ cfg.synWeightFractionENGF = [0.834, 0.166] # NGF AMPA to NMDA ratio
 cfg.singleCellPops = False
 cfg.singlePop = ''
 cfg.removeWeightNorm = False
-cfg.scale = 1.0     
+cfg.scale = 1.0
 cfg.sizeY = 2000.0 
 cfg.sizeX = 200.0 
 cfg.sizeZ = 200.0

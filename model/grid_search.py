@@ -1,8 +1,16 @@
 from netpyne.batchtools.search import search
 import numpy as np
 
-params = {'osc_f': np.linspace(5, 50, 16),
-          'osc_pop_name': ['IT3', 'IT5A', 'IT5B']}
+
+def generate_freqs(f0, fn, df_mult, n):
+    # Generate n freqs from f0 to fn, with df changing from 1 to df_mult
+    df = np.linspace(1, df_mult, n)
+    f = np.cumsum(df) - 1
+    f = f0 + f * (fn - f0) / f[-1]
+    return f
+
+params = {'osc_f': generate_freqs(3, 50, 3, 25),
+          'osc_pop_name': ['IT3']}
 
 sge_config = {
     'queue': 'cpu.q',
