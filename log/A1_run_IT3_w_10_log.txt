@@ -1,0 +1,110 @@
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+numprocs=49
+NEURON -- VERSION 8.2.4 HEAD (1d87d5d39) 2024-02-09
+Duke, Yale, and the BlueBrain Project -- Copyright 1984-2022
+See http://neuron.yale.edu/neuron/credits
+
+Additional mechanisms from files
+ "mod/APCounter2.mod" "mod/ar_traub.mod" "mod/beforestep_py.mod" "mod/CA1ika.mod" "mod/CA1ikdr.mod" "mod/CA1ina.mod" "mod/cadad.mod" "mod/cadecay_destexhe.mod" "mod/cad.mod" "mod/Cadynamics.mod" "mod/cadyn.mod" "mod/cagk.mod" "mod/cal_mh.mod" "mod/cal_mig.mod" "mod/cancr.mod" "mod/canin.mod" "mod/can_mig.mod" "mod/caolmw.mod" "mod/capr.mod" "mod/catcb.mod" "mod/cat_mig.mod" "mod/cat_traub.mod" "mod/ch_CavL.mod" "mod/ch_CavN.mod" "mod/ch_KCaS.mod" "mod/ch_Kdrfastngf.mod" "mod/ch_KvAngf.mod" "mod/ch_KvCaB.mod" "mod/ch_leak.mod" "mod/ch_Navngf.mod" "mod/cp2.mod" "mod/cp.mod" "mod/DynamicNetStim.mod" "mod/gabab.mod" "mod/h_BS.mod" "mod/HH2.mod" "mod/h_harnett.mod" "mod/HH_traub.mod" "mod/hin.mod" "mod/h_kole.mod" "mod/h_migliore.mod" "mod/htc.mod" "mod/Iahp.mod" "mod/ICal.mod" "mod/Ican.mod" "mod/ican_sidi.mod" "mod/icaolmw.mod" "mod/icapr.mod" "mod/iccr.mod" "mod/IC.mod" "mod/iconc_Ca.mod" "mod/iholmkop.mod" "mod/iholmw.mod" "mod/ihpyrkop.mod" "mod/IKM.mod" "mod/ikscr.mod" "mod/IKsin.mod" "mod/IL_gutnick.mod" "mod/IL.mod" "mod/IM_cortex.mod" "mod/ipulse3.mod" "mod/IT2.mod" "mod/IT.mod" "mod/kahppr.mod" "mod/kaolmkop.mod" "mod/kap_BS.mod" "mod/kapcb.mod" "mod/kapin.mod" "mod/kapyrkop.mod" "mod/kBK.mod" "mod/kca.mod" "mod/kcaolmw.mod" "mod/kcpr.mod" "mod/kctin.mod" "mod/kdmc_BS.mod" "mod/kdr2_orig.mod" "mod/kdr_BS.mod" "mod/kdrbwb.mod" "mod/kdrcr.mod" "mod/kdrin.mod" "mod/kdrolmkop.mod" "mod/kdrpr.mod" "mod/kdrpyrkop.mod" "mod/kl.mod" "mod/km.mod" "mod/kv.mod" "mod/MyExp2SynAlpha.mod" "mod/MyExp2SynBB.mod" "mod/my_exp2syn.mod" "mod/MyExp2SynNMDABB.mod" "mod/na_2.mod" "mod/naf2.mod" "mod/nafbwb.mod" "mod/nafcr.mod" "mod/nafolmkop.mod" "mod/nafpr.mod" "mod/nafpyrkop.mod" "mod/nafx.mod" "mod/nap_sidi.mod" "mod/nax_BS.mod" "mod/naz.mod" "mod/Nca.mod" "mod/nsloc.mod" "mod/ntIh.mod" "mod/ntleak.mod" "mod/ntt_int.mod" "mod/ntt.mod" "mod/pasi.mod" "mod/savedist.mod" "mod/tia.mod" "mod/vecstim.mod" "mod/wrap.mod"
+
+h_vmem=128G
+maxrss=N/A
+
+

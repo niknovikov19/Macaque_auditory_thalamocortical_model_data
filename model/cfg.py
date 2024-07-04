@@ -46,7 +46,7 @@ cfg.recordStim = False			## Seen in M1 cfg.py
 cfg.recordTime = False  		## SEen in M1 cfg.py 
 cfg.recordStep = 0.1            ## Step size (in ms) to save data 
 
-cfg.recordLFP = [[100, y, 100] for y in range(0, 2000, 100)]
+cfg.recordLFP = [[100, y, 100] for y in range(0, 2000, 50)]
 #cfg.recordLFP = [[x, 1000, 100] for x in range(100, 2200, 200)]
 #cfg.saveLFPPops =  cfg.allCorticalPops #, "IT3", "SOM3", "PV3", "VIP3", "NGF3", "ITP4", "ITS4", "IT5A", "CT5A", "IT5B", "PT5B", "CT5B", "IT6", "CT6"]
 
@@ -72,7 +72,7 @@ cfg.osc_inp_weight = 10
 #------------------------------------------------------------------------------
 
 #cfg.simLabel = 'A1_test_2000ms_IT3_40Hz_A=0.8_indep'
-#cfg.simLabel = 'A1_test_2000ms_IT3_40Hz_A=0.8_q=1'
+#cfg.simLabel = 'A1_test_2000ms_IT3_20Hz_A_0.8_w_10_6'
 #cfg.saveFolder = '/ddn/niknovikov19/repo/A1_model_old/data/A1_osc_inp'
 cfg.savePickle = True         	## Save pkl file
 cfg.saveJson = False           	## Save json file
