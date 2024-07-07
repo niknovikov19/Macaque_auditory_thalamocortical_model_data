@@ -1,23 +1,10 @@
-"""
-netParams.py 
-
-High-level specifications for A1 network model using NetPyNE
-
-Contributors: ericaygriffith@gmail.com, salvadordura@gmail.com
-"""
-
-from netpyne import specs
+from netpyne.batchtools import specs
 import pickle, json
+
 
 netParams = specs.NetParams()   # object of class NetParams to store the network parameters
 
-# =============================================================================
-# try:
-# 	from __main__ import cfg  # import SimConfig object with params from parent module
-# except:
-# 	from cfg import cfg
-# =============================================================================
-
+# Load config
 fpath_cfg = 'v34_batch56_0_0_cfg.json'
 with open(fpath_cfg, 'r') as fid:
     cfg_dict = json.load(fid)
@@ -26,6 +13,12 @@ cfg = specs.SimConfig(cfg_dict['simConfig'])
 cfg.duration = 10 * 1e3
 cfg.simLabel = 'v34_batch56_10s'
 cfg.saveFolder = '/ddn/niknovikov19/repo/A1_model_old/data/A1_paper'
+
+cfg.recordLFP = [[100, y, 100] for y in range(0, 2000, 50)]
+
+# Update config by batchtools
+cfg.update_cfg()
+
 
 #------------------------------------------------------------------------------
 # VERSION 
