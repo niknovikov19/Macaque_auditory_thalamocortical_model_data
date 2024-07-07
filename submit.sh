@@ -1,12 +1,12 @@
 #!/bin/bash
 #$ -cwd
-#$ -N A1_run_10um_5s_256G
+#$ -N A1_test_3s
 #$ -q cpu.q
-#$ -pe smp 50
+#$ -pe smp 60
 #$ -l h_vmem=256G
 #$ -l h_rt=2:00:00
-#$ -o /ddn/niknovikov19/repo/A1_model_old/log/A1_run_IT3_w_10_6_log.txt
-#$ -e /ddn/niknovikov19/repo/A1_model_old/log/A1_run_IT3_w_10_6_err.txt
+#$ -o /ddn/niknovikov19/repo/A1_model_old/log/A1_test_3s_log.txt
+#$ -e /ddn/niknovikov19/repo/A1_model_old/log/A1_test_3s_err.txt
 
 source ~/.bashrc
 #echo $(pwd)

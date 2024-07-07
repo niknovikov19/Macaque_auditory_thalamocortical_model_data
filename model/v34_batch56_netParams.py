@@ -21,10 +21,10 @@ netParams = specs.NetParams()   # object of class NetParams to store the network
 fpath_cfg = 'v34_batch56_0_0_cfg.json'
 with open(fpath_cfg, 'r') as fid:
     cfg_dict = json.load(fid)
-cfg = specs.SimConfig(cfg_dict)
+cfg = specs.SimConfig(cfg_dict['simConfig'])
 
-cfg.duration = 5 * 1e3
-cfg.simLabel = 'v34_batch56'
+cfg.duration = 10 * 1e3
+cfg.simLabel = 'v34_batch56_10s'
 cfg.saveFolder = '/ddn/niknovikov19/repo/A1_model_old/data/A1_paper'
 
 #------------------------------------------------------------------------------

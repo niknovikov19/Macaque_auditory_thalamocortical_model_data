@@ -13,7 +13,7 @@ cfg = specs.SimConfig()
 #------------------------------------------------------------------------------
 # Run parameters
 #------------------------------------------------------------------------------
-cfg.duration = 5 * 1e3			## Duration of the sim, in ms 
+cfg.duration = 3 * 1e3			## Duration of the sim, in ms 
 cfg.dt = 0.05                   ## Internal Integration Time Step 
 cfg.verbose = 0              	## Show detailed messages
 cfg.hParams['celsius'] = 37
@@ -58,7 +58,7 @@ cfg.recordLFP = [[100, y, 100] for y in range(0, 2000, 50)]
 # Oscillatory input
 #------------------------------------------------------------------------------
 
-cfg.osc_inp_on = 1
+cfg.osc_inp_on = 0
 cfg.osc_pop_name = 'IT3'
 cfg.osc_A_frac = 0.8
 cfg.osc_f = 20
@@ -72,8 +72,8 @@ cfg.osc_inp_weight = 10
 #------------------------------------------------------------------------------
 
 #cfg.simLabel = 'A1_test_2000ms_IT3_40Hz_A=0.8_indep'
-#cfg.simLabel = 'A1_test_2000ms_IT3_20Hz_A_0.8_w_10_6'
-#cfg.saveFolder = '/ddn/niknovikov19/repo/A1_model_old/data/A1_osc_inp'
+cfg.simLabel = 'A1_test_3s'
+cfg.saveFolder = '/ddn/niknovikov19/repo/A1_model_old/data/A1_paper'
 cfg.savePickle = True         	## Save pkl file
 cfg.saveJson = False           	## Save json file
 cfg.saveDataInclude = ['simData', 'simConfig', 'netParams', 'net'] 
