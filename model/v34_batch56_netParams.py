@@ -10,7 +10,7 @@ with open(fpath_cfg, 'r') as fid:
     cfg_dict = json.load(fid)
 cfg = specs.SimConfig(cfg_dict['simConfig'])
 
-cfg.duration = 5 * 1e3
+cfg.duration = 3 * 1e3
 #cfg.simLabel = 'v34_batch56_10s'
 #cfg.saveFolder = '/ddn/niknovikov19/repo/A1_model_old/data/A1_paper'
 
@@ -18,6 +18,9 @@ cfg.recordLFP = [[100, y, 100] for y in range(0, 2000, 50)]
 
 cfg.analysis['plotRaster'] = {'include': cfg.allpops, 'saveFig': True, 'showFig': False, 'popRates': True, 'orderInverse': True, 'timeRange': [1000, cfg.duration], 'figSize': (14,12), 'lw': 0.3, 'markerSize': 3, 'marker': '.', 'dpi': 300}      	## Plot a raster
 cfg.analysis['plotSpikeStats'] = {'stats': ['rate', 'isicv'], 'figSize': (6,12), 'timeRange': [1000, cfg.duration], 'dpi': 300, 'showFig': 0, 'saveFig': 1}
+
+# Scling factor for TC and HTC leak conduction
+cfg.TC_leak_mult = 1
 
 # Update config by batchtools
 cfg.update_cfg()
@@ -48,7 +51,7 @@ netParams.shape = 'cylinder' # cylindrical (column-like) volume
 # General connectivity parameters
 #------------------------------------------------------------------------------
 netParams.scaleConnWeight = 1.0 # Connection weight scale factor (default if no model specified)
-netParams.scaleConnWeightModels = { 'HH_reduced': 1.0, 'HH_full': 1.0} #scale conn weight factor for each cell model
+netParams.scaleConnWeightModels = {'HH_reduced': 1.0, 'HH_full': 1.0} #scale conn weight factor for each cell model
 netParams.scaleConnWeightNetStims = 1.0 #0.5  # scale conn weight factor for NetStims
 netParams.defaultThreshold = 0.0 # spike threshold, 10 mV is NetCon default, lower it for all cells
 netParams.defaultDelay = 2.0 # default conn delay (ms)
@@ -94,7 +97,9 @@ for k in cfg.weightNormScaling:
         for i in range(len(sec['weightNorm'])):
             sec['weightNorm'][i] *= cfg.weightNormScaling[k]
 
-
+# Change leak conductance of TC and HTC neurons
+netParams.cellParams['TC_reduced']['secs']['soma']['mechs']['kl']['gmax'] *= cfg.TC_leak_mult
+netParams.cellParams['HTC_reduced']['secs']['soma']['mechs']['kl']['gmax'] *= cfg.TC_leak_mult
 
 #------------------------------------------------------------------------------
 # Population parameters

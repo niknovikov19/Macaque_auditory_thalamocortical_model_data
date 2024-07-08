@@ -2,7 +2,8 @@ from netpyne.batchtools.search import search
 import numpy as np
 
 
-params = {'EbkgThalamicGain': np.linspace(2, 6, 8)}
+#params = {'EbkgThalamicGain': np.linspace(2, 6, 8)}
+params = {'TC_leak_mult': np.linspace(0.5, 1.5, 10)}
 
 sge_config = {
     'queue': 'cpu.q',
@@ -18,7 +19,7 @@ search(job_type = 'sge',
        comm_type = 'socket',
        label = 'grid',
        params = params,
-       output_path = '../grid_batch_v34_batch56_2',
+       output_path = '../grid_batch_v34_batch56_tckl_1',
        checkpoint_path = '../ray',
        run_config = sge_config,
        num_samples = 1,
