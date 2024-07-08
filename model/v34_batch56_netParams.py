@@ -10,11 +10,14 @@ with open(fpath_cfg, 'r') as fid:
     cfg_dict = json.load(fid)
 cfg = specs.SimConfig(cfg_dict['simConfig'])
 
-cfg.duration = 10 * 1e3
-cfg.simLabel = 'v34_batch56_10s'
-cfg.saveFolder = '/ddn/niknovikov19/repo/A1_model_old/data/A1_paper'
+cfg.duration = 5 * 1e3
+#cfg.simLabel = 'v34_batch56_10s'
+#cfg.saveFolder = '/ddn/niknovikov19/repo/A1_model_old/data/A1_paper'
 
 cfg.recordLFP = [[100, y, 100] for y in range(0, 2000, 50)]
+
+cfg.analysis['plotRaster'] = {'include': cfg.allpops, 'saveFig': True, 'showFig': False, 'popRates': True, 'orderInverse': True, 'timeRange': [1000, cfg.duration], 'figSize': (14,12), 'lw': 0.3, 'markerSize': 3, 'marker': '.', 'dpi': 300}      	## Plot a raster
+cfg.analysis['plotSpikeStats'] = {'stats': ['rate', 'isicv'], 'figSize': (6,12), 'timeRange': [1000, cfg.duration], 'dpi': 300, 'showFig': 0, 'saveFig': 1}
 
 # Update config by batchtools
 cfg.update_cfg()
