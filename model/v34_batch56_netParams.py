@@ -10,17 +10,36 @@ with open(fpath_cfg, 'r') as fid:
     cfg_dict = json.load(fid)
 cfg = specs.SimConfig(cfg_dict['simConfig'])
 
-cfg.duration = 3 * 1e3
+cfg.duration = 5 * 1e3
 #cfg.simLabel = 'v34_batch56_10s'
 #cfg.saveFolder = '/ddn/niknovikov19/repo/A1_model_old/data/A1_paper'
 
-cfg.recordLFP = [[100, y, 100] for y in range(0, 2000, 50)]
+cfg.recordStep = 0.5
+cfg.recordLFP = [[100, y, 100] for y in range(0, 2000, 75)]
+cfg.saveLFPPops = ['IT2', 'IT3', 'ITP4', 'IT5A', 'IT5B', 'IT6']
+cell_idx = list(range(5))
+pops_rec = ['IT2', 'IT3', 'ITP4', 'IT5A', 'IT5B', 'IT6', 'CT6', 'TC', 'HTC', 'IRE']
+cfg.recordCells = [(pop, cell_idx) for pop in pops_rec]
+cfg.recordTraces['V_soma'] = {"sec": "soma", "loc": 0.5, "var": "v"}
+cfg.recordTime = True
 
 cfg.analysis['plotRaster'] = {'include': cfg.allpops, 'saveFig': True, 'showFig': False, 'popRates': True, 'orderInverse': True, 'timeRange': [1000, cfg.duration], 'figSize': (14,12), 'lw': 0.3, 'markerSize': 3, 'marker': '.', 'dpi': 300}      	## Plot a raster
 cfg.analysis['plotSpikeStats'] = {'stats': ['rate', 'isicv'], 'figSize': (6,12), 'timeRange': [1000, cfg.duration], 'dpi': 300, 'showFig': 0, 'saveFig': 1}
 
-# Scling factor for TC and HTC leak conduction
+# Scaling factor for TC and HTC leak conduction
 cfg.TC_leak_mult = 1
+cfg.TC_ebkg_mult = 1
+cfg.IRE_ibkg_mult = 1
+
+# Oscillatory input
+cfg.osc_inp_on = 1
+cfg.osc_pop_name = 'IT3'
+cfg.osc_A_frac = 0.8
+cfg.osc_f = 20
+cfg.osc_inp_indep = 1
+cfg.osc_pop_scale = 0.5
+cfg.osc_inp_replace_bkg = 1
+cfg.osc_inp_weight = 0
 
 # Update config by batchtools
 cfg.update_cfg()
@@ -547,10 +566,28 @@ if cfg.addSubConn:
 #------------------------------------------------------------------------------
 # Background inputs 
 #------------------------------------------------------------------------------  
+
+import numpy as np
+from osc_input import generate_sin_spike_times, calc_num_cells
+
 if cfg.addBkgConn:
+
     # add bkg sources for E and I cells
     netParams.stimSourceParams['excBkg'] = {'type': 'NetStim', 'start': cfg.startBkg, 'rate': cfg.rateBkg['exc'], 'noise': cfg.noiseBkg, 'number': 1e9}
     netParams.stimSourceParams['inhBkg'] = {'type': 'NetStim', 'start': cfg.startBkg, 'rate': cfg.rateBkg['inh'], 'noise': cfg.noiseBkg, 'number': 1e9}
+    
+    # Create sinusoidal input
+    r0 = cfg.rateBkg['exc']
+    A = r0 * cfg.osc_A_frac
+    ncells_osc = calc_num_cells(netParams, cfg.osc_pop_name)
+    if not cfg.osc_inp_indep:
+        ncells_osc = int(ncells_osc * cfg.osc_pop_scale)
+    S = generate_sin_spike_times(cfg, r0, A=A, f=cfg.osc_f, ncells=ncells_osc)
+    netParams.popParams['osc' + cfg.osc_pop_name] = {
+						'numCells': ncells_osc, 
+						'cellModel': 'VecStim',
+						'spkTimes': S,   
+						'delay': 0}
     
     if cfg.cochlearThalInput:
         from input import cochlearInputSpikes
@@ -600,20 +637,56 @@ if cfg.addBkgConn:
         weightBkg[pop] *= cfg.EbkgThalamicGain 
 
     for pop in ['IRE', 'IREM', 'TI', 'TIM']:
-        weightBkg[pop] *= cfg.IbkgThalamicGain 
-
+        weightBkg[pop] *= cfg.IbkgThalamicGain
+        
 
     for pop in pops:
-        netParams.stimTargetParams['excBkg->'+pop] =  {
-            'source': 'excBkg', 
-            'conds': {'pop': pop},
-            'sec': 'apic', 
-            'loc': 0.5,
-            'synMech': ESynMech,
-            'weight': weightBkg[pop],
-            'synMechWeightFactor': cfg.synWeightFractionEE,
-            'delay': cfg.delayBkg}
+    
+        if (pop == cfg.osc_pop_name) and cfg.osc_inp_on:
+            add_osc = 1
+            if cfg.osc_inp_replace_bkg:  # replace excBkg by osc. input
+                osc_w = weightBkg[pop]
+                add_bkg = 0
+            else:                        # add osc. input together with excBkg
+                osc_w = cfg.osc_inp_weight
+                add_bkg = 1
+        else:
+            add_osc = 0
+            add_bkg = 1
+            
+        # Excitatory sinusoidal input
+        if add_osc:
+            netParams.connParams['osc->' + pop] = {
+                'preConds': {'pop': 'osc' + pop},  
+                'postConds': {'pop': pop},
+                'sec': 'apic', 
+                'loc': 0.5,
+                'synMech': ESynMech,
+                'synsPerConn': 1,
+                'weight': osc_w,
+                'synMechWeightFactor': cfg.synWeightFractionEE, 
+                'delay': cfg.delayBkg}
+            if cfg.osc_inp_indep:
+                ncells_osc = calc_num_cells(netParams, cfg.osc_pop_name)
+                C = np.array(
+                    [range(0, ncells_osc, 1), range(0, ncells_osc, 1)])
+                netParams.connParams['osc->' + pop]['connList'] = C.T
+            else:
+                netParams.connParams['osc->' + pop]['convergence'] = 1
+                
+        # Excitatory poisson input
+        if add_bkg:
+            netParams.stimTargetParams['excBkg->'+pop] =  {
+                'source': 'excBkg', 
+                'conds': {'pop': pop},
+                'sec': 'apic', 
+                'loc': 0.5,
+                'synMech': ESynMech,
+                'weight': weightBkg[pop],
+                'synMechWeightFactor': cfg.synWeightFractionEE,
+                'delay': cfg.delayBkg}
 
+        # Inhibitory poisson input
         netParams.stimTargetParams['inhBkg->'+pop] =  {
             'source': 'inhBkg', 
             'conds': {'pop': pop},
@@ -622,7 +695,15 @@ if cfg.addBkgConn:
             'synMech': 'GABAA',
             'weight': weightBkg[pop],
             'delay': cfg.delayBkg}
-
+    
+    
+    # Multipliers for background inputs to the thalamus        
+    for pop in ['TC']:
+        if ('excBkg->'+pop) in netParams.stimTargetParams:
+            netParams.stimTargetParams['excBkg->'+pop]['weight'] *= cfg.TC_ebkg_mult        
+    for pop in ['IRE', 'IREM']:
+        netParams.stimTargetParams['inhBkg->'+pop]['weight'] *= cfg.IRE_ibkg_mult
+        
     # cochlea -> thal
     if cfg.cochlearThalInput:
         netParams.connParams['cochlea->ThalE'] = { 

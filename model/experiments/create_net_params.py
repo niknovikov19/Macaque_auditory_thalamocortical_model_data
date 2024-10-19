@@ -735,4 +735,5 @@ def create_net_params(cfg):
     v33 - Fixed bug in matrix thalamocortical conn (were very low)
     v34 - Added missing conn from cortex to matrix thalamus IREM and TIM
     """
-
+    
+    return netParams

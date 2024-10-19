@@ -1,11 +1,11 @@
 
 def apply_exp_cfg(cfg):
     
-    cfg.duration = 0.3 * 1e3
+    cfg.duration = 10 * 1e3
     
     cfg.recordStep = 0.5
     cfg.recordLFP = [[100, y, 100] for y in range(0, 2000, 75)]
-    cfg.saveLFPPops = ['IT2', 'IT3', 'ITP4', 'IT5A', 'IT5B', 'IT6']
+    cfg.saveLFPPops = ['IT2', 'IT3', 'ITP4', 'IT5A', 'IT5B', 'IT6', 'CT6']
     cell_idx = list(range(5))
     pops_rec = ['IT2', 'IT3', 'ITP4', 'IT5A', 'IT5B', 'IT6', 'CT6',
                 'TC', 'HTC', 'IRE']
@@ -22,4 +22,3 @@ def apply_exp_cfg(cfg):
         'stats': ['rate', 'isicv'], 'figSize': (6, 12),
         'timeRange': [100, cfg.duration], 'dpi': 300, 'showFig': 0, 'saveFig': 1
     }
-

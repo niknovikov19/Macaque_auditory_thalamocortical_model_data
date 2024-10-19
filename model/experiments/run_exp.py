@@ -13,10 +13,14 @@ from create_base_cfg_v34_batch56 import create_base_cfg
 from create_net_params import create_net_params
 
 
-def run_exp(exp_name, is_batch):
+#exp_name = 'test_run_1'
+#is_batch = False
 
+
+def run_exp(exp_name, is_batch):
+    
     # Import experiment-specific config py-file
-    fpath_exp_cfg = Path(__file__).resolve() / exp_name / 'exp_cfg.py'
+    fpath_exp_cfg = Path(__file__).resolve().parent / exp_name / 'exp_cfg.py'
     cfg_mod_spec = importlib.util.spec_from_file_location(
         'module.name', fpath_exp_cfg)
     cfg_mod = importlib.util.module_from_spec(cfg_mod_spec)
@@ -31,7 +35,7 @@ def run_exp(exp_name, is_batch):
     
     # Automatically set the experiment name in config
     cfg.simLabel = exp_name
-    cfg.saveFolder = Path(__file__).resolve().parent.parent.parent / 'data'
+    cfg.saveFolder = str(Path(__file__).resolve().parent.parent.parent / 'data' / exp_name)
     
     # Update config by batchtools
     cfg.update_cfg()
@@ -42,7 +46,7 @@ def run_exp(exp_name, is_batch):
     comm.initialize()
     
     # Save the config into the output folder
-    if comm.is_host() or not is_batch:
+    if comm.is_host(): #or not is_batch:
         cfg.save("{}/{}_params.json".format(cfg.saveFolder, cfg.simLabel))
     
     # Prepare simulation
