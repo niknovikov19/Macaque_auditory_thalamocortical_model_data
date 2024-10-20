@@ -1,0 +1,3 @@
+[submodule "subnet_tuner"]
+	path = subnet_tuner
+	url = git@github.com:niknovikov19/subnet-builder.git
