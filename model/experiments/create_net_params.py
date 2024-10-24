@@ -94,8 +94,17 @@ def create_net_params(cfg):
     # Population parameters
     #------------------------------------------------------------------------------
     
+    def _read_pkl(fpath):
+        with open(fpath, 'rb') as fid:
+            data = fid.read()
+        try:
+            return pickle.loads(data)
+        except:
+            data = data.replace(b'\r\n', b'\n')
+            return pickle.loads(data)
+    
     ## load densities
-    with open('cells/cellDensity.pkl', 'rb') as fileObj: density = pickle.load(fileObj)['density']
+    density = _read_pkl('cells/cellDensity.pkl')['density']
     density = {k: [x * cfg.scaleDensity for x in v] for k,v in density.items()} # Scale densities 
     
     # ### LAYER 1:
@@ -204,7 +213,7 @@ def create_net_params(cfg):
     #------------------------------------------------------------------------------
     
     ## load data from conn pre-processing file
-    with open('conn/conn.pkl', 'rb') as fileObj: connData = pickle.load(fileObj)
+    connData = _read_pkl('conn/conn.pkl')
     pmat = connData['pmat']
     lmat = connData['lmat']
     wmat = connData['wmat']

@@ -17,7 +17,7 @@ from create_net_params import create_net_params
 #is_batch = False
 
 
-def run_exp(exp_name, is_batch):
+def run_exp(exp_name, is_batch, need_run=True):
     
     # Import experiment-specific config py-file
     fpath_exp_cfg = Path(__file__).resolve().parent / exp_name / 'exp_cfg.py'
