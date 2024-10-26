@@ -2,13 +2,13 @@ import numpy as np
 from pathlib import Path
 import sys
 
-from netpyne.batchtools.specs import SimConfig
+from netpyne.batchtools import specs #import SimConfig
 
 sys.path.append(str(Path(__file__).resolve().parents[3]))
 from subnet_tuner import SubnetDesc
 
 
-def prepare_subnet_desc(pop_rate_data: dict, cfg: SimConfig) -> SubnetDesc:    
+def prepare_subnet_desc(pop_rate_data: dict, cfg: specs.SimConfig) -> SubnetDesc:    
     desc = SubnetDesc()
     #desc.pops_active = ['IT3', 'SOM3', 'PV3', 'VIP3', 'NGF3']
     desc.pops_active = cfg.subnet_par['pops_active']

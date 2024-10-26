@@ -13,4 +13,4 @@ def apply_exp_cfg(cfg):
         'timeRange': [100, cfg.duration], 'dpi': 300, 'showFig': 0, 'saveFig': 1
     }
     
-    cfg.subnet_par['pops_active'] = ['IT3', 'SOM3', 'PV3', 'VIP3', 'NGF3']
+    cfg.subnet_par = {'pops_active': ['IT3', 'SOM3', 'PV3', 'VIP3', 'NGF3']}

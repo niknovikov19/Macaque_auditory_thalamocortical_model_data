@@ -84,7 +84,7 @@ def run_exp(exp_name, is_batch):
     sim.net.createPops()               			# instantiate network populations
     sim.net.createCells()              			# instantiate network cells based on defined populations
     sim.net.connectCells()            			# create connections between cells based on params
-    sim.net.addStims() 							        # add network stimulation
+    sim.net.addStims() 							# add network stimulation
     
     # Run simulations
     sim.setupRecording()              			# setup variables to record for each cell (spikes, V traces, etc)

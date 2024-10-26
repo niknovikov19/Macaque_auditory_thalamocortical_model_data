@@ -10,7 +10,7 @@ matplotlib.use('Agg')  # to avoid graphics error on servers
 
 from neuron import h
 try:
-    h.nrn_load_dll(r'D:\WORK\Salvador\repo\A1_model_old\model\nrnmech.dll')
+    h.nrn_load_dll(r'..\nrnmech.dll')
 except:
     pass
 

@@ -1,5 +1,6 @@
 import importlib.util
 import json
+import os
 from pathlib import Path
 import pickle as pkl
 import sys
@@ -7,12 +8,19 @@ import sys
 import matplotlib
 matplotlib.use('Agg')  # to avoid graphics error on servers
 
+from neuron import h
+try:
+    h.nrn_load_dll(r'..\nrnmech.dll')
+except:
+    pass
+
 #from netpyne.batchtools import comm, specs
 from netpyne import sim, specs
 
 sys.path.append(str(Path(__file__).resolve().parents[2]))
 
 from subnet_tuner import SubnetDesc, SubnetParamBuilder
+import subnet_tuner.sim_res_parse_utils as srp
 
 from create_base_cfg_v34_batch56 import create_base_cfg
 from create_net_params import create_net_params
@@ -61,22 +69,37 @@ netParams_full = create_net_params(cfg)
 
 # Load firing rate data from a previous simulation for subnet builder
 fpath_rates = str(dirpath_data / 'A1_paper' / 'v34_batch56_10s_pop_rates.pkl')
+if not os.path.exists(fpath_rates):
+    fpath_sim_res = str(dirpath_data / 'A1_paper' / 'v34_batch56_10s_data.pkl')
+    with open(fpath_sim_res, 'rb') as fid:
+        sim_res = pkl.load(fid)   
+    pop_names = srp.get_pop_names(sim_res)
+    pop_rate_data = {}
+    for pop_name in pop_names:
+        pop_rate_data[pop_name] = srp.get_pop_cell_rates(sim_res, pop_name)
+    with open(fpath_rates, 'wb') as fid:
+        pkl.dump(pop_rate_data, fid)
 with open(fpath_rates, 'rb') as fid:
     pop_rate_data = pkl.load(fid)
 
-# Create subnet netParams
-desc = subnet_mod.prepare_subnet_desc(pop_rate_data)
-spb = SubnetParamBuilder()    
-netParams_sub = spb.build(netParams_full.todict(), desc)
-netParams_sub = specs.NetParams(netParams_sub)
+# =============================================================================
+# # Create subnet netParams
+# desc = subnet_mod.prepare_subnet_desc(pop_rate_data, cfg)
+# spb = SubnetParamBuilder()    
+# netParams_sub = spb.build(netParams_full.todict(), desc)
+# netParams_sub = specs.NetParams(netParams_sub)
+# 
+# cfg.save(str(dirpath_exp / f'{exp_name}_cfg.json'))
+# netParams_full.save(str(dirpath_exp / f'{exp_name}_netParams_full.json'))
+# netParams_sub.save(str(dirpath_exp / f'{exp_name}_netParams_sub.json'))
+# =============================================================================
 
-cfg.save(str(dirpath_exp / f'{exp_name}_cfg.json'))
-netParams_full.save(str(dirpath_exp / f'{exp_name}_netParams_full.json'))
-netParams_sub.save(str(dirpath_exp / f'{exp_name}_netParams_sub.json'))
+with open(dirpath_exp / f'{exp_name}_netParams_sub.json', 'r') as fid:
+    netParams_sub = json.load(fid)['net']['params']
 
 # Prepare simulation
 sim.initialize(simConfig=cfg, netParams=netParams_sub)
 sim.net.createPops()               			# instantiate network populations
 sim.net.createCells()              			# instantiate network cells based on defined populations
-sim.net.connectCells()            			# create connections between cells based on params
 sim.net.addStims() 							        # add network stimulation
+sim.net.connectCells()            			# create connections between cells based on params

@@ -6,3 +6,6 @@ ray/
 *.dll
 *.c
 *.o
+model/subconn_test/netParams_sub.json
+model/subconn_test/test_subconn.py
+model/subconn_test/v34_batch56_0_0_cfg.json
