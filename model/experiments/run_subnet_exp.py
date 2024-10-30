@@ -1,5 +1,6 @@
 import importlib.util
 import json
+import os
 from pathlib import Path
 import pickle as pkl
 import sys
@@ -7,12 +8,13 @@ import sys
 import matplotlib
 matplotlib.use('Agg')  # to avoid graphics error on servers
 
-from netpyne.batchtools import comm, specs
-from netpyne import sim
+from netpyne.batchtools import comm #, specs
+from netpyne import sim, specs
 
 sys.path.append(str(Path(__file__).resolve().parents[2]))
 
 from subnet_tuner import SubnetDesc, SubnetParamBuilder
+import subnet_tuner.sim_res_parse_utils as srp
 
 from create_base_cfg_v34_batch56 import create_base_cfg
 from create_net_params import create_net_params
@@ -60,13 +62,24 @@ def run_exp(exp_name, is_batch):
     # Create netParams of the full model based on the config
     netParams_full = create_net_params(cfg)
     
-    # Load firing rate data from a previous simulation for subnet builder
-    fpath_rates = str(dirpath_data / 'A1_paper' / 'v34_batch56_10s_pop_rates.pkl')
+    # Load firing rates and spike times data from a previous simulation for subnet builder
+    dirpath_old_sim = Path(r'/ddn/niknovikov19/repo/A1_model_old/data/A1_paper')
+    tlim = (1, 4)
+    old_sim_name = 'v34_batch56_10s'
+    postfix = f'(t={tlim[0]}-{tlim[1]})'
+    fpath_rates = dirpath_old_sim / f'{old_sim_name}_pop_rates_{postfix}.pkl'
+    fpath_spikes = dirpath_old_sim / f'{old_sim_name}_spikes_{postfix}.pkl'
+    sim_data = {}
     with open(fpath_rates, 'rb') as fid:
-        pop_rate_data = pkl.load(fid)
+        sim_data['rates'] = pkl.load(fid)
+    with open(fpath_spikes, 'rb') as fid:
+        sim_data['spikes'] = pkl.load(fid)
+    sim_data['spikes'] = {pop: [list(s) for s in spikes] for pop, spikes in sim_data['spikes'].items()}
+        
+    #return sim_data
     
     # Create subnet netParams
-    desc = subnet_mod.prepare_subnet_desc(pop_rate_data)
+    desc = subnet_mod.prepare_subnet_desc(sim_data, cfg)
     spb = SubnetParamBuilder()    
     netParams_sub = spb.build(netParams_full.todict(), desc)
     netParams_sub = specs.NetParams(netParams_sub)
@@ -78,13 +91,17 @@ def run_exp(exp_name, is_batch):
         cfg.save(str(dirpath_exp / f'{exp_name}_cfg.json'))
         netParams_full.save(str(dirpath_exp / f'{exp_name}_netParams_full.json'))
         netParams_sub.save(str(dirpath_exp / f'{exp_name}_netParams_sub.json'))
+        
+    cfg.singleCellPops = 1
     
     # Prepare simulation
     sim.initialize(simConfig=cfg, netParams=netParams_sub)
     sim.net.createPops()               			# instantiate network populations
     sim.net.createCells()              			# instantiate network cells based on defined populations
-    sim.net.connectCells()            			# create connections between cells based on params
-    sim.net.addStims() 							# add network stimulation
+    #sim.net.connectCells()            			# create connections between cells based on params
+    sim.net.addStims() 							        # add network stimulation
+    
+    return
     
     # Run simulations
     sim.setupRecording()              			# setup variables to record for each cell (spikes, V traces, etc)

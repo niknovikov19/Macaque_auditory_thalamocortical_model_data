@@ -8,12 +8,6 @@ import sys
 import matplotlib
 matplotlib.use('Agg')  # to avoid graphics error on servers
 
-from neuron import h
-try:
-    h.nrn_load_dll(r'..\nrnmech.dll')
-except:
-    pass
-
 #from netpyne.batchtools import comm, specs
 from netpyne import sim, specs
 
@@ -82,24 +76,19 @@ if not os.path.exists(fpath_rates):
 with open(fpath_rates, 'rb') as fid:
     pop_rate_data = pkl.load(fid)
 
-# =============================================================================
-# # Create subnet netParams
-# desc = subnet_mod.prepare_subnet_desc(pop_rate_data, cfg)
-# spb = SubnetParamBuilder()    
-# netParams_sub = spb.build(netParams_full.todict(), desc)
-# netParams_sub = specs.NetParams(netParams_sub)
-# 
-# cfg.save(str(dirpath_exp / f'{exp_name}_cfg.json'))
-# netParams_full.save(str(dirpath_exp / f'{exp_name}_netParams_full.json'))
-# netParams_sub.save(str(dirpath_exp / f'{exp_name}_netParams_sub.json'))
-# =============================================================================
+# Create subnet netParams
+desc = subnet_mod.prepare_subnet_desc(pop_rate_data, cfg)
+spb = SubnetParamBuilder()    
+netParams_sub = spb.build(netParams_full.todict(), desc)
+netParams_sub = specs.NetParams(netParams_sub)
 
-with open(dirpath_exp / f'{exp_name}_netParams_sub.json', 'r') as fid:
-    netParams_sub = json.load(fid)['net']['params']
+cfg.save(str(dirpath_exp / f'{exp_name}_cfg.json'))
+netParams_full.save(str(dirpath_exp / f'{exp_name}_netParams_full.json'))
+netParams_sub.save(str(dirpath_exp / f'{exp_name}_netParams_sub.json'))
 
 # Prepare simulation
 sim.initialize(simConfig=cfg, netParams=netParams_sub)
 sim.net.createPops()               			# instantiate network populations
 sim.net.createCells()              			# instantiate network cells based on defined populations
-sim.net.addStims() 							        # add network stimulation
 sim.net.connectCells()            			# create connections between cells based on params
+sim.net.addStims() 							        # add network stimulation
