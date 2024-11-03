@@ -2,8 +2,8 @@
 #$ -cwd
 #$ -N A1_sub
 #$ -q cpu.q
-#$ -pe smp 50
-#$ -l h_vmem=128G
+#$ -pe smp 60
+#$ -l h_vmem=256G
 #$ -l h_rt=6:00:00
 #$ -o /ddn/niknovikov19/repo/A1_model_old/log/A1_sub_log.txt
 #$ -e /ddn/niknovikov19/repo/A1_model_old/log/A1_sub_err.txt

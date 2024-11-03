@@ -63,20 +63,12 @@ def run_exp(exp_name, is_batch):
     netParams_full = create_net_params(cfg)
     
     # Load firing rates and spike times data from a previous simulation for subnet builder
-    dirpath_old_sim = Path(r'/ddn/niknovikov19/repo/A1_model_old/data/A1_paper')
-    tlim = (1, 4)
-    old_sim_name = 'v34_batch56_10s'
-    postfix = f'(t={tlim[0]}-{tlim[1]})'
-    fpath_rates = dirpath_old_sim / f'{old_sim_name}_pop_rates_{postfix}.pkl'
-    fpath_spikes = dirpath_old_sim / f'{old_sim_name}_spikes_{postfix}.pkl'
     sim_data = {}
-    with open(fpath_rates, 'rb') as fid:
+    with open(cfg['subnet_par']['fpath_inp_rates'], 'rb') as fid:
         sim_data['rates'] = pkl.load(fid)
-    with open(fpath_spikes, 'rb') as fid:
+    with open(cfg['subnet_par']['fpath_inp_spikes'], 'rb') as fid:
         sim_data['spikes'] = pkl.load(fid)
     sim_data['spikes'] = {pop: [list(s) for s in spikes] for pop, spikes in sim_data['spikes'].items()}
-        
-    #return sim_data
     
     # Create subnet netParams
     desc = subnet_mod.prepare_subnet_desc(sim_data, cfg)
@@ -92,16 +84,14 @@ def run_exp(exp_name, is_batch):
         netParams_full.save(str(dirpath_exp / f'{exp_name}_netParams_full.json'))
         netParams_sub.save(str(dirpath_exp / f'{exp_name}_netParams_sub.json'))
         
-    cfg.singleCellPops = 1
+    #cfg.singleCellPops = 0
     
     # Prepare simulation
     sim.initialize(simConfig=cfg, netParams=netParams_sub)
     sim.net.createPops()               			# instantiate network populations
     sim.net.createCells()              			# instantiate network cells based on defined populations
-    #sim.net.connectCells()            			# create connections between cells based on params
+    sim.net.connectCells()            			# create connections between cells based on params
     sim.net.addStims() 							        # add network stimulation
-    
-    return
     
     # Run simulations
     sim.setupRecording()              			# setup variables to record for each cell (spikes, V traces, etc)
