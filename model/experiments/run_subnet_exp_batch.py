@@ -61,7 +61,13 @@ def _prepare_subnet_desc(sim_data: dict, cfg: specs.SimConfig) -> SubnetDesc:
     return desc
 
 
-def run_exp(exp_name):
+def run_exp():
+    
+    # Preliminary: get cfg from batchtools to identify exp_name (simLabel),
+    # which is then used to  generate the path to exp_cfg.py
+    cfg0 = specs.SimConfig()
+    cfg0.update_cfg()
+    exp_name = cfg0.simLabel
     
     # Import experiment-specific config py-file
     dirpath_exp = Path(__file__).resolve().parent / exp_name
@@ -74,11 +80,8 @@ def run_exp(exp_name):
     # Apply experiment-specific config modifications
     cfg_mod.apply_exp_cfg(cfg)
     
-    # Automatically set the experiment name in config
-    cfg.simLabel = exp_name
-    dirpath_data = Path(__file__).resolve().parents[2] / 'data'
-    dirpath_exp = dirpath_data / exp_name
-    cfg.saveFolder = str(dirpath_exp)
+    # Update config by batchtools (including cfg.simLabel and cfg.saveFolder)
+    cfg.update_cfg()
     
     # Create netParams of the full model based on the config
     netParams_full = create_net_params(cfg)
@@ -99,15 +102,13 @@ def run_exp(exp_name):
     
     comm.initialize()
     
-    # Save the config into the output folder
+    # Save cfg and netParams into the output folder
     if comm.is_host():
         cfg.save('{}/{}_cfg.json'.format(cfg.saveFolder, cfg.simLabel))
         netParams_full.save(
             '{}/{}_netParams_full.json'.format(cfg.saveFolder, cfg.simLabel))
         netParams_sub.save(
             '{}/{}_netParams_sub.json'.format(cfg.saveFolder, cfg.simLabel))
-        
-    #cfg.singleCellPops = 0
     
     # Prepare simulation
     sim.initialize(simConfig=cfg, netParams=netParams_sub)
@@ -124,4 +125,9 @@ def run_exp(exp_name):
     # Save the results
     sim.saveData()
     sim.analysis.plotData()         			# plot spike raster etc
-
+    
+    # Close the communication with the batchtools master process
+    if comm.is_host():
+       out_json = json.dumps({'loss': 0})
+       comm.send(out_json)
+       comm.close()
