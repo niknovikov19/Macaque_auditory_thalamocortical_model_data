@@ -1,0 +1,652 @@
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+numprocs=3
+NEURON -- VERSION 8.2.4 HEAD (1d87d5d39) 2024-02-09
+Duke, Yale, and the BlueBrain Project -- Copyright 1984-2022
+See http://neuron.yale.edu/neuron/credits
+
+Additional mechanisms from files
+ "mod/APCounter2.mod" "mod/ar_traub.mod" "mod/beforestep_py.mod" "mod/CA1ika.mod" "mod/CA1ikdr.mod" "mod/CA1ina.mod" "mod/cadad.mod" "mod/cadecay_destexhe.mod" "mod/cad.mod" "mod/Cadynamics.mod" "mod/cadyn.mod" "mod/cagk.mod" "mod/cal_mh.mod" "mod/cal_mig.mod" "mod/cancr.mod" "mod/canin.mod" "mod/can_mig.mod" "mod/caolmw.mod" "mod/capr.mod" "mod/catcb.mod" "mod/cat_mig.mod" "mod/cat_traub.mod" "mod/ch_CavL.mod" "mod/ch_CavN.mod" "mod/ch_KCaS.mod" "mod/ch_Kdrfastngf.mod" "mod/ch_KvAngf.mod" "mod/ch_KvCaB.mod" "mod/ch_leak.mod" "mod/ch_Navngf.mod" "mod/cp2.mod" "mod/cp.mod" "mod/DynamicNetStim.mod" "mod/gabab.mod" "mod/h_BS.mod" "mod/HH2.mod" "mod/h_harnett.mod" "mod/HH_traub.mod" "mod/hin.mod" "mod/h_kole.mod" "mod/h_migliore.mod" "mod/htc.mod" "mod/Iahp.mod" "mod/ICal.mod" "mod/Ican.mod" "mod/ican_sidi.mod" "mod/icaolmw.mod" "mod/icapr.mod" "mod/iccr.mod" "mod/IC.mod" "mod/iconc_Ca.mod" "mod/iholmkop.mod" "mod/iholmw.mod" "mod/ihpyrkop.mod" "mod/IKM.mod" "mod/ikscr.mod" "mod/IKsin.mod" "mod/IL_gutnick.mod" "mod/IL.mod" "mod/IM_cortex.mod" "mod/ipulse3.mod" "mod/IT2.mod" "mod/IT.mod" "mod/kahppr.mod" "mod/kaolmkop.mod" "mod/kap_BS.mod" "mod/kapcb.mod" "mod/kapin.mod" "mod/kapyrkop.mod" "mod/kBK.mod" "mod/kca.mod" "mod/kcaolmw.mod" "mod/kcpr.mod" "mod/kctin.mod" "mod/kdmc_BS.mod" "mod/kdr2_orig.mod" "mod/kdr_BS.mod" "mod/kdrbwb.mod" "mod/kdrcr.mod" "mod/kdrin.mod" "mod/kdrolmkop.mod" "mod/kdrpr.mod" "mod/kdrpyrkop.mod" "mod/kl.mod" "mod/km.mod" "mod/kv.mod" "mod/MyExp2SynAlpha.mod" "mod/MyExp2SynBB.mod" "mod/my_exp2syn.mod" "mod/MyExp2SynNMDABB.mod" "mod/na_2.mod" "mod/naf2.mod" "mod/nafbwb.mod" "mod/nafcr.mod" "mod/nafolmkop.mod" "mod/nafpr.mod" "mod/nafpyrkop.mod" "mod/nafx.mod" "mod/nap_sidi.mod" "mod/nax_BS.mod" "mod/naz.mod" "mod/Nca.mod" "mod/nsloc.mod" "mod/ntIh.mod" "mod/ntleak.mod" "mod/ntt_int.mod" "mod/ntt.mod" "mod/pasi.mod" "mod/savedist.mod" "mod/tia.mod" "mod/vecstim.mod" "mod/wrap.mod"
+
+Start time:  2024-11-11 21:04:48.826292
+
+
+Creating network of 39 cell populations on 3 hosts...:   0%|          |[A
+
+Creating network of 39 cell populations on 3 hosts...:  18%|#7        |[A
+
+Creating network of 39 cell populations on 3 hosts...:  28%|##8       |[A
+
+Creating network of 39 cell populations on 3 hosts...:  56%|#####6    |[A
+
+Creating network of 39 cell populations on 3 hosts...:  67%|######6   |[A
+
+Creating network of 39 cell populations on 3 hosts...:  74%|#######4  |[A
+Creating network of 39 cell populations on 3 hosts...: 100%|##########|
+PV2 rank=0
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+cell=2 rank=0 t0=898.8
+cell=5 rank=0 t0=986.65
+cell=8 rank=0 t0=1681.9
+  Number of cells on node 0: 4166 
+  Done; cell creation time = 2.83 s.
+PV2 rank=1
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+
+Error: VecStim requires interval, rate or spkTimes
+cell=3 rank=1 t0=182.6
+cell=6 rank=1 t0=719.9
+cell=12 rank=1 t0=984.05
+  Number of cells on node 1: 4165 
+PV2 rank=2
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+cell=1 rank=2 t0=1138.3
+cell=4 rank=2 t0=870.85
+cell=7 rank=2 t0=336.85
+cell=10 rank=2 t0=1149.25
+  Number of cells on node 2: 4165 
+
+h_vmem=64G
+maxrss=N/A
+
+
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+numprocs=3
+NEURON -- VERSION 8.2.4 HEAD (1d87d5d39) 2024-02-09
+Duke, Yale, and the BlueBrain Project -- Copyright 1984-2022
+See http://neuron.yale.edu/neuron/credits
+
+Additional mechanisms from files
+ "mod/APCounter2.mod" "mod/ar_traub.mod" "mod/beforestep_py.mod" "mod/CA1ika.mod" "mod/CA1ikdr.mod" "mod/CA1ina.mod" "mod/cadad.mod" "mod/cadecay_destexhe.mod" "mod/cad.mod" "mod/Cadynamics.mod" "mod/cadyn.mod" "mod/cagk.mod" "mod/cal_mh.mod" "mod/cal_mig.mod" "mod/cancr.mod" "mod/canin.mod" "mod/can_mig.mod" "mod/caolmw.mod" "mod/capr.mod" "mod/catcb.mod" "mod/cat_mig.mod" "mod/cat_traub.mod" "mod/ch_CavL.mod" "mod/ch_CavN.mod" "mod/ch_KCaS.mod" "mod/ch_Kdrfastngf.mod" "mod/ch_KvAngf.mod" "mod/ch_KvCaB.mod" "mod/ch_leak.mod" "mod/ch_Navngf.mod" "mod/cp2.mod" "mod/cp.mod" "mod/DynamicNetStim.mod" "mod/gabab.mod" "mod/h_BS.mod" "mod/HH2.mod" "mod/h_harnett.mod" "mod/HH_traub.mod" "mod/hin.mod" "mod/h_kole.mod" "mod/h_migliore.mod" "mod/htc.mod" "mod/Iahp.mod" "mod/ICal.mod" "mod/Ican.mod" "mod/ican_sidi.mod" "mod/icaolmw.mod" "mod/icapr.mod" "mod/iccr.mod" "mod/IC.mod" "mod/iconc_Ca.mod" "mod/iholmkop.mod" "mod/iholmw.mod" "mod/ihpyrkop.mod" "mod/IKM.mod" "mod/ikscr.mod" "mod/IKsin.mod" "mod/IL_gutnick.mod" "mod/IL.mod" "mod/IM_cortex.mod" "mod/ipulse3.mod" "mod/IT2.mod" "mod/IT.mod" "mod/kahppr.mod" "mod/kaolmkop.mod" "mod/kap_BS.mod" "mod/kapcb.mod" "mod/kapin.mod" "mod/kapyrkop.mod" "mod/kBK.mod" "mod/kca.mod" "mod/kcaolmw.mod" "mod/kcpr.mod" "mod/kctin.mod" "mod/kdmc_BS.mod" "mod/kdr2_orig.mod" "mod/kdr_BS.mod" "mod/kdrbwb.mod" "mod/kdrcr.mod" "mod/kdrin.mod" "mod/kdrolmkop.mod" "mod/kdrpr.mod" "mod/kdrpyrkop.mod" "mod/kl.mod" "mod/km.mod" "mod/kv.mod" "mod/MyExp2SynAlpha.mod" "mod/MyExp2SynBB.mod" "mod/my_exp2syn.mod" "mod/MyExp2SynNMDABB.mod" "mod/na_2.mod" "mod/naf2.mod" "mod/nafbwb.mod" "mod/nafcr.mod" "mod/nafolmkop.mod" "mod/nafpr.mod" "mod/nafpyrkop.mod" "mod/nafx.mod" "mod/nap_sidi.mod" "mod/nax_BS.mod" "mod/naz.mod" "mod/Nca.mod" "mod/nsloc.mod" "mod/ntIh.mod" "mod/ntleak.mod" "mod/ntt_int.mod" "mod/ntt.mod" "mod/pasi.mod" "mod/savedist.mod" "mod/tia.mod" "mod/vecstim.mod" "mod/wrap.mod"
+
+Start time:  2024-11-11 22:29:24.835828
+
+
+Creating network of 39 cell populations on 3 hosts...:   0%|          |[A
+
+Creating network of 39 cell populations on 3 hosts...:  18%|#7        |[A
+
+Creating network of 39 cell populations on 3 hosts...:  31%|###       |[A
+
+Creating network of 39 cell populations on 3 hosts...:  56%|#####6    |[A
+
+Creating network of 39 cell populations on 3 hosts...:  69%|######9   |[A
+
+Creating network of 39 cell populations on 3 hosts...:  85%|########4 |[APV2 rank=0
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+cell=2 rank=0 t0=898.8
+cell=5 rank=0 t0=986.65
+cell=8 rank=0 t0=1681.9
+  Number of cells on node 0: 4166 
+  Done; cell creation time = 2.14 s.
+PV2 rank=1
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+
+Error: VecStim requires interval, rate or spkTimes
+cell=3 rank=1 t0=182.6
+cell=6 rank=1 t0=719.9
+cell=12 rank=1 t0=984.05
+  Number of cells on node 1: 4165 
+PV2 rank=2
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+cell=1 rank=2 t0=1138.3
+cell=4 rank=2 t0=870.85
+cell=7 rank=2 t0=336.85
+cell=10 rank=2 t0=1149.25
+  Number of cells on node 2: 4165 
+
+Creating network of 39 cell populations on 3 hosts...: 100%|##########|
+
+h_vmem=64G
+maxrss=407.188M
+
+
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+numprocs=3
+NEURON -- VERSION 8.2.4 HEAD (1d87d5d39) 2024-02-09
+Duke, Yale, and the BlueBrain Project -- Copyright 1984-2022
+See http://neuron.yale.edu/neuron/credits
+
+Additional mechanisms from files
+ "mod/APCounter2.mod" "mod/ar_traub.mod" "mod/beforestep_py.mod" "mod/CA1ika.mod" "mod/CA1ikdr.mod" "mod/CA1ina.mod" "mod/cadad.mod" "mod/cadecay_destexhe.mod" "mod/cad.mod" "mod/Cadynamics.mod" "mod/cadyn.mod" "mod/cagk.mod" "mod/cal_mh.mod" "mod/cal_mig.mod" "mod/cancr.mod" "mod/canin.mod" "mod/can_mig.mod" "mod/caolmw.mod" "mod/capr.mod" "mod/catcb.mod" "mod/cat_mig.mod" "mod/cat_traub.mod" "mod/ch_CavL.mod" "mod/ch_CavN.mod" "mod/ch_KCaS.mod" "mod/ch_Kdrfastngf.mod" "mod/ch_KvAngf.mod" "mod/ch_KvCaB.mod" "mod/ch_leak.mod" "mod/ch_Navngf.mod" "mod/cp2.mod" "mod/cp.mod" "mod/DynamicNetStim.mod" "mod/gabab.mod" "mod/h_BS.mod" "mod/HH2.mod" "mod/h_harnett.mod" "mod/HH_traub.mod" "mod/hin.mod" "mod/h_kole.mod" "mod/h_migliore.mod" "mod/htc.mod" "mod/Iahp.mod" "mod/ICal.mod" "mod/Ican.mod" "mod/ican_sidi.mod" "mod/icaolmw.mod" "mod/icapr.mod" "mod/iccr.mod" "mod/IC.mod" "mod/iconc_Ca.mod" "mod/iholmkop.mod" "mod/iholmw.mod" "mod/ihpyrkop.mod" "mod/IKM.mod" "mod/ikscr.mod" "mod/IKsin.mod" "mod/IL_gutnick.mod" "mod/IL.mod" "mod/IM_cortex.mod" "mod/ipulse3.mod" "mod/IT2.mod" "mod/IT.mod" "mod/kahppr.mod" "mod/kaolmkop.mod" "mod/kap_BS.mod" "mod/kapcb.mod" "mod/kapin.mod" "mod/kapyrkop.mod" "mod/kBK.mod" "mod/kca.mod" "mod/kcaolmw.mod" "mod/kcpr.mod" "mod/kctin.mod" "mod/kdmc_BS.mod" "mod/kdr2_orig.mod" "mod/kdr_BS.mod" "mod/kdrbwb.mod" "mod/kdrcr.mod" "mod/kdrin.mod" "mod/kdrolmkop.mod" "mod/kdrpr.mod" "mod/kdrpyrkop.mod" "mod/kl.mod" "mod/km.mod" "mod/kv.mod" "mod/MyExp2SynAlpha.mod" "mod/MyExp2SynBB.mod" "mod/my_exp2syn.mod" "mod/MyExp2SynNMDABB.mod" "mod/na_2.mod" "mod/naf2.mod" "mod/nafbwb.mod" "mod/nafcr.mod" "mod/nafolmkop.mod" "mod/nafpr.mod" "mod/nafpyrkop.mod" "mod/nafx.mod" "mod/nap_sidi.mod" "mod/nax_BS.mod" "mod/naz.mod" "mod/Nca.mod" "mod/nsloc.mod" "mod/ntIh.mod" "mod/ntleak.mod" "mod/ntt_int.mod" "mod/ntt.mod" "mod/pasi.mod" "mod/savedist.mod" "mod/tia.mod" "mod/vecstim.mod" "mod/wrap.mod"
+Traceback (most recent call last):
+  File "experiments/test_vecstim.py", line 6, in <module>
+    from netpyne import sim, specs
+  File "/ddn/niknovikov19/repo/netpyne/netpyne/__init__.py", line 24, in <module>
+Traceback (most recent call last):
+  File "experiments/test_vecstim.py", line 6, in <module>
+    from netpyne import sim, specs
+  File "/ddn/niknovikov19/repo/netpyne/netpyne/__init__.py", line 24, in <module>
+Traceback (most recent call last):
+  File "experiments/test_vecstim.py", line 6, in <module>
+    from netpyne import sim, specs
+  File "/ddn/niknovikov19/repo/netpyne/netpyne/__init__.py", line 24, in <module>
+    from netpyne import batch
+  File "/ddn/niknovikov19/repo/netpyne/netpyne/batch/__init__.py", line 6, in <module>
+    from netpyne import batch
+  File "/ddn/niknovikov19/repo/netpyne/netpyne/batch/__init__.py", line 6, in <module>
+    from netpyne import batch
+  File "/ddn/niknovikov19/repo/netpyne/netpyne/batch/__init__.py", line 6, in <module>
+    from .batch import Batch
+  File "/ddn/niknovikov19/repo/netpyne/netpyne/batch/batch.py", line 21, in <module>
+    from .batch import Batch
+  File "/ddn/niknovikov19/repo/netpyne/netpyne/batch/batch.py", line 21, in <module>
+    from .batch import Batch
+  File "/ddn/niknovikov19/repo/netpyne/netpyne/batch/batch.py", line 21, in <module>
+    from .asd_parallel import asdOptim
+  File "/ddn/niknovikov19/repo/netpyne/netpyne/batch/asd_parallel.py", line 18, in <module>
+    from .asd_parallel import asdOptim
+  File "/ddn/niknovikov19/repo/netpyne/netpyne/batch/asd_parallel.py", line 18, in <module>
+    from .asd_parallel import asdOptim
+  File "/ddn/niknovikov19/repo/netpyne/netpyne/batch/asd_parallel.py", line 18, in <module>
+    from netpyne import sim
+  File "/ddn/niknovikov19/repo/netpyne/netpyne/sim/__init__.py", line 103, in <module>
+    from netpyne import sim
+  File "/ddn/niknovikov19/repo/netpyne/netpyne/sim/__init__.py", line 103, in <module>
+    from netpyne import sim
+  File "/ddn/niknovikov19/repo/netpyne/netpyne/sim/__init__.py", line 103, in <module>
+    from ..network import Network, Pop
+  File "/ddn/niknovikov19/repo/netpyne/netpyne/network/__init__.py", line 7, in <module>
+    from ..network import Network, Pop
+  File "/ddn/niknovikov19/repo/netpyne/netpyne/network/__init__.py", line 7, in <module>
+    from ..network import Network, Pop
+  File "/ddn/niknovikov19/repo/netpyne/netpyne/network/__init__.py", line 7, in <module>
+    from .pop import Pop
+  File "/ddn/niknovikov19/repo/netpyne/netpyne/network/pop.py", line 358
+    if len(ss)
+              ^
+SyntaxError: expected ':'
+    from .pop import Pop
+  File "/ddn/niknovikov19/repo/netpyne/netpyne/network/pop.py", line 358
+    if len(ss)
+              ^
+SyntaxError: expected ':'
+    from .pop import Pop
+  File "/ddn/niknovikov19/repo/netpyne/netpyne/network/pop.py", line 358
+    if len(ss)
+              ^
+SyntaxError: expected ':'
+
+h_vmem=64G
+maxrss=N/A
+
+
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+numprocs=3
+NEURON -- VERSION 8.2.4 HEAD (1d87d5d39) 2024-02-09
+Duke, Yale, and the BlueBrain Project -- Copyright 1984-2022
+See http://neuron.yale.edu/neuron/credits
+
+Additional mechanisms from files
+ "mod/APCounter2.mod" "mod/ar_traub.mod" "mod/beforestep_py.mod" "mod/CA1ika.mod" "mod/CA1ikdr.mod" "mod/CA1ina.mod" "mod/cadad.mod" "mod/cadecay_destexhe.mod" "mod/cad.mod" "mod/Cadynamics.mod" "mod/cadyn.mod" "mod/cagk.mod" "mod/cal_mh.mod" "mod/cal_mig.mod" "mod/cancr.mod" "mod/canin.mod" "mod/can_mig.mod" "mod/caolmw.mod" "mod/capr.mod" "mod/catcb.mod" "mod/cat_mig.mod" "mod/cat_traub.mod" "mod/ch_CavL.mod" "mod/ch_CavN.mod" "mod/ch_KCaS.mod" "mod/ch_Kdrfastngf.mod" "mod/ch_KvAngf.mod" "mod/ch_KvCaB.mod" "mod/ch_leak.mod" "mod/ch_Navngf.mod" "mod/cp2.mod" "mod/cp.mod" "mod/DynamicNetStim.mod" "mod/gabab.mod" "mod/h_BS.mod" "mod/HH2.mod" "mod/h_harnett.mod" "mod/HH_traub.mod" "mod/hin.mod" "mod/h_kole.mod" "mod/h_migliore.mod" "mod/htc.mod" "mod/Iahp.mod" "mod/ICal.mod" "mod/Ican.mod" "mod/ican_sidi.mod" "mod/icaolmw.mod" "mod/icapr.mod" "mod/iccr.mod" "mod/IC.mod" "mod/iconc_Ca.mod" "mod/iholmkop.mod" "mod/iholmw.mod" "mod/ihpyrkop.mod" "mod/IKM.mod" "mod/ikscr.mod" "mod/IKsin.mod" "mod/IL_gutnick.mod" "mod/IL.mod" "mod/IM_cortex.mod" "mod/ipulse3.mod" "mod/IT2.mod" "mod/IT.mod" "mod/kahppr.mod" "mod/kaolmkop.mod" "mod/kap_BS.mod" "mod/kapcb.mod" "mod/kapin.mod" "mod/kapyrkop.mod" "mod/kBK.mod" "mod/kca.mod" "mod/kcaolmw.mod" "mod/kcpr.mod" "mod/kctin.mod" "mod/kdmc_BS.mod" "mod/kdr2_orig.mod" "mod/kdr_BS.mod" "mod/kdrbwb.mod" "mod/kdrcr.mod" "mod/kdrin.mod" "mod/kdrolmkop.mod" "mod/kdrpr.mod" "mod/kdrpyrkop.mod" "mod/kl.mod" "mod/km.mod" "mod/kv.mod" "mod/MyExp2SynAlpha.mod" "mod/MyExp2SynBB.mod" "mod/my_exp2syn.mod" "mod/MyExp2SynNMDABB.mod" "mod/na_2.mod" "mod/naf2.mod" "mod/nafbwb.mod" "mod/nafcr.mod" "mod/nafolmkop.mod" "mod/nafpr.mod" "mod/nafpyrkop.mod" "mod/nafx.mod" "mod/nap_sidi.mod" "mod/nax_BS.mod" "mod/naz.mod" "mod/Nca.mod" "mod/nsloc.mod" "mod/ntIh.mod" "mod/ntleak.mod" "mod/ntt_int.mod" "mod/ntt.mod" "mod/pasi.mod" "mod/savedist.mod" "mod/tia.mod" "mod/vecstim.mod" "mod/wrap.mod"
+
+Start time:  2024-11-11 22:32:11.205805
+
+
+Creating network of 39 cell populations on 3 hosts...:   0%|          |[A
+
+Creating network of 39 cell populations on 3 hosts...:  18%|#7        |[A
+
+Creating network of 39 cell populations on 3 hosts...:  31%|###       |[A
+
+Creating network of 39 cell populations on 3 hosts...:  56%|#####6    |[A
+
+Creating network of 39 cell populations on 3 hosts...:  72%|#######1  |[APV2 rank=0
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+cell=2 rank=0 t0=898.8
+cell=5 rank=0 t0=986.65
+cell=8 rank=0 t0=1681.9
+cell=11 rank=0 t0=[]
+  Number of cells on node 0: 4166 
+  Done; cell creation time = 2.07 s.
+PV2 rank=1
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+cell=0 rank=1 t0=[]
+cell=3 rank=1 t0=182.6
+cell=6 rank=1 t0=719.9
+cell=9 rank=1 t0=[]
+cell=12 rank=1 t0=984.05
+  Number of cells on node 1: 4165 
+
+Creating network of 39 cell populations on 3 hosts...: 100%|##########|
+PV2 rank=2
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+cell=1 rank=2 t0=1138.3
+cell=4 rank=2 t0=870.85
+cell=7 rank=2 t0=336.85
+cell=10 rank=2 t0=1149.25
+  Number of cells on node 2: 4165 
+
+h_vmem=64G
+maxrss=N/A
+
+
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+numprocs=59
+NEURON -- VERSION 8.2.4 HEAD (1d87d5d39) 2024-02-09
+Duke, Yale, and the BlueBrain Project -- Copyright 1984-2022
+See http://neuron.yale.edu/neuron/credits
+
+Additional mechanisms from files
+ "mod/APCounter2.mod" "mod/ar_traub.mod" "mod/beforestep_py.mod" "mod/CA1ika.mod" "mod/CA1ikdr.mod" "mod/CA1ina.mod" "mod/cadad.mod" "mod/cadecay_destexhe.mod" "mod/cad.mod" "mod/Cadynamics.mod" "mod/cadyn.mod" "mod/cagk.mod" "mod/cal_mh.mod" "mod/cal_mig.mod" "mod/cancr.mod" "mod/canin.mod" "mod/can_mig.mod" "mod/caolmw.mod" "mod/capr.mod" "mod/catcb.mod" "mod/cat_mig.mod" "mod/cat_traub.mod" "mod/ch_CavL.mod" "mod/ch_CavN.mod" "mod/ch_KCaS.mod" "mod/ch_Kdrfastngf.mod" "mod/ch_KvAngf.mod" "mod/ch_KvCaB.mod" "mod/ch_leak.mod" "mod/ch_Navngf.mod" "mod/cp2.mod" "mod/cp.mod" "mod/DynamicNetStim.mod" "mod/gabab.mod" "mod/h_BS.mod" "mod/HH2.mod" "mod/h_harnett.mod" "mod/HH_traub.mod" "mod/hin.mod" "mod/h_kole.mod" "mod/h_migliore.mod" "mod/htc.mod" "mod/Iahp.mod" "mod/ICal.mod" "mod/Ican.mod" "mod/ican_sidi.mod" "mod/icaolmw.mod" "mod/icapr.mod" "mod/iccr.mod" "mod/IC.mod" "mod/iconc_Ca.mod" "mod/iholmkop.mod" "mod/iholmw.mod" "mod/ihpyrkop.mod" "mod/IKM.mod" "mod/ikscr.mod" "mod/IKsin.mod" "mod/IL_gutnick.mod" "mod/IL.mod" "mod/IM_cortex.mod" "mod/ipulse3.mod" "mod/IT2.mod" "mod/IT.mod" "mod/kahppr.mod" "mod/kaolmkop.mod" "mod/kap_BS.mod" "mod/kapcb.mod" "mod/kapin.mod" "mod/kapyrkop.mod" "mod/kBK.mod" "mod/kca.mod" "mod/kcaolmw.mod" "mod/kcpr.mod" "mod/kctin.mod" "mod/kdmc_BS.mod" "mod/kdr2_orig.mod" "mod/kdr_BS.mod" "mod/kdrbwb.mod" "mod/kdrcr.mod" "mod/kdrin.mod" "mod/kdrolmkop.mod" "mod/kdrpr.mod" "mod/kdrpyrkop.mod" "mod/kl.mod" "mod/km.mod" "mod/kv.mod" "mod/MyExp2SynAlpha.mod" "mod/MyExp2SynBB.mod" "mod/my_exp2syn.mod" "mod/MyExp2SynNMDABB.mod" "mod/na_2.mod" "mod/naf2.mod" "mod/nafbwb.mod" "mod/nafcr.mod" "mod/nafolmkop.mod" "mod/nafpr.mod" "mod/nafpyrkop.mod" "mod/nafx.mod" "mod/nap_sidi.mod" "mod/nax_BS.mod" "mod/naz.mod" "mod/Nca.mod" "mod/nsloc.mod" "mod/ntIh.mod" "mod/ntleak.mod" "mod/ntt_int.mod" "mod/ntt.mod" "mod/pasi.mod" "mod/savedist.mod" "mod/tia.mod" "mod/vecstim.mod" "mod/wrap.mod"
+
+Start time:  2024-11-11 22:36:10.661381
+
+
+Creating network of 39 cell populations on 59 hosts...:   0%|          |[A
+
+Creating network of 39 cell populations on 59 hosts...:  18%|#7        |[APV2 rank=0
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 0: 212 
+  Done; cell creation time = 0.51 s.
+PV2 rank=1
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 1: 212 
+PV2 rank=2
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 2: 212 
+PV2 rank=3
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 3: 212 
+PV2 rank=4
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 4: 212 
+PV2 rank=5
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 5: 212 
+PV2 rank=6
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 6: 212 
+PV2 rank=7
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 7: 212 
+PV2 rank=8
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 8: 212 
+PV2 rank=9
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 9: 212 
+PV2 rank=10
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 10: 212 
+PV2 rank=11
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 11: 212 
+PV2 rank=12
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 12: 212 
+PV2 rank=13
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 13: 212 
+PV2 rank=14
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 14: 212 
+PV2 rank=15
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 15: 212 
+PV2 rank=16
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 16: 212 
+PV2 rank=17
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 17: 212 
+PV2 rank=18
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 18: 212 
+PV2 rank=19
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 19: 212 
+PV2 rank=20
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 20: 212 
+PV2 rank=21
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 21: 212 
+PV2 rank=22
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 22: 212 
+PV2 rank=24
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+cell=1 rank=24 t0=1138.3
+  Number of cells on node 24: 212 
+PV2 rank=25
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+cell=2 rank=25 t0=898.8
+  Number of cells on node 25: 212 
+PV2 rank=26
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+cell=3 rank=26 t0=182.6
+  Number of cells on node 26: 212 
+PV2 rank=27
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+cell=4 rank=27 t0=870.85
+  Number of cells on node 27: 212 
+PV2 rank=28
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+cell=5 rank=28 t0=986.65
+  Number of cells on node 28: 212 
+PV2 rank=29
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+cell=6 rank=29 t0=719.9
+  Number of cells on node 29: 212 
+PV2 rank=30
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+cell=7 rank=30 t0=336.85
+  Number of cells on node 30: 212 
+PV2 rank=31
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+cell=8 rank=31 t0=1681.9
+  Number of cells on node 31: 212 
+PV2 rank=32
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+cell=9 rank=32 t0=[]
+  Number of cells on node 32: 212 
+PV2 rank=33
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+cell=10 rank=33 t0=1149.25
+  Number of cells on node 33: 212 
+PV2 rank=34
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+cell=11 rank=34 t0=[]
+  Number of cells on node 34: 212 
+PV2 rank=35
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+cell=12 rank=35 t0=984.05
+  Number of cells on node 35: 212 
+PV2 rank=36
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 36: 212 
+PV2 rank=37
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 37: 212 
+PV2 rank=38
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 38: 212 
+PV2 rank=39
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 39: 212 
+PV2 rank=40
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 40: 212 
+PV2 rank=41
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 41: 212 
+PV2 rank=42
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 42: 212 
+PV2 rank=43
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 43: 212 
+PV2 rank=44
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 44: 212 
+PV2 rank=45
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 45: 212 
+PV2 rank=46
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 46: 212 
+PV2 rank=47
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 47: 211 
+PV2 rank=48
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 48: 211 
+PV2 rank=49
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 49: 211 
+PV2 rank=50
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 50: 211 
+PV2 rank=51
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 51: 211 
+PV2 rank=52
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 52: 211 
+PV2 rank=53
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 53: 211 
+PV2 rank=55
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 55: 211 
+PV2 rank=56
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 56: 211 
+PV2 rank=57
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 57: 211 
+PV2 rank=58
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 58: 211 
+
+Creating network of 39 cell populations on 59 hosts...: 100%|##########|
+PV2 rank=23
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+cell=0 rank=23 t0=[]
+  Number of cells on node 23: 212 
+PV2 rank=54
+[0, 20, 29, 32, 27, 3, 2, 36, 9, 0, 9, 0, 5]
+  Number of cells on node 54: 211 
+
+h_vmem=64G
+maxrss=N/A
+
+
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+numprocs=3
+NEURON -- VERSION 8.2.4 HEAD (1d87d5d39) 2024-02-09
+Duke, Yale, and the BlueBrain Project -- Copyright 1984-2022
+See http://neuron.yale.edu/neuron/credits
+
+Additional mechanisms from files
+ "mod/APCounter2.mod" "mod/ar_traub.mod" "mod/beforestep_py.mod" "mod/CA1ika.mod" "mod/CA1ikdr.mod" "mod/CA1ina.mod" "mod/cadad.mod" "mod/cadecay_destexhe.mod" "mod/cad.mod" "mod/Cadynamics.mod" "mod/cadyn.mod" "mod/cagk.mod" "mod/cal_mh.mod" "mod/cal_mig.mod" "mod/cancr.mod" "mod/canin.mod" "mod/can_mig.mod" "mod/caolmw.mod" "mod/capr.mod" "mod/catcb.mod" "mod/cat_mig.mod" "mod/cat_traub.mod" "mod/ch_CavL.mod" "mod/ch_CavN.mod" "mod/ch_KCaS.mod" "mod/ch_Kdrfastngf.mod" "mod/ch_KvAngf.mod" "mod/ch_KvCaB.mod" "mod/ch_leak.mod" "mod/ch_Navngf.mod" "mod/cp2.mod" "mod/cp.mod" "mod/DynamicNetStim.mod" "mod/gabab.mod" "mod/h_BS.mod" "mod/HH2.mod" "mod/h_harnett.mod" "mod/HH_traub.mod" "mod/hin.mod" "mod/h_kole.mod" "mod/h_migliore.mod" "mod/htc.mod" "mod/Iahp.mod" "mod/ICal.mod" "mod/Ican.mod" "mod/ican_sidi.mod" "mod/icaolmw.mod" "mod/icapr.mod" "mod/iccr.mod" "mod/IC.mod" "mod/iconc_Ca.mod" "mod/iholmkop.mod" "mod/iholmw.mod" "mod/ihpyrkop.mod" "mod/IKM.mod" "mod/ikscr.mod" "mod/IKsin.mod" "mod/IL_gutnick.mod" "mod/IL.mod" "mod/IM_cortex.mod" "mod/ipulse3.mod" "mod/IT2.mod" "mod/IT.mod" "mod/kahppr.mod" "mod/kaolmkop.mod" "mod/kap_BS.mod" "mod/kapcb.mod" "mod/kapin.mod" "mod/kapyrkop.mod" "mod/kBK.mod" "mod/kca.mod" "mod/kcaolmw.mod" "mod/kcpr.mod" "mod/kctin.mod" "mod/kdmc_BS.mod" "mod/kdr2_orig.mod" "mod/kdr_BS.mod" "mod/kdrbwb.mod" "mod/kdrcr.mod" "mod/kdrin.mod" "mod/kdrolmkop.mod" "mod/kdrpr.mod" "mod/kdrpyrkop.mod" "mod/kl.mod" "mod/km.mod" "mod/kv.mod" "mod/MyExp2SynAlpha.mod" "mod/MyExp2SynBB.mod" "mod/my_exp2syn.mod" "mod/MyExp2SynNMDABB.mod" "mod/na_2.mod" "mod/naf2.mod" "mod/nafbwb.mod" "mod/nafcr.mod" "mod/nafolmkop.mod" "mod/nafpr.mod" "mod/nafpyrkop.mod" "mod/nafx.mod" "mod/nap_sidi.mod" "mod/nax_BS.mod" "mod/naz.mod" "mod/Nca.mod" "mod/nsloc.mod" "mod/ntIh.mod" "mod/ntleak.mod" "mod/ntt_int.mod" "mod/ntt.mod" "mod/pasi.mod" "mod/savedist.mod" "mod/tia.mod" "mod/vecstim.mod" "mod/wrap.mod"
+Traceback (most recent call last):
+  File "experiments/test_vecstim.py", line 17, in <module>
+Traceback (most recent call last):
+  File "experiments/test_vecstim.py", line 17, in <module>
+Traceback (most recent call last):
+  File "experiments/test_vecstim.py", line 17, in <module>
+    with open(fpath_par, 'r') as fid:
+    with open(fpath_par, 'r') as fid:
+    with open(fpath_par, 'r') as fid:
+FileNotFoundError: [Errno 2] No such file or directory: '/ddn/niknovikov19/repo/A1_model_old/data/exp_subnet_L3_8s_replay/exp_subnet_L3_8s_replay_netParams_sub.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/ddn/niknovikov19/repo/A1_model_old/data/exp_subnet_L3_8s_replay/exp_subnet_L3_8s_replay_netParams_sub.json'
+FileNotFoundError: [Errno 2] No such file or directory: '/ddn/niknovikov19/repo/A1_model_old/data/exp_subnet_L3_8s_replay/exp_subnet_L3_8s_replay_netParams_sub.json'
+
+h_vmem=64G
+maxrss=N/A
+
+
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+/ddn/niknovikov19/miniconda3/envs/netpyne_batch/bin/nrniv:10: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  from pkg_resources import working_set
+numprocs=3
+NEURON -- VERSION 8.2.4 HEAD (1d87d5d39) 2024-02-09
+Duke, Yale, and the BlueBrain Project -- Copyright 1984-2022
+See http://neuron.yale.edu/neuron/credits
+
+Additional mechanisms from files
+ "mod/APCounter2.mod" "mod/ar_traub.mod" "mod/beforestep_py.mod" "mod/CA1ika.mod" "mod/CA1ikdr.mod" "mod/CA1ina.mod" "mod/cadad.mod" "mod/cadecay_destexhe.mod" "mod/cad.mod" "mod/Cadynamics.mod" "mod/cadyn.mod" "mod/cagk.mod" "mod/cal_mh.mod" "mod/cal_mig.mod" "mod/cancr.mod" "mod/canin.mod" "mod/can_mig.mod" "mod/caolmw.mod" "mod/capr.mod" "mod/catcb.mod" "mod/cat_mig.mod" "mod/cat_traub.mod" "mod/ch_CavL.mod" "mod/ch_CavN.mod" "mod/ch_KCaS.mod" "mod/ch_Kdrfastngf.mod" "mod/ch_KvAngf.mod" "mod/ch_KvCaB.mod" "mod/ch_leak.mod" "mod/ch_Navngf.mod" "mod/cp2.mod" "mod/cp.mod" "mod/DynamicNetStim.mod" "mod/gabab.mod" "mod/h_BS.mod" "mod/HH2.mod" "mod/h_harnett.mod" "mod/HH_traub.mod" "mod/hin.mod" "mod/h_kole.mod" "mod/h_migliore.mod" "mod/htc.mod" "mod/Iahp.mod" "mod/ICal.mod" "mod/Ican.mod" "mod/ican_sidi.mod" "mod/icaolmw.mod" "mod/icapr.mod" "mod/iccr.mod" "mod/IC.mod" "mod/iconc_Ca.mod" "mod/iholmkop.mod" "mod/iholmw.mod" "mod/ihpyrkop.mod" "mod/IKM.mod" "mod/ikscr.mod" "mod/IKsin.mod" "mod/IL_gutnick.mod" "mod/IL.mod" "mod/IM_cortex.mod" "mod/ipulse3.mod" "mod/IT2.mod" "mod/IT.mod" "mod/kahppr.mod" "mod/kaolmkop.mod" "mod/kap_BS.mod" "mod/kapcb.mod" "mod/kapin.mod" "mod/kapyrkop.mod" "mod/kBK.mod" "mod/kca.mod" "mod/kcaolmw.mod" "mod/kcpr.mod" "mod/kctin.mod" "mod/kdmc_BS.mod" "mod/kdr2_orig.mod" "mod/kdr_BS.mod" "mod/kdrbwb.mod" "mod/kdrcr.mod" "mod/kdrin.mod" "mod/kdrolmkop.mod" "mod/kdrpr.mod" "mod/kdrpyrkop.mod" "mod/kl.mod" "mod/km.mod" "mod/kv.mod" "mod/MyExp2SynAlpha.mod" "mod/MyExp2SynBB.mod" "mod/my_exp2syn.mod" "mod/MyExp2SynNMDABB.mod" "mod/na_2.mod" "mod/naf2.mod" "mod/nafbwb.mod" "mod/nafcr.mod" "mod/nafolmkop.mod" "mod/nafpr.mod" "mod/nafpyrkop.mod" "mod/nafx.mod" "mod/nap_sidi.mod" "mod/nax_BS.mod" "mod/naz.mod" "mod/Nca.mod" "mod/nsloc.mod" "mod/ntIh.mod" "mod/ntleak.mod" "mod/ntt_int.mod" "mod/ntt.mod" "mod/pasi.mod" "mod/savedist.mod" "mod/tia.mod" "mod/vecstim.mod" "mod/wrap.mod"
+
+Start time:  2024-11-12 00:14:40.881000
+
+
+Creating network of 39 cell populations on 3 hosts...:   0%|          |[A
+
+Creating network of 39 cell populations on 3 hosts...:  15%|#5        |[A
+
+Creating network of 39 cell populations on 3 hosts...:  31%|###       |[A
+
+Creating network of 39 cell populations on 3 hosts...:  56%|#####6    |[A
+
+Creating network of 39 cell populations on 3 hosts...:  67%|######6   |[A
+
+Creating network of 39 cell populations on 3 hosts...:  77%|#######6  |[Acell=2 rank=0 t0=898.8
+cell=5 rank=0 t0=986.65
+cell=8 rank=0 t0=1681.9
+cell=11 rank=0 t0=[]
+  Number of cells on node 0: 4166 
+  Done; cell creation time = 2.84 s.
+cell=0 rank=1 t0=6539.4
+cell=3 rank=1 t0=182.6
+cell=6 rank=1 t0=719.9
+cell=9 rank=1 t0=4212.9
+cell=12 rank=1 t0=984.05
+  Number of cells on node 1: 4165 
+cell=1 rank=2 t0=1138.3
+cell=4 rank=2 t0=870.85
+cell=7 rank=2 t0=336.85
+cell=10 rank=2 t0=1149.25
+  Number of cells on node 2: 4165 
+
+Creating network of 39 cell populations on 3 hosts...: 100%|##########|
+
+h_vmem=64G
+maxrss=N/A
+
+

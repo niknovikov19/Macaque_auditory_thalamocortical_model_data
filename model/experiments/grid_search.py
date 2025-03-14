@@ -15,7 +15,7 @@ def _load_module(fpath_mod):
     return mod
 
 
-exp_name = 'exp_batch_subnet_test_1'
+exp_name = 'exp_batch_subnet_L3_wrec_wxe_6x6_poiss_8s'
 
 # Import experiment-specific batch_params.py and get batch params
 dirpath_exp = Path(__file__).resolve().parent / exp_name
@@ -25,9 +25,9 @@ params = batch_params_mod.get_batch_params()
 
 sge_config = {
     'queue': 'cpu.q',
-    'cores': 60,
-    'vmem': '256G',
-    'realtime': '2:30:00',
+    'cores': 30,
+    'vmem': '128G',
+    'realtime': '3:30:00',
     'command': ('conda activate netpyne_batch \n'
                 'export LD_LIBRARY_PATH=$CONDA_PREFIX/lib:$LD_LIBRARY_PATH \n'
                 'cd .. \n'
@@ -38,8 +38,8 @@ search(job_type = 'sge',
        comm_type = 'socket',
        label = exp_name,
        params = params,
-       output_path = f'../../data/{exp_name}',
+       output_path = f'../data/{exp_name}',
        checkpoint_path = '../ray',
        run_config = sge_config,
        num_samples = 1,
-       max_concurrent = 13)
+       max_concurrent = 25)

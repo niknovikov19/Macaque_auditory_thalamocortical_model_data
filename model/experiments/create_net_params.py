@@ -224,6 +224,11 @@ def create_net_params(cfg):
     
     layerGainLabels = ['1', '2', '3', '4', '5A', '5B', '6']
     
+    for pre in wmat:
+        for post in wmat[pre]:
+            wmat[pre][post] *= cfg.wmult_rec 
+
+    
     #------------------------------------------------------------------------------
     ## E -> E
     if cfg.addConn and cfg.EEGain > 0.0:
@@ -608,7 +613,7 @@ def create_net_params(cfg):
                 'sec': 'apic', 
                 'loc': 0.5,
                 'synMech': ESynMech,
-                'weight': weightBkg[pop],
+                'weight': weightBkg[pop] * cfg.wmult_ebkg,
                 'synMechWeightFactor': cfg.synWeightFractionEE,
                 'delay': cfg.delayBkg}
     

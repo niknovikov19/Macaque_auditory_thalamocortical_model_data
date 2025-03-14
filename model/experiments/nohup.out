@@ -1,0 +1,1127 @@
+Warning: no DISPLAY environment variable.
+--No graphics will be displayed.
+numprocs=1
+2024-11-05 04:48:01,407	INFO worker.py:1744 -- Started a local Ray instance. View the dashboard at [1m[32m127.0.0.1:8265 [39m[22m
+2024-11-05 04:48:01,510	INFO packaging.py:530 -- Creating a file package for local directory '.'.
+2024-11-05 04:48:01,600	INFO packaging.py:358 -- Pushing file package 'gcs://_ray_pkg_4a879c66b010f764.zip' (0.20MiB) to Ray cluster...
+2024-11-05 04:48:01,602	INFO packaging.py:371 -- Successfully pushed file package 'gcs://_ray_pkg_4a879c66b010f764.zip'.
+2024-11-05 04:50:38,121	ERROR tune_controller.py:1331 -- Trial task failed for trial run_0ce00_00000
+Traceback (most recent call last):
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/ray/air/execution/_internal/event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/ray/_private/auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/ray/_private/client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/ray/_private/worker.py", line 2613, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/ray/_private/worker.py", line 861, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(ValueError): [36mray::ImplicitFunc.train()[39m (pid=725872, ip=10.0.0.101, actor_id=7d1cff09464ce4f37a6ffb1401000000, repr=run)
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/ray/tune/trainable/trainable.py", line 331, in train
+    raise skipped from exception_cause(skipped)
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/ray/air/_internal/util.py", line 98, in run
+    self._ret = self._target(*self._args, **self._kwargs)
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/ray/tune/trainable/function_trainable.py", line 45, in <lambda>
+    training_func=lambda: self._trainable_func(self.config),
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/ray/tune/trainable/function_trainable.py", line 248, in _trainable_func
+    output = fn()
+  File "/ddn/niknovikov19/repo/netpyne/netpyne/batchtools/search.py", line 183, in run
+    data = ray_trial(config, label, dispatcher_constructor, project_path, output_path, submit)
+  File "/ddn/niknovikov19/repo/batchtk/batchtk/raytk/search.py", line 27, in ray_trial
+    data = pandas.read_json(data, typ='series', dtype=float)
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/pandas/io/json/_json.py", line 791, in read_json
+    json_reader = JsonReader(
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/pandas/io/json/_json.py", line 904, in __init__
+    data = self._get_data_from_filepath(filepath_or_buffer)
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/pandas/io/json/_json.py", line 944, in _get_data_from_filepath
+    self.handles = get_handle(
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/pandas/io/common.py", line 728, in get_handle
+    ioargs = _get_filepath_or_buffer(
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/pandas/io/common.py", line 472, in _get_filepath_or_buffer
+    raise ValueError(msg)
+ValueError: Invalid file path or buffer object type: <class 'NoneType'>
+2024-11-05 04:50:41,101	ERROR tune_controller.py:1331 -- Trial task failed for trial run_0ce00_00001
+Traceback (most recent call last):
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/ray/air/execution/_internal/event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/ray/_private/auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/ray/_private/client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/ray/_private/worker.py", line 2613, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/ray/_private/worker.py", line 861, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(ValueError): [36mray::ImplicitFunc.train()[39m (pid=725873, ip=10.0.0.101, actor_id=c6740922387446030dbe7b8501000000, repr=run)
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/ray/tune/trainable/trainable.py", line 331, in train
+    raise skipped from exception_cause(skipped)
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/ray/air/_internal/util.py", line 98, in run
+    self._ret = self._target(*self._args, **self._kwargs)
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/ray/tune/trainable/function_trainable.py", line 45, in <lambda>
+    training_func=lambda: self._trainable_func(self.config),
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/ray/tune/trainable/function_trainable.py", line 248, in _trainable_func
+    output = fn()
+  File "/ddn/niknovikov19/repo/netpyne/netpyne/batchtools/search.py", line 183, in run
+    data = ray_trial(config, label, dispatcher_constructor, project_path, output_path, submit)
+  File "/ddn/niknovikov19/repo/batchtk/batchtk/raytk/search.py", line 27, in ray_trial
+    data = pandas.read_json(data, typ='series', dtype=float)
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/pandas/io/json/_json.py", line 791, in read_json
+    json_reader = JsonReader(
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/pandas/io/json/_json.py", line 904, in __init__
+    data = self._get_data_from_filepath(filepath_or_buffer)
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/pandas/io/json/_json.py", line 944, in _get_data_from_filepath
+    self.handles = get_handle(
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/pandas/io/common.py", line 728, in get_handle
+    ioargs = _get_filepath_or_buffer(
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/pandas/io/common.py", line 472, in _get_filepath_or_buffer
+    raise ValueError(msg)
+ValueError: Invalid file path or buffer object type: <class 'NoneType'>
+2024-11-05 04:50:44,943	ERROR tune_controller.py:1331 -- Trial task failed for trial run_0ce00_00002
+Traceback (most recent call last):
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/ray/air/execution/_internal/event_manager.py", line 110, in resolve_future
+    result = ray.get(future)
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/ray/_private/auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/ray/_private/client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/ray/_private/worker.py", line 2613, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/ray/_private/worker.py", line 861, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(ValueError): [36mray::ImplicitFunc.train()[39m (pid=725874, ip=10.0.0.101, actor_id=6c4239fd69da9cb82a5b1eac01000000, repr=run)
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/ray/tune/trainable/trainable.py", line 331, in train
+    raise skipped from exception_cause(skipped)
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/ray/air/_internal/util.py", line 98, in run
+    self._ret = self._target(*self._args, **self._kwargs)
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/ray/tune/trainable/function_trainable.py", line 45, in <lambda>
+    training_func=lambda: self._trainable_func(self.config),
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/ray/tune/trainable/function_trainable.py", line 248, in _trainable_func
+    output = fn()
+  File "/ddn/niknovikov19/repo/netpyne/netpyne/batchtools/search.py", line 183, in run
+    data = ray_trial(config, label, dispatcher_constructor, project_path, output_path, submit)
+  File "/ddn/niknovikov19/repo/batchtk/batchtk/raytk/search.py", line 27, in ray_trial
+    data = pandas.read_json(data, typ='series', dtype=float)
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/pandas/io/json/_json.py", line 791, in read_json
+    json_reader = JsonReader(
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/pandas/io/json/_json.py", line 904, in __init__
+    data = self._get_data_from_filepath(filepath_or_buffer)
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/pandas/io/json/_json.py", line 944, in _get_data_from_filepath
+    self.handles = get_handle(
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/pandas/io/common.py", line 728, in get_handle
+    ioargs = _get_filepath_or_buffer(
+  File "/ddn/niknovikov19/miniconda3/envs/netpyne_batch/lib/python3.10/site-packages/pandas/io/common.py", line 472, in _get_filepath_or_buffer
+    raise ValueError(msg)
+ValueError: Invalid file path or buffer object type: <class 'NoneType'>
+2024-11-05 04:50:44,963	INFO tune.py:1009 -- Wrote the latest version of all result files and experiment state to '/ddn/niknovikov19/repo/A1_model_old/model/ray/variant_generator' in 0.0137s.
+2024-11-05 04:50:44,969	ERROR tune.py:1037 -- Trials did not complete: [run_0ce00_00000, run_0ce00_00001, run_0ce00_00002]
+╭────────────────────────────────────────────────────────╮
+│ Configuration for experiment     variant_generator     │
+├────────────────────────────────────────────────────────┤
+│ Search algorithm                 BasicVariantGenerator │
+│ Scheduler                        FIFOScheduler         │
+│ Number of trials                 3                     │
+╰────────────────────────────────────────────────────────╯
+
+View detailed results here: /ddn/niknovikov19/repo/A1_model_old/model/ray/variant_generator
+To visualize your results with TensorBoard, run: `tensorboard --logdir /tmp/ray/session_2024-11-05_04-47-57_093453_723503/artifacts/2024-11-05_04-48-03/variant_generator/driver_artifacts`
+
+Trial status: 3 PENDING
+Current time: 2024-11-05 04:48:03. Total running time: 0s
+Logical resource usage: 0/32 CPUs, 0/0 GPUs
+╭─────────────────────────────────────────────────────╮
+│ Trial name        status     ...t_par.pops_active   │
+├─────────────────────────────────────────────────────┤
+│ run_0ce00_00000   PENDING    ..., 'VIP2', 'NGF2']   │
+│ run_0ce00_00001   PENDING    ..., 'VIP3', 'NGF3']   │
+│ run_0ce00_00002   PENDING    ..., 'VIP6', 'NGF6']   │
+╰─────────────────────────────────────────────────────╯
+
+Trial run_0ce00_00001 started with configuration:
+╭───────────────────────────────────────────────────────╮
+│ Trial run_0ce00_00001 config                          │
+├───────────────────────────────────────────────────────┤
+│ subnet_par.pops_active           ..., 'VIP3', 'NGF3'] │
+╰───────────────────────────────────────────────────────╯
+
+Trial run_0ce00_00000 started with configuration:
+╭───────────────────────────────────────────────────────╮
+│ Trial run_0ce00_00000 config                          │
+├───────────────────────────────────────────────────────┤
+│ subnet_par.pops_active           ..., 'VIP2', 'NGF2'] │
+╰───────────────────────────────────────────────────────╯
+
+Trial run_0ce00_00002 started with configuration:
+╭───────────────────────────────────────────────────────╮
+│ Trial run_0ce00_00002 config                          │
+├───────────────────────────────────────────────────────┤
+│ subnet_par.pops_active           ..., 'VIP6', 'NGF6'] │
+╰───────────────────────────────────────────────────────╯
+
+Trial status: 3 RUNNING
+Current time: 2024-11-05 04:48:33. Total running time: 30s
+Logical resource usage: 3.0/32 CPUs, 0/0 GPUs
+╭─────────────────────────────────────────────────────╮
+│ Trial name        status     ...t_par.pops_active   │
+├─────────────────────────────────────────────────────┤
+│ run_0ce00_00000   RUNNING    ..., 'VIP2', 'NGF2']   │
+│ run_0ce00_00001   RUNNING    ..., 'VIP3', 'NGF3']   │
+│ run_0ce00_00002   RUNNING    ..., 'VIP6', 'NGF6']   │
+╰─────────────────────────────────────────────────────╯
+Trial status: 3 RUNNING
+Current time: 2024-11-05 04:49:03. Total running time: 1min 0s
+Logical resource usage: 3.0/32 CPUs, 0/0 GPUs
+╭─────────────────────────────────────────────────────╮
+│ Trial name        status     ...t_par.pops_active   │
+├─────────────────────────────────────────────────────┤
+│ run_0ce00_00000   RUNNING    ..., 'VIP2', 'NGF2']   │
+│ run_0ce00_00001   RUNNING    ..., 'VIP3', 'NGF3']   │
+│ run_0ce00_00002   RUNNING    ..., 'VIP6', 'NGF6']   │
+╰─────────────────────────────────────────────────────╯
+Trial status: 3 RUNNING
+Current time: 2024-11-05 04:49:33. Total running time: 1min 30s
+Logical resource usage: 3.0/32 CPUs, 0/0 GPUs
+╭─────────────────────────────────────────────────────╮
+│ Trial name        status     ...t_par.pops_active   │
+├─────────────────────────────────────────────────────┤
+│ run_0ce00_00000   RUNNING    ..., 'VIP2', 'NGF2']   │
+│ run_0ce00_00001   RUNNING    ..., 'VIP3', 'NGF3']   │
+│ run_0ce00_00002   RUNNING    ..., 'VIP6', 'NGF6']   │
+╰─────────────────────────────────────────────────────╯
+Trial status: 3 RUNNING
+Current time: 2024-11-05 04:50:03. Total running time: 2min 0s
+Logical resource usage: 3.0/32 CPUs, 0/0 GPUs
+╭─────────────────────────────────────────────────────╮
+│ Trial name        status     ...t_par.pops_active   │
+├─────────────────────────────────────────────────────┤
+│ run_0ce00_00000   RUNNING    ..., 'VIP2', 'NGF2']   │
+│ run_0ce00_00001   RUNNING    ..., 'VIP3', 'NGF3']   │
+│ run_0ce00_00002   RUNNING    ..., 'VIP6', 'NGF6']   │
+╰─────────────────────────────────────────────────────╯
+Trial status: 3 RUNNING
+Current time: 2024-11-05 04:50:33. Total running time: 2min 30s
+Logical resource usage: 3.0/32 CPUs, 0/0 GPUs
+╭─────────────────────────────────────────────────────╮
+│ Trial name        status     ...t_par.pops_active   │
+├─────────────────────────────────────────────────────┤
+│ run_0ce00_00000   RUNNING    ..., 'VIP2', 'NGF2']   │
+│ run_0ce00_00001   RUNNING    ..., 'VIP3', 'NGF3']   │
+│ run_0ce00_00002   RUNNING    ..., 'VIP6', 'NGF6']   │
+╰─────────────────────────────────────────────────────╯
+
+Trial run_0ce00_00000 errored after 0 iterations at 2024-11-05 04:50:38. Total running time: 2min 34s
+Error file: /tmp/ray/session_2024-11-05_04-47-57_093453_723503/artifacts/2024-11-05_04-48-03/variant_generator/driver_artifacts/run_0ce00_00000_0_subnet_par_pops_active=IT2_SOM2_PV2_VIP2_NGF2_2024-11-05_04-48-03/error.txt
+
+Trial run_0ce00_00001 errored after 0 iterations at 2024-11-05 04:50:41. Total running time: 2min 37s
+Error file: /tmp/ray/session_2024-11-05_04-47-57_093453_723503/artifacts/2024-11-05_04-48-03/variant_generator/driver_artifacts/run_0ce00_00001_1_subnet_par_pops_active=IT3_SOM3_PV3_VIP3_NGF3_2024-11-05_04-48-03/error.txt
+
+Trial run_0ce00_00002 errored after 0 iterations at 2024-11-05 04:50:44. Total running time: 2min 41s
+Error file: /tmp/ray/session_2024-11-05_04-47-57_093453_723503/artifacts/2024-11-05_04-48-03/variant_generator/driver_artifacts/run_0ce00_00002_2_subnet_par_pops_active=IT6_CT6_SOM6_PV6_VIP6_NGF6_2024-11-05_04-48-03/error.txt
+
+Trial status: 3 ERROR
+Current time: 2024-11-05 04:50:44. Total running time: 2min 41s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+╭─────────────────────────────────────────────────────╮
+│ Trial name        status     ...t_par.pops_active   │
+├─────────────────────────────────────────────────────┤
+│ run_0ce00_00000   ERROR      ..., 'VIP2', 'NGF2']   │
+│ run_0ce00_00001   ERROR      ..., 'VIP3', 'NGF3']   │
+│ run_0ce00_00002   ERROR      ..., 'VIP6', 'NGF6']   │
+╰─────────────────────────────────────────────────────╯
+
+Number of errored trials: 3
+╭────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name          # failures   error file                                                                                                                                                                                                            │
+├────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_0ce00_00000              1   /tmp/ray/session_2024-11-05_04-47-57_093453_723503/artifacts/2024-11-05_04-48-03/variant_generator/driver_artifacts/run_0ce00_00000_0_subnet_par_pops_active=IT2_SOM2_PV2_VIP2_NGF2_2024-11-05_04-48-03/error.txt     │
+│ run_0ce00_00001              1   /tmp/ray/session_2024-11-05_04-47-57_093453_723503/artifacts/2024-11-05_04-48-03/variant_generator/driver_artifacts/run_0ce00_00001_1_subnet_par_pops_active=IT3_SOM3_PV3_VIP3_NGF3_2024-11-05_04-48-03/error.txt     │
+│ run_0ce00_00002              1   /tmp/ray/session_2024-11-05_04-47-57_093453_723503/artifacts/2024-11-05_04-48-03/variant_generator/driver_artifacts/run_0ce00_00002_2_subnet_par_pops_active=IT6_CT6_SOM6_PV6_VIP6_NGF6_2024-11-05_04-48-03/error.txt │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+Warning: no DISPLAY environment variable.
+--No graphics will be displayed.
+numprocs=1
+2024-11-05 04:52:55,992	INFO worker.py:1744 -- Started a local Ray instance. View the dashboard at [1m[32m127.0.0.1:8265 [39m[22m
+2024-11-05 04:52:56,058	INFO packaging.py:530 -- Creating a file package for local directory '.'.
+2024-11-05 04:52:56,137	INFO packaging.py:358 -- Pushing file package 'gcs://_ray_pkg_d4d6c6b3c24f6601.zip' (0.22MiB) to Ray cluster...
+2024-11-05 04:52:56,140	INFO packaging.py:371 -- Successfully pushed file package 'gcs://_ray_pkg_d4d6c6b3c24f6601.zip'.
+[36m(run pid=730717)[0m /ddn/niknovikov19/repo/batchtk/batchtk/raytk/search.py:27: FutureWarning: Passing literal json to 'read_json' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[36m(run pid=730717)[0m   data = pandas.read_json(data, typ='series', dtype=float)
+[36m(run pid=730719)[0m /ddn/niknovikov19/repo/batchtk/batchtk/raytk/search.py:27: FutureWarning: Passing literal json to 'read_json' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[36m(run pid=730719)[0m   data = pandas.read_json(data, typ='series', dtype=float)
+2024-11-05 05:29:00,651	INFO tune.py:1009 -- Wrote the latest version of all result files and experiment state to '/ddn/niknovikov19/repo/A1_model_old/model/ray/variant_generator' in 0.0117s.
+[36m(run pid=730718)[0m /ddn/niknovikov19/repo/batchtk/batchtk/raytk/search.py:27: FutureWarning: Passing literal json to 'read_json' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+[36m(run pid=730718)[0m   data = pandas.read_json(data, typ='series', dtype=float)
+╭────────────────────────────────────────────────────────╮
+│ Configuration for experiment     variant_generator     │
+├────────────────────────────────────────────────────────┤
+│ Search algorithm                 BasicVariantGenerator │
+│ Scheduler                        FIFOScheduler         │
+│ Number of trials                 3                     │
+╰────────────────────────────────────────────────────────╯
+
+View detailed results here: /ddn/niknovikov19/repo/A1_model_old/model/ray/variant_generator
+To visualize your results with TensorBoard, run: `tensorboard --logdir /tmp/ray/session_2024-11-05_04-52-51_676264_728348/artifacts/2024-11-05_04-52-57/variant_generator/driver_artifacts`
+
+Trial status: 3 PENDING
+Current time: 2024-11-05 04:52:58. Total running time: 0s
+Logical resource usage: 0/32 CPUs, 0/0 GPUs
+╭─────────────────────────────────────────────────────╮
+│ Trial name        status     ...t_par.pops_active   │
+├─────────────────────────────────────────────────────┤
+│ run_bc7ab_00000   PENDING    ..., 'VIP2', 'NGF2']   │
+│ run_bc7ab_00001   PENDING    ..., 'VIP3', 'NGF3']   │
+│ run_bc7ab_00002   PENDING    ..., 'VIP6', 'NGF6']   │
+╰─────────────────────────────────────────────────────╯
+
+Trial run_bc7ab_00000 started with configuration:
+╭───────────────────────────────────────────────────────╮
+│ Trial run_bc7ab_00000 config                          │
+├───────────────────────────────────────────────────────┤
+│ subnet_par.pops_active           ..., 'VIP2', 'NGF2'] │
+╰───────────────────────────────────────────────────────╯
+
+Trial run_bc7ab_00001 started with configuration:
+╭───────────────────────────────────────────────────────╮
+│ Trial run_bc7ab_00001 config                          │
+├───────────────────────────────────────────────────────┤
+│ subnet_par.pops_active           ..., 'VIP3', 'NGF3'] │
+╰───────────────────────────────────────────────────────╯
+
+Trial run_bc7ab_00002 started with configuration:
+╭───────────────────────────────────────────────────────╮
+│ Trial run_bc7ab_00002 config                          │
+├───────────────────────────────────────────────────────┤
+│ subnet_par.pops_active           ..., 'VIP6', 'NGF6'] │
+╰───────────────────────────────────────────────────────╯
+
+Trial status: 3 RUNNING
+Current time: 2024-11-05 04:53:28. Total running time: 30s
+Logical resource usage: 3.0/32 CPUs, 0/0 GPUs
+╭─────────────────────────────────────────────────────╮
+│ Trial name        status     ...t_par.pops_active   │
+├─────────────────────────────────────────────────────┤
+│ run_bc7ab_00000   RUNNING    ..., 'VIP2', 'NGF2']   │
+│ run_bc7ab_00001   RUNNING    ..., 'VIP3', 'NGF3']   │
+│ run_bc7ab_00002   RUNNING    ..., 'VIP6', 'NGF6']   │
+╰─────────────────────────────────────────────────────╯
+Trial status: 3 RUNNING
+Current time: 2024-11-05 04:53:58. Total running time: 1min 0s
+Logical resource usage: 3.0/32 CPUs, 0/0 GPUs
+╭─────────────────────────────────────────────────────╮
+│ Trial name        status     ...t_par.pops_active   │
+├─────────────────────────────────────────────────────┤
+│ run_bc7ab_00000   RUNNING    ..., 'VIP2', 'NGF2']   │
+│ run_bc7ab_00001   RUNNING    ..., 'VIP3', 'NGF3']   │
+│ run_bc7ab_00002   RUNNING    ..., 'VIP6', 'NGF6']   │
+╰─────────────────────────────────────────────────────╯
+Trial status: 3 RUNNING
+Current time: 2024-11-05 04:54:28. Total running time: 1min 30s
+Logical resource usage: 3.0/32 CPUs, 0/0 GPUs
+╭─────────────────────────────────────────────────────╮
+│ Trial name        status     ...t_par.pops_active   │
+├─────────────────────────────────────────────────────┤
+│ run_bc7ab_00000   RUNNING    ..., 'VIP2', 'NGF2']   │
+│ run_bc7ab_00001   RUNNING    ..., 'VIP3', 'NGF3']   │
+│ run_bc7ab_00002   RUNNING    ..., 'VIP6', 'NGF6']   │
+╰─────────────────────────────────────────────────────╯
+Trial status: 3 RUNNING
+Current time: 2024-11-05 04:54:58. Total running time: 2min 0s
+Logical resource usage: 3.0/32 CPUs, 0/0 GPUs
+╭─────────────────────────────────────────────────────╮
+│ Trial name        status     ...t_par.pops_active   │
+├─────────────────────────────────────────────────────┤
+│ run_bc7ab_00000   RUNNING    ..., 'VIP2', 'NGF2']   │
+│ run_bc7ab_00001   RUNNING    ..., 'VIP3', 'NGF3']   │
+│ run_bc7ab_00002   RUNNING    ..., 'VIP6', 'NGF6']   │
+╰─────────────────────────────────────────────────────╯
+Trial status: 3 RUNNING
+Current time: 2024-11-05 04:55:28. Total running time: 2min 30s
+Logical resource usage: 3.0/32 CPUs, 0/0 GPUs
+╭─────────────────────────────────────────────────────╮
+│ Trial name        status     ...t_par.pops_active   │
+├─────────────────────────────────────────────────────┤
+│ run_bc7ab_00000   RUNNING    ..., 'VIP2', 'NGF2']   │
+│ run_bc7ab_00001   RUNNING    ..., 'VIP3', 'NGF3']   │
+│ run_bc7ab_00002   RUNNING    ..., 'VIP6', 'NGF6']   │
+╰─────────────────────────────────────────────────────╯
+Trial status: 3 RUNNING
+Current time: 2024-11-05 04:55:58. Total running time: 3min 0s
+Logical resource usage: 3.0/32 CPUs, 0/0 GPUs
+╭─────────────────────────────────────────────────────╮
+│ Trial name        status     ...t_par.pops_active   │
+├─────────────────────────────────────────────────────┤
+│ run_bc7ab_00000   RUNNING    ..., 'VIP2', 'NGF2']   │
+│ run_bc7ab_00001   RUNNING    ..., 'VIP3', 'NGF3']   │
+│ run_bc7ab_00002   RUNNING    ..., 'VIP6', 'NGF6']   │
+╰─────────────────────────────────────────────────────╯
+Trial status: 3 RUNNING
+Current time: 2024-11-05 04:56:28. Total running time: 3min 30s
+Logical resource usage: 3.0/32 CPUs, 0/0 GPUs
+╭─────────────────────────────────────────────────────╮
+│ Trial name        status     ...t_par.pops_active   │
+├─────────────────────────────────────────────────────┤
+│ run_bc7ab_00000   RUNNING    ..., 'VIP2', 'NGF2']   │
+│ run_bc7ab_00001   RUNNING    ..., 'VIP3', 'NGF3']   │
+│ run_bc7ab_00002   RUNNING    ..., 'VIP6', 'NGF6']   │
+╰─────────────────────────────────────────────────────╯
+Trial status: 3 RUNNING
+Current time: 2024-11-05 04:56:58. Total running time: 4min 0s
+Logical resource usage: 3.0/32 CPUs, 0/0 GPUs
+╭─────────────────────────────────────────────────────╮
+│ Trial name        status     ...t_par.pops_active   │
+├─────────────────────────────────────────────────────┤
+│ run_bc7ab_00000   RUNNING    ..., 'VIP2', 'NGF2']   │
+│ run_bc7ab_00001   RUNNING    ..., 'VIP3', 'NGF3']   │
+│ run_bc7ab_00002   RUNNING    ..., 'VIP6', 'NGF6']   │
+╰─────────────────────────────────────────────────────╯
+Trial status: 3 RUNNING
+Current time: 2024-11-05 04:57:28. Total running time: 4min 30s
+Logical resource usage: 3.0/32 CPUs, 0/0 GPUs
+╭─────────────────────────────────────────────────────╮
+│ Trial name        status     ...t_par.pops_active   │
+├─────────────────────────────────────────────────────┤
+│ run_bc7ab_00000   RUNNING    ..., 'VIP2', 'NGF2']   │
+│ run_bc7ab_00001   RUNNING    ..., 'VIP3', 'NGF3']   │
+│ run_bc7ab_00002   RUNNING    ..., 'VIP6', 'NGF6']   │
+╰─────────────────────────────────────────────────────╯
+Trial status: 3 RUNNING
+Current time: 2024-11-05 04:57:58. Total running time: 5min 0s
+Logical resource usage: 3.0/32 CPUs, 0/0 GPUs
+╭─────────────────────────────────────────────────────╮
+│ Trial name        status     ...t_par.pops_active   │
+├─────────────────────────────────────────────────────┤
+│ run_bc7ab_00000   RUNNING    ..., 'VIP2', 'NGF2']   │
+│ run_bc7ab_00001   RUNNING    ..., 'VIP3', 'NGF3']   │
+│ run_bc7ab_00002   RUNNING    ..., 'VIP6', 'NGF6']   │
+╰─────────────────────────────────────────────────────╯
+Trial status: 3 RUNNING
+Current time: 2024-11-05 04:58:28. Total running time: 5min 30s
+Logical resource usage: 3.0/32 CPUs, 0/0 GPUs
+╭─────────────────────────────────────────────────────╮
+│ Trial name        status     ...t_par.pops_active   │
+├─────────────────────────────────────────────────────┤
+│ run_bc7ab_00000   RUNNING    ..., 'VIP2', 'NGF2']   │
+│ run_bc7ab_00001   RUNNING    ..., 'VIP3', 'NGF3']   │
+│ run_bc7ab_00002   RUNNING    ..., 'VIP6', 'NGF6']   │
+╰─────────────────────────────────────────────────────╯
+Trial status: 3 RUNNING
+Current time: 2024-11-05 04:58:58. Total running time: 6min 0s
+Logical resource usage: 3.0/32 CPUs, 0/0 GPUs
+╭─────────────────────────────────────────────────────╮
+│ Trial name        status     ...t_par.pops_active   │
+├─────────────────────────────────────────────────────┤
+│ run_bc7ab_00000   RUNNING    ..., 'VIP2', 'NGF2']   │
+│ run_bc7ab_00001   RUNNING    ..., 'VIP3', 'NGF3']   │
+│ run_bc7ab_00002   RUNNING    ..., 'VIP6', 'NGF6']   │
+╰─────────────────────────────────────────────────────╯
+Trial status: 3 RUNNING
+Current time: 2024-11-05 04:59:28. Total running time: 6min 30s
+Logical resource usage: 3.0/32 CPUs, 0/0 GPUs
+╭─────────────────────────────────────────────────────╮
+│ Trial name        status     ...t_par.pops_active   │
+├─────────────────────────────────────────────────────┤
+│ run_bc7ab_00000   RUNNING    ..., 'VIP2', 'NGF2']   │
+│ run_bc7ab_00001   RUNNING    ..., 'VIP3', 'NGF3']   │
+│ run_bc7ab_00002   RUNNING    ..., 'VIP6', 'NGF6']   │
+╰─────────────────────────────────────────────────────╯
+Trial status: 3 RUNNING
+Current time: 2024-11-05 04:59:58. Total running time: 7min 0s
+Logical resource usage: 3.0/32 CPUs, 0/0 GPUs
+╭─────────────────────────────────────────────────────╮
+│ Trial name        status     ...t_par.pops_active   │
+├─────────────────────────────────────────────────────┤
+│ run_bc7ab_00000   RUNNING    ..., 'VIP2', 'NGF2']   │
+│ run_bc7ab_00001   RUNNING    ..., 'VIP3', 'NGF3']   │
+│ run_bc7ab_00002   RUNNING    ..., 'VIP6', 'NGF6']   │
+╰─────────────────────────────────────────────────────╯
+Trial status: 3 RUNNING
+Current time: 2024-11-05 05:00:28. Total running time: 7min 30s
+Logical resource usage: 3.0/32 CPUs, 0/0 GPUs
+╭─────────────────────────────────────────────────────╮
+│ Trial name        status     ...t_par.pops_active   │
+├─────────────────────────────────────────────────────┤
+│ run_bc7ab_00000   RUNNING    ..., 'VIP2', 'NGF2']   │
+│ run_bc7ab_00001   RUNNING    ..., 'VIP3', 'NGF3']   │
+│ run_bc7ab_00002   RUNNING    ..., 'VIP6', 'NGF6']   │
+╰─────────────────────────────────────────────────────╯
+Trial status: 3 RUNNING
+Current time: 2024-11-05 05:00:58. Total running time: 8min 0s
+Logical resource usage: 3.0/32 CPUs, 0/0 GPUs
+╭─────────────────────────────────────────────────────╮
+│ Trial name        status     ...t_par.pops_active   │
+├─────────────────────────────────────────────────────┤
+│ run_bc7ab_00000   RUNNING    ..., 'VIP2', 'NGF2']   │
+│ run_bc7ab_00001   RUNNING    ..., 'VIP3', 'NGF3']   │
+│ run_bc7ab_00002   RUNNING    ..., 'VIP6', 'NGF6']   │
+╰─────────────────────────────────────────────────────╯
+
+Trial run_bc7ab_00000 completed after 1 iterations at 2024-11-05 05:01:14. Total running time: 8min 16s
+╭───────────────────────────────────────────────────────╮
+│ Trial run_bc7ab_00000 result                          │
+├───────────────────────────────────────────────────────┤
+│ checkpoint_dir_name                                   │
+│ time_this_iter_s                            492.68383 │
+│ time_total_s                                492.68383 │
+│ training_iteration                                  1 │
+│ data                             ....0
+dtype: float64 │
+│ loss                                               0. │
+╰───────────────────────────────────────────────────────╯
+
+Trial status: 1 TERMINATED | 2 RUNNING
+Current time: 2024-11-05 05:01:28. Total running time: 8min 30s
+Logical resource usage: 2.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00002   RUNNING      ..., 'VIP6', 'NGF6']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 1 TERMINATED | 2 RUNNING
+Current time: 2024-11-05 05:01:58. Total running time: 9min 0s
+Logical resource usage: 2.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00002   RUNNING      ..., 'VIP6', 'NGF6']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 1 TERMINATED | 2 RUNNING
+Current time: 2024-11-05 05:02:28. Total running time: 9min 30s
+Logical resource usage: 2.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00002   RUNNING      ..., 'VIP6', 'NGF6']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 1 TERMINATED | 2 RUNNING
+Current time: 2024-11-05 05:02:58. Total running time: 10min 0s
+Logical resource usage: 2.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00002   RUNNING      ..., 'VIP6', 'NGF6']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 1 TERMINATED | 2 RUNNING
+Current time: 2024-11-05 05:03:28. Total running time: 10min 30s
+Logical resource usage: 2.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00002   RUNNING      ..., 'VIP6', 'NGF6']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 1 TERMINATED | 2 RUNNING
+Current time: 2024-11-05 05:03:58. Total running time: 11min 0s
+Logical resource usage: 2.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00002   RUNNING      ..., 'VIP6', 'NGF6']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+
+Trial run_bc7ab_00002 completed after 1 iterations at 2024-11-05 05:04:19. Total running time: 11min 21s
+╭───────────────────────────────────────────────────────╮
+│ Trial run_bc7ab_00002 result                          │
+├───────────────────────────────────────────────────────┤
+│ checkpoint_dir_name                                   │
+│ time_this_iter_s                            677.54531 │
+│ time_total_s                                677.54531 │
+│ training_iteration                                  1 │
+│ data                             ....0
+dtype: float64 │
+│ loss                                               0. │
+╰───────────────────────────────────────────────────────╯
+
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:04:28. Total running time: 11min 30s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:04:58. Total running time: 12min 0s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:05:28. Total running time: 12min 30s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:05:58. Total running time: 13min 0s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:06:28. Total running time: 13min 30s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:06:58. Total running time: 14min 0s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:07:28. Total running time: 14min 30s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:07:58. Total running time: 15min 0s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:08:28. Total running time: 15min 30s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:08:58. Total running time: 16min 0s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:09:28. Total running time: 16min 30s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:09:58. Total running time: 17min 0s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:10:28. Total running time: 17min 30s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:10:58. Total running time: 18min 0s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:11:28. Total running time: 18min 30s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:11:58. Total running time: 19min 0s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:12:28. Total running time: 19min 31s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:12:58. Total running time: 20min 1s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:13:28. Total running time: 20min 31s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:13:58. Total running time: 21min 1s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:14:28. Total running time: 21min 31s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:14:58. Total running time: 22min 1s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:15:28. Total running time: 22min 31s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:15:58. Total running time: 23min 1s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:16:28. Total running time: 23min 31s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:16:58. Total running time: 24min 1s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:17:28. Total running time: 24min 31s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:17:58. Total running time: 25min 1s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:18:29. Total running time: 25min 31s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:18:59. Total running time: 26min 1s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:19:29. Total running time: 26min 31s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:19:59. Total running time: 27min 1s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:20:29. Total running time: 27min 31s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:20:59. Total running time: 28min 1s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:21:29. Total running time: 28min 31s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:21:59. Total running time: 29min 1s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:22:29. Total running time: 29min 31s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:22:59. Total running time: 30min 1s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:23:29. Total running time: 30min 31s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:23:59. Total running time: 31min 1s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:24:29. Total running time: 31min 31s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:24:59. Total running time: 32min 1s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:25:29. Total running time: 32min 31s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:25:59. Total running time: 33min 1s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:26:29. Total running time: 33min 31s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:26:59. Total running time: 34min 1s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:27:29. Total running time: 34min 31s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:27:59. Total running time: 35min 1s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:28:29. Total running time: 35min 31s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+Trial status: 2 TERMINATED | 1 RUNNING
+Current time: 2024-11-05 05:28:59. Total running time: 36min 1s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00001   RUNNING      ..., 'VIP3', 'NGF3']                                        │
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+
+Trial run_bc7ab_00001 completed after 1 iterations at 2024-11-05 05:29:00. Total running time: 36min 2s
+╭───────────────────────────────────────────────────────╮
+│ Trial run_bc7ab_00001 result                          │
+├───────────────────────────────────────────────────────┤
+│ checkpoint_dir_name                                   │
+│ time_this_iter_s                           2158.62135 │
+│ time_total_s                               2158.62135 │
+│ training_iteration                                  1 │
+│ data                             ....0
+dtype: float64 │
+│ loss                                               0. │
+╰───────────────────────────────────────────────────────╯
+
+Trial status: 3 TERMINATED
+Current time: 2024-11-05 05:29:00. Total running time: 36min 2s
+Logical resource usage: 1.0/32 CPUs, 0/0 GPUs
+Current best trial: bc7ab_00000 with loss=0.0 and params={'subnet_par.pops_active': ['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2'], 'saveFolder': '../data/exp_batch_subnet_test_1', 'simLabel': 'exp_batch_subnet_test_1_00000'}
+╭────────────────────────────────────────────────────────────────────────────────────────────╮
+│ Trial name        status       ...t_par.pops_active       iter     total time (s)     loss │
+├────────────────────────────────────────────────────────────────────────────────────────────┤
+│ run_bc7ab_00000   TERMINATED   ..., 'VIP2', 'NGF2']          1            492.684        0 │
+│ run_bc7ab_00001   TERMINATED   ..., 'VIP3', 'NGF3']          1           2158.62         0 │
+│ run_bc7ab_00002   TERMINATED   ..., 'VIP6', 'NGF6']          1            677.545        0 │
+╰────────────────────────────────────────────────────────────────────────────────────────────╯
+

@@ -14,8 +14,12 @@ def create_base_cfg():
     cfg.duration = 1 * 1e3
     
     # Default recording params
+    print(cfg.__dict__.keys())
     cfg.analysis['plotRaster'] = {'include': cfg.allpops, 'saveFig': True, 'showFig': False, 'popRates': True, 'orderInverse': True, 'timeRange': [1000, cfg.duration], 'figSize': (14,12), 'lw': 0.3, 'markerSize': 3, 'marker': '.', 'dpi': 300}      	## Plot a raster
     cfg.analysis['plotSpikeStats'] = {'stats': ['rate', 'isicv'], 'figSize': (6,12), 'timeRange': [1000, cfg.duration], 'dpi': 300, 'showFig': 0, 'saveFig': 1}
+    
+    cfg.wmult_rec = 1
+    cfg.wmult_ebkg = 1
     
     # Scaling factor for TC and HTC leak conduction (default: no scaling)
     cfg.TC_leak_mult = 1

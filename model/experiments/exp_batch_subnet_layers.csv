@@ -1,0 +1,37 @@
+,data,loss,timestamp,checkpoint_dir_name,done,training_iteration,trial_id,date,time_this_iter_s,time_total_s,pid,hostname,node_ip,time_since_restore,iterations_since_restore,config/subnet_par.pops_active,config/subnet_par.inp_type,config/saveFolder,config/simLabel,logdir
+0,"loss    0.0
+dtype: float64",0.0,1730848327,,False,1,55d87_00000,2024-11-05_18-12-07,872.5281794071198,872.5281794071198,805375,grid,10.0.0.101,872.5281794071198,1,"['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2']",poisson,../data/exp_batch_subnet_layers,exp_batch_subnet_layers_00000,55d87_00000
+1,"loss    0.0
+dtype: float64",0.0,1730847874,,False,1,55d87_00001,2024-11-05_18-04-34,419.6561794281006,419.6561794281006,805376,grid,10.0.0.101,419.6561794281006,1,"['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2']",spike_replay,../data/exp_batch_subnet_layers,exp_batch_subnet_layers_00001,55d87_00001
+2,"loss    0.0
+dtype: float64",0.0,1730847868,,False,1,55d87_00002,2024-11-05_18-04-28,412.9654848575592,412.9654848575592,805377,grid,10.0.0.101,412.9654848575592,1,"['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2']",spike_replay_jit,../data/exp_batch_subnet_layers,exp_batch_subnet_layers_00002,55d87_00002
+3,"loss    0.0
+dtype: float64",0.0,1730849664,,False,1,55d87_00003,2024-11-05_18-34-24,2209.076537132263,2209.076537132263,805378,grid,10.0.0.101,2209.076537132263,1,"['IT3', 'SOM3', 'PV3', 'VIP3', 'NGF3']",poisson,../data/exp_batch_subnet_layers,exp_batch_subnet_layers_00003,55d87_00003
+4,"loss    0.0
+dtype: float64",0.0,1730850080,,False,1,55d87_00004,2024-11-05_18-41-20,2625.727837562561,2625.727837562561,805379,grid,10.0.0.101,2625.727837562561,1,"['IT3', 'SOM3', 'PV3', 'VIP3', 'NGF3']",spike_replay,../data/exp_batch_subnet_layers,exp_batch_subnet_layers_00004,55d87_00004
+5,"loss    0.0
+dtype: float64",0.0,1730851263,,False,1,55d87_00005,2024-11-05_19-01-03,3808.6804761886597,3808.6804761886597,805380,grid,10.0.0.101,3808.6804761886597,1,"['IT3', 'SOM3', 'PV3', 'VIP3', 'NGF3']",spike_replay_jit,../data/exp_batch_subnet_layers,exp_batch_subnet_layers_00005,55d87_00005
+6,"loss    0.0
+dtype: float64",0.0,1730848622,,False,1,55d87_00006,2024-11-05_18-17-02,1167.5982625484467,1167.5982625484467,805381,grid,10.0.0.101,1167.5982625484467,1,"['ITP4', 'ITS4', 'SOM4', 'PV4', 'VIP4', 'NGF4']",poisson,../data/exp_batch_subnet_layers,exp_batch_subnet_layers_00006,55d87_00006
+7,"loss    0.0
+dtype: float64",0.0,1730849991,,False,1,55d87_00007,2024-11-05_18-39-51,2536.4130771160126,2536.4130771160126,805414,grid,10.0.0.101,2536.4130771160126,1,"['ITP4', 'ITS4', 'SOM4', 'PV4', 'VIP4', 'NGF4']",spike_replay,../data/exp_batch_subnet_layers,exp_batch_subnet_layers_00007,55d87_00007
+8,"loss    0.0
+dtype: float64",0.0,1730849142,,False,1,55d87_00008,2024-11-05_18-25-42,1687.7459235191345,1687.7459235191345,805415,grid,10.0.0.101,1687.7459235191345,1,"['ITP4', 'ITS4', 'SOM4', 'PV4', 'VIP4', 'NGF4']",spike_replay_jit,../data/exp_batch_subnet_layers,exp_batch_subnet_layers_00008,55d87_00008
+9,"loss    0.0
+dtype: float64",0.0,1730849130,,False,1,55d87_00009,2024-11-05_18-25-30,1674.9993724822998,1674.9993724822998,805416,grid,10.0.0.101,1674.9993724822998,1,"['IT5A', 'CT5A', 'SOM5A', 'PV5A', 'VIP5A', 'NGF5A']",poisson,../data/exp_batch_subnet_layers,exp_batch_subnet_layers_00009,55d87_00009
+10,"loss    0.0
+dtype: float64",0.0,1730847932,,False,1,55d87_00010,2024-11-05_18-05-32,476.916650056839,476.916650056839,805417,grid,10.0.0.101,476.916650056839,1,"['IT5A', 'CT5A', 'SOM5A', 'PV5A', 'VIP5A', 'NGF5A']",spike_replay,../data/exp_batch_subnet_layers,exp_batch_subnet_layers_00010,55d87_00010
+11,"loss    0.0
+dtype: float64",0.0,1730850488,,False,1,55d87_00011,2024-11-05_18-48-08,3033.053169488907,3033.053169488907,805434,grid,10.0.0.101,3033.053169488907,1,"['IT5A', 'CT5A', 'SOM5A', 'PV5A', 'VIP5A', 'NGF5A']",spike_replay_jit,../data/exp_batch_subnet_layers,exp_batch_subnet_layers_00011,55d87_00011
+12,"loss    0.0
+dtype: float64",0.0,1730850435,,False,1,55d87_00012,2024-11-05_18-47-15,2980.2777075767517,2980.2777075767517,805435,grid,10.0.0.101,2980.2777075767517,1,"['IT5B', 'CT5B', 'PT5B', 'SOM5B', 'PV5B', 'VIP5B', 'NGF5B']",poisson,../data/exp_batch_subnet_layers,exp_batch_subnet_layers_00012,55d87_00012
+13,"loss    0.0
+dtype: float64",0.0,1730850820,,False,1,55d87_00013,2024-11-05_18-53-40,2948.983189344406,2948.983189344406,814580,grid,10.0.0.101,2948.983189344406,1,"['IT5B', 'CT5B', 'PT5B', 'SOM5B', 'PV5B', 'VIP5B', 'NGF5B']",spike_replay,../data/exp_batch_subnet_layers,exp_batch_subnet_layers_00013,55d87_00013
+14,"loss    0.0
+dtype: float64",0.0,1730851182,,False,1,55d87_00014,2024-11-05_18-59-42,3304.402956008911,3304.402956008911,815222,grid,10.0.0.101,3304.402956008911,1,"['IT5B', 'CT5B', 'PT5B', 'SOM5B', 'PV5B', 'VIP5B', 'NGF5B']",spike_replay_jit,../data/exp_batch_subnet_layers,exp_batch_subnet_layers_00014,55d87_00014
+15,"loss    0.0
+dtype: float64",0.0,1730851140,,False,1,55d87_00015,2024-11-05_18-59-00,3204.859826564789,3204.859826564789,815968,grid,10.0.0.101,3204.859826564789,1,"['IT6', 'CT6', 'SOM6', 'PV6', 'VIP6', 'NGF6']",poisson,../data/exp_batch_subnet_layers,exp_batch_subnet_layers_00015,55d87_00015
+16,"loss    0.0
+dtype: float64",0.0,1730851463,,False,1,55d87_00016,2024-11-05_19-04-23,3132.231510400772,3132.231510400772,817407,grid,10.0.0.101,3132.231510400772,1,"['IT6', 'CT6', 'SOM6', 'PV6', 'VIP6', 'NGF6']",spike_replay,../data/exp_batch_subnet_layers,exp_batch_subnet_layers_00016,55d87_00016
+17,"loss    0.0
+dtype: float64",0.0,1730851762,,False,1,55d87_00017,2024-11-05_19-09-22,3136.426158428192,3136.426158428192,818832,grid,10.0.0.101,3136.426158428192,1,"['IT6', 'CT6', 'SOM6', 'PV6', 'VIP6', 'NGF6']",spike_replay_jit,../data/exp_batch_subnet_layers,exp_batch_subnet_layers_00017,55d87_00017

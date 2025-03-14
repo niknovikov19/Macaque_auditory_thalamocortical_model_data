@@ -1,0 +1,7 @@
+,data,loss,timestamp,checkpoint_dir_name,done,training_iteration,trial_id,date,time_this_iter_s,time_total_s,pid,hostname,node_ip,time_since_restore,iterations_since_restore,config/subnet_par.pops_active,config/saveFolder,config/simLabel,logdir
+0,"loss    0.0
+dtype: float64",0.0,1730800874,,False,1,bc7ab_00000,2024-11-05_05-01-14,492.6838262081146,492.6838262081146,730717,grid,10.0.0.101,492.6838262081146,1,"['IT2', 'SOM2', 'PV2', 'VIP2', 'NGF2']",../data/exp_batch_subnet_test_1,exp_batch_subnet_test_1_00000,bc7ab_00000
+1,"loss    0.0
+dtype: float64",0.0,1730802540,,False,1,bc7ab_00001,2024-11-05_05-29-00,2158.6213471889496,2158.6213471889496,730718,grid,10.0.0.101,2158.6213471889496,1,"['IT3', 'SOM3', 'PV3', 'VIP3', 'NGF3']",../data/exp_batch_subnet_test_1,exp_batch_subnet_test_1_00001,bc7ab_00001
+2,"loss    0.0
+dtype: float64",0.0,1730801059,,False,1,bc7ab_00002,2024-11-05_05-04-19,677.5453095436096,677.5453095436096,730719,grid,10.0.0.101,677.5453095436096,1,"['IT6', 'CT6', 'SOM6', 'PV6', 'VIP6', 'NGF6']",../data/exp_batch_subnet_test_1,exp_batch_subnet_test_1_00002,bc7ab_00002

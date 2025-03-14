@@ -8,8 +8,9 @@ import sys
 import matplotlib
 matplotlib.use('Agg')  # to avoid graphics error on servers
 
-from netpyne.batchtools import comm #, specs
-from netpyne import sim, specs
+from netpyne.batchtools import comm, specs
+from netpyne import sim
+from netpyne.specs import NetParams
 import numpy as np
 
 sys.path.append(str(Path(__file__).resolve().parents[2]))
@@ -65,9 +66,7 @@ def run_exp():
     
     # Preliminary: get cfg from batchtools to identify exp_name (simLabel),
     # which is then used to  generate the path to exp_cfg.py
-    cfg0 = specs.SimConfig()
-    cfg0.update_cfg()
-    exp_name = cfg0.simLabel
+    exp_name = specs.mappings['simLabel'][:-6]  # cut away job id
     
     # Import experiment-specific config py-file
     dirpath_exp = Path(__file__).resolve().parent / exp_name
@@ -98,36 +97,38 @@ def run_exp():
     desc = _prepare_subnet_desc(sim_data, cfg)
     spb = SubnetParamBuilder()    
     netParams_sub = spb.build(netParams_full.todict(), desc)
-    netParams_sub = specs.NetParams(netParams_sub)
+    netParams_sub = NetParams(netParams_sub)
     
     comm.initialize()
     
     # Save cfg and netParams into the output folder
     if comm.is_host():
+        os.makedirs(cfg.saveFolder, exist_ok=True)
         cfg.save('{}/{}_cfg.json'.format(cfg.saveFolder, cfg.simLabel))
         netParams_full.save(
             '{}/{}_netParams_full.json'.format(cfg.saveFolder, cfg.simLabel))
         netParams_sub.save(
             '{}/{}_netParams_sub.json'.format(cfg.saveFolder, cfg.simLabel))
-    
-    # Prepare simulation
-    sim.initialize(simConfig=cfg, netParams=netParams_sub)
-    sim.net.createPops()               			# instantiate network populations
-    sim.net.createCells()              			# instantiate network cells based on defined populations
-    sim.net.connectCells()            			# create connections between cells based on params
-    sim.net.addStims() 							# add network stimulation
-    
-    # Run simulations
-    sim.setupRecording()              			# setup variables to record for each cell (spikes, V traces, etc)
-    sim.runSim()                      			# run parallel Neuron simulation  
-    sim.gatherData()                  			# gather spiking data and cell info from each node
-    
-    # Save the results
-    sim.saveData()
-    sim.analysis.plotData()         			# plot spike raster etc
-    
+
+    if True:
+        # Prepare simulation
+        sim.initialize(simConfig=cfg, netParams=netParams_sub)
+        sim.net.createPops()               			# instantiate network populations
+        sim.net.createCells()              			# instantiate network cells based on defined populations
+        sim.net.connectCells()            			# create connections between cells based on params
+        sim.net.addStims() 							# add network stimulation
+        
+        # Run simulations
+        sim.setupRecording()              			# setup variables to record for each cell (spikes, V traces, etc)
+        sim.runSim()                      			# run parallel Neuron simulation  
+        sim.gatherData()                  			# gather spiking data and cell info from each node
+        
+        # Save the results
+        sim.saveData()
+        sim.analysis.plotData()         			# plot spike raster etc
+  
     # Close the communication with the batchtools master process
     if comm.is_host():
-       out_json = json.dumps({'loss': 0})
-       comm.send(out_json)
-       comm.close()
+        out_json = json.dumps({'loss': 0})
+        comm.send(out_json)
+        comm.close()
